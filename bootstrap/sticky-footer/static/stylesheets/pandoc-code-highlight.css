@@ -1,0 +1,69 @@
+/* pandoc code highlight */
+p code, li code {
+  font-size: 80%;
+  color: #333333;
+  background-color: RGBA(0, 0, 0, 0.04);
+  padding: 4px; }
+
+pre.sourceCode {
+  font-size: 80%;
+  color: #333333;
+  background-color: RGBA(0, 0, 0, 0.04);
+  padding: 16px; }
+
+/* Pandoc code highligh */
+table.sourceCode, tr.sourceCode {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: none; }
+
+td.lineNumbers, td.sourceCode {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: none; }
+
+table.sourceCode {
+  width: 100%;
+  line-height: 100%; }
+
+td.lineNumbers {
+  text-align: right;
+  padding-right: 4px;
+  padding-left: 4px;
+  color: #AAAAAA;
+  border-right: 1px solid #AAAAAA; }
+td.sourceCode {
+  padding-left: 5px; }
+
+code > span.kw {
+  color: #007020;
+  font-weight: bold; }
+code > span.dt {
+  color: #902000; }
+code > span.dv, code > span.bn, code > span.fl {
+  color: #40A070; }
+code > span.ch, code > span.st {
+  color: #4070A0; }
+code > span.co {
+  color: #60A0B0;
+  font-style: italic; }
+code > span.ot {
+  color: #007020; }
+code > span.al {
+  color: #FF0000;
+  font-weight: bold; }
+code > span.fu {
+  color: #06287e; }
+code > span.er {
+  color: #FF0000;
+  font-weight: bold; }
+
+pre {
+  background-color: transparent;
+  border: 0px; }
+
+.footnotes > hr {
+  border-top: dashed 1px #DDD;
+  border-bottom: none; }

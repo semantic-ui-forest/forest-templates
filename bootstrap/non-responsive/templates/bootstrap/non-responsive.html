@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
+    <meta content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." name="description" />
+    <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
+    <meta content="PPType" name="author" />
+    <meta content="#ffffff" name="theme-color" />
+    <title>Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI.</title>
+    <link href="../../static/dist/semantic-ui/semantic.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/stylesheets/default.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
+    <script src="../../static/dist/jquery/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="ui fixed borderless big menu">
+      <div class="ui container">
+        <a class="header item">Project Name</a><a class="active item">Home</a><a class="item">About</a><a class="item">Contact</a><a class="ui dropdown item">Dropdown<i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">
+              Action
+            </div>
+            <div class="item">
+              Another action
+            </div>
+            <div class="item">
+              Something else here
+            </div>
+            <div class="ui divider"></div>
+            <div class="header">
+              Navbar header
+            </div>
+            <div class="item">
+              Seperated link
+            </div>
+            <div class="item">
+              One more seperated link
+            </div>
+          </div>
+        </a>
+        <div class="item">
+          <div class="ui form">
+            <div class="inline field">
+              <div class="ui input">
+                <input placeholder="Search" type="text" />
+              </div>
+              <div class="ui button">
+                Submit
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right menu">
+          <a class="item" href="non-responsive.html#">Link</a><a class="item" href="non-responsive.html#">Link</a><a class="item" href="non-responsive.html#">Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="ui container grid">
+      <div class="column row">
+        <div class="ui basic segment">
+          <h1 class="ui huge header">
+            Non-responsive Semantic-UI
+          </h1>
+          <p class="lead">
+            In fact, Semantic-UI's grid system, container and many other components are by default "non-responsive", they will <b>grow</b> or <b>shrink</b> as screen width changes, but they will not stack vertically on a small screen, unless you add "stackable" to it. You can also fix the container's width with simple CSS.
+          </p>
+          <p class="lead">
+            Here are some keywords related to responsiveness:
+          </p>
+          <div class="ui bulleted list">
+            <div class="item">
+              <b>Stackable</b>: stack the items vertically on small screens
+            </div>
+            <div class="item">
+              <b>Doubling</b>: double the items' width on every screen width breakpoint jump
+            </div>
+            <div class="item">
+              <b>Computer, tablet, mobile only</b>: only show the elements on specific devices.
+            </div>
+            <div class="item">
+              <b>Fluid</b>: make the elements take all the possible space horizontally
+            </div>
+            <div class="item">
+              <b>Unstackable</b>: never stack the elements even on small screens
+            </div>
+          </div>
+          <div class="ui section divider"></div>
+          <h2 class="ui big header">
+            What changes
+          </h2>
+          <p>
+            Note that we have set the container's width to 970px and max-width to none on this page, so on small screens or narrower browser viewport, some contents will be compressed together and not be visible.
+          </p>
+          <h2 class="ui big header">
+            Regarding navbars
+          </h2>
+          <p>
+          </p>
+          <h2 class="ui big header">
+            Browsers, scrolling, and fixed elements
+          </h2>
+          <p>
+            Non-responsive layouts highlight a key drawback to fixed elements. Any fixed component, such as a fixed navbar, will not be scrollable when the viewport becomes narrower than the page content. In other words, given the non-responsive container width of 970px and a viewport of 800px, you'll potentially hide 170px of content.
+          </p>
+          <p>
+            There is no way around this as it's default browser behavior. The only solution is a responsive layout or using a non-fixed element.
+          </p>
+          <h2 class="ui big header">
+            Non-responsive grid system
+          </h2>
+          <div class="ui three column grid">
+            <div class="column">
+              <p>
+                One third
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                One third
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                One third
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../static/dist/semantic-ui/semantic.min.js"></script>
+    <style type="text/css">
+      body > .ui.fixed.menu {
+        background-color: #f5f5f5;
+      }
+      body > .ui.fixed.menu .ui.container {
+        width: 970px;
+        max-width: none !important;
+      }
+      body > .ui.fixed.menu .item {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      
+      body > .ui.container.grid {
+        width: 970px !important;
+        max-width: none !important;
+      }
+      body > .ui.container.grid > .column.row {
+        margin-top: 4em;
+      }
+      body > .ui.container.grid h1 {
+        font-size: 36px;
+      }
+      body > .ui.container.grid .row .ui.grid .column {
+        background-color: rgba(86, 61, 124, 0.15);
+        border: solid 1px rgba(85, 61, 124, 0.2);
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      
+      p.lead {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+    </style>
+    <script>
+      $(document).ready(function() {
+        $('.ui.dropdown').dropdown();
+      });
+    </script>
+  </body>
+</html>

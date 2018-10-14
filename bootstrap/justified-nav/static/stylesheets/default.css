@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* Some mixins */
+/* Basic style for some HTML elements */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
+footer.center.aligned p {
+  text-align: center; }
+footer p {
+  color: rgba(255, 255, 255, 0.5); }
+
+ul,
+ol {
+  padding-left: 2rem; }
+
+p {
+  line-height: 1.5rem; }
+  [lang='cn'] p {
+    text-align: justify; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-bottom: 3px double #EEE;
+  margin: 1rem 0;
+  padding: 0; }
+  hr.plain {
+    border-bottom: 1px solid #DDD; }
+
+/* blockquote styles comes from bootstrap */
+blockquote {
+  padding: 0.6rem 1rem 0.4rem;
+  margin: 0 0 0.8rem;
+  border-left: 3px solid #eee; }
+  blockquote p {
+    line-height: 1.2rem;
+    margin-bottom: 0.3rem;
+    text-align: start !important; }
+    blockquote p:last-child {
+      margin-bottom: 0; }
+  blockquote ul:last-child,
+  blockquote ol:last-child {
+    margin-bottom: 0; }
+  blockquote footer,
+  blockquote small,
+  blockquote .small {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857;
+    color: #999;
+    padding: 0; }
+  blockquote footer:before,
+  blockquote small:before,
+  blockquote .small:before {
+    content: "— "; }
+  blockquote cite:before {
+    content: "«"; }
+  blockquote cite:after {
+    content: "»"; }
+
+img {
+  width: 100%; }
+  img.logo {
+    width: 200px;
+    margin: 3rem 0 1rem; }
+
+nav.ui.menu {
+  border-radius: 0; }
+  nav.ui.menu.ui.container > a.item:first-child {
+    margin-left: -1.14286em; }
+  nav.ui.menu.ui.container > .right.menu > a.item:last-child {
+    padding-right: 0; }
+
+/* Styles for semantic-ui elements */
+.ui.alternative.segment {
+  background: #FFFFFF; }
+.ui.vertical.stripe.segment {
+  padding: 4rem 0; }
+.ui.vertical.segment {
+  padding: 2rem 0; }
+
+.ui.menu {
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  -moz-font-feature-settings: "smcp" 0, "onum" 0;
+  -ms-font-feature-settings: "smcp" 0, "onum" 0;
+  -o-font-feature-settings: "smcp" 0, "onum" 0;
+  -webkit-font-feature-settings: "smcp" 0, "onum" 0;
+  font-feature-settings: "smcp" 0, "onum" 0; }
+  .ui.menu form {
+    font-size: 14px; }
+  .ui.menu input {
+    -moz-font-feature-settings: "smcp" 0, "onum" 0;
+    -ms-font-feature-settings: "smcp" 0, "onum" 0;
+    -o-font-feature-settings: "smcp" 0, "onum" 0;
+    -webkit-font-feature-settings: "smcp" 0, "onum" 0;
+    font-feature-settings: "smcp" 0, "onum" 0;
+    font-size: 14px; }
+
+.ui.progress {
+  margin: 1rem 0; }
+  .ui.progress .ui.label {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem; }
+
+.ui.article.segment {
+  font-feature-settings: "onum" 0;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.65);
+  margin: 1.5rem 0 2.5rem 0;
+  padding-top: 2rem; }
+.ui.article > .ui.grid > .row.article-head {
+  padding-bottom: 1rem; }
+.ui.article > .ui.grid > .row.article-body {
+  padding-top: 0; }
+  .ui.article > .ui.grid > .row.article-body > aside {
+    display: table; }
+    .ui.article > .ui.grid > .row.article-body > aside > .ui.header {
+      margin-bottom: 0.2rem; }
+    .ui.article > .ui.grid > .row.article-body > aside > .ui.list {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem; }
+  .ui.article > .ui.grid > .row.article-body .ui.header a {
+    color: inherit; }
+
+/* Position, width, margin modifications for right rail */
+.right.rail .header {
+  margin-top: 3em !important; }
+
+.ui.demo.container .tab .example {
+  margin: 2em 0em;
+  padding: 2em 0em;
+  position: relative; }
+.ui.demo.container .tab .example:last-child:not(.position) {
+  padding-bottom: auto; }
+.ui.demo.container.basic.segment {
+  padding-left: 0em; }
+
+/* Width and position on <- 768 - 992 - 1200 -> px screens */
+@media only screen and (min-width: 1200px) {
+  .right.rail {
+    left: 827px !important; }
+
+  .ui.demo.container {
+    margin-left: calc((100% - 1127px)/2) !important;
+    margin-right: 387px !important; }
+    .ui.demo.container > .tab {
+      width: 827px; }
+
+  #content .vertical.segment:not(.center) .container {
+    width: 827px;
+    margin-left: calc((100% - 1127px)/2) !important; } }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .right.rail {
+    left: 732px !important;
+    width: 200px !important; }
+
+  .ui.demo.container {
+    margin-left: calc((100% - 933px)/2) !important;
+    margin-right: 250px !important; }
+    .ui.demo.container > .tab {
+      width: 732px; }
+
+  #content .vertical.segment:not(.center) .container {
+    width: 732px;
+    margin-left: calc((100% - 933px)/2) !important; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .right.rail {
+    left: 550px !important;
+    width: 160px !important; }
+
+  .ui.demo.container {
+    margin-left: calc((100% - 723px)/2) !important;
+    margin-right: 250 !important; }
+    .ui.demo.container > .tab {
+      width: 550px; }
+
+  #content .vertical.segment:not(.center) .container {
+    width: 550px;
+    margin-left: calc((100% - 723px)/2) !important; } }
+@media only screen and (max-width: 767px) {
+  .right.rail {
+    display: none; }
+
+  .ui.demo.container {
+    margin-left: auto;
+    margin-right: auto; }
+    .ui.demo.container > .tab {
+      width: auto; }
+
+  #content .vertical.segment .container {
+    width: auto; } }
+/* Enable smallcaps and oldstyle-number OpenType features for English */
+[lang='en'] {
+  -moz-font-feature-settings: "smcp" 0, "onum" 1;
+  -ms-font-feature-settings: "smcp" 0, "onum" 1;
+  -o-font-feature-settings: "smcp" 0, "onum" 1;
+  -webkit-font-feature-settings: "smcp" 0, "onum" 1;
+  font-feature-settings: "smcp" 0, "onum" 1; }
+
+/* Disable smallcaps and oldstyle-number OpenType features for Chinese */
+[lang='cn'] {
+  -moz-font-feature-settings: "smcp" 0, "onum" 0;
+  -ms-font-feature-settings: "smcp" 0, "onum" 0;
+  -o-font-feature-settings: "smcp" 0, "onum" 0;
+  -webkit-font-feature-settings: "smcp" 0, "onum" 0;
+  font-feature-settings: "smcp" 0, "onum" 0; }
+
+/* TeX and LaTeX Logo in HTML */
+.tex sub {
+  text-transform: uppercase;
+  top: auto;
+  bottom: auto; }
+
+.latex sub,
+.latex sup {
+  text-transform: uppercase;
+  top: auto;
+  bottom: auto; }
+
+.tex sub,
+.latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667rem;
+  margin-right: -0.125rem; }
+
+.tex,
+.latex,
+.tex sub,
+.latex sub {
+  font-size: 1rem; }
+
+/* disqus comment div */
+#disqus_thread {
+  margin-top: 2rem; }
+
+@media only screen and (max-width: 767px) {
+  .desktop-only {
+    display: none; }
+
+  .ui.menu .item.desktop-only {
+    display: none; }
+
+  .ui[class*="padded"].segment {
+    padding: 1.5rem; }
+
+  .ui.grid .ui.stackable.grid {
+    margin-left: 0 !important;
+    margin-right: 0 !important; } }

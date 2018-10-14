@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
+    <meta content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." name="description" />
+    <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
+    <meta content="PPType" name="author" />
+    <meta content="#ffffff" name="theme-color" />
+    <title>Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI.</title>
+    <link href="../../static/dist/semantic-ui/semantic.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/stylesheets/default.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
+    <script src="../../static/dist/jquery/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="ui container grid">
+      <div class="column">
+        <div id="page-header">
+          <h1 class="ui header">
+            Semantic-UI grid examples
+          </h1>
+          <p>
+            Basic grid layouts to get you familiar with building within the Semantic-UI grid system.
+          </p>
+        </div>
+        <div class="ui section divider"></div>
+        <h2 class="ui header">
+          Three equal columns
+        </h2>
+        <p>
+          Get three equal-width columns starting at desktops and scaling to large desktops. On mobile devices, tablets and below, the columns will automatically stack. If you want it to shrink rather than stack, you can remove the "stackable" class.
+        </p>
+        <div class="ui three column stackable grid">
+          <div class="column">
+            <p>
+              .column
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              .column
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              .column
+            </p>
+          </div>
+        </div>
+        <div class="ui hidden divider"></div>
+        <h2 class="ui header">
+          Three unequal columns
+        </h2>
+        <p>
+          Get three columns starting at desktops and scaling to large desktops of various widths. Remember, grid columns should add up to sixteen for a single horizontal block. More than that, and columns start stacking no matter the viewport.
+        </p>
+        <div class="ui stackable grid">
+          <div class="four wide column">
+            <p>
+              .four.wide.column
+            </p>
+          </div>
+          <div class="eight wide column">
+            <p>
+              .eight.wide.column
+            </p>
+          </div>
+          <div class="four wide column">
+            <p>
+              .four.wide.column
+            </p>
+          </div>
+        </div>
+        <div class="ui hidden divider"></div>
+        <h2 class="ui header">
+          Two columns
+        </h2>
+        <p>
+          Get two columns starting at desktops and scaling to large desktops.
+        </p>
+        <div class="ui stackable grid">
+          <div class="ten wide column">
+            <p>
+              .ten.wide.column
+            </p>
+          </div>
+          <div class="six wide column">
+            <p>
+              .six.wide.column
+            </p>
+          </div>
+        </div>
+        <div class="ui hidden divider"></div>
+        <h2 class="ui header">
+          Full width, single column
+        </h2>
+        <p>
+          No grid classes are necessary for full-width elements.
+        </p>
+        <div class="ui section divider"></div>
+        <h2 class="ui header">
+          Two columns with two nested columns
+        </h2>
+        <p>
+          Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns starting at desktops and scaling to large desktops, with another two (equal widths) within the larger column.
+          At mobile device sizes, tablets and down, these columns and their nested columns will stack.
+        </p>
+        <div class="ui stackable grid">
+          <div class="ten wide column">
+            <p>
+              .ten.wide.column
+            </p>
+            <div class="ui stackable grid">
+              <div class="eight wide column">
+                <p>
+                  .eight.wide.column
+                </p>
+              </div>
+              <div class="eight wide column">
+                <p>
+                  .eight.wide.column
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="six wide column">
+            <p>
+              .six.wide.column
+            </p>
+          </div>
+        </div>
+        <div class="ui section divider"></div>
+        <h2 class="ui header">
+          Mixed: mobile and desktop
+        </h2>
+        <p>
+          The Semantic grid system has three tiers of classes: mobile (phones), tablet (tablets), computer (desktops and larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.
+        </p>
+        <p>
+          Here, you would see the computer, tablet, mobile only columns appear and disappear when you change the browser's viewport width.
+        </p>
+        <div class="ui stackable grid">
+          <div class="ten wide computer only column">
+            <p>
+              .ten.wide.computer.only.column
+            </p>
+          </div>
+          <div class="six wide computer only column">
+            <p>
+              .six.wide.computer.only.column
+            </p>
+          </div>
+        </div>
+        <div class="ui three column stackable grid">
+          <div class="computer only column">
+            <p>
+              .computer.only.column
+            </p>
+          </div>
+          <div class="computer only column">
+            <p>
+              .computer.only.column
+            </p>
+          </div>
+          <div class="computer only column">
+            <p>
+              .computer.only.column
+            </p>
+          </div>
+        </div>
+        <div class="ui two column stackable grid">
+          <div class="column">
+            <p>
+              .column
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              .column
+            </p>
+          </div>
+        </div>
+        <div class="ui section divider"></div>
+        <h2 class="ui header">
+          Mixed: mobile, tablet and desktop
+        </h2>
+        <div class="ui stackable grid">
+          <div class="ten wide computer only column">
+            <p>
+              .ten.wide.computer.only.column
+            </p>
+          </div>
+          <div class="six wide computer only column">
+            <p>
+              .six.wide.computer.only.column
+            </p>
+          </div>
+        </div>
+        <div class="ui stackable grid">
+          <div class="ten wide tablet only column">
+            <p>
+              .ten.wide.tablet.only.column
+            </p>
+          </div>
+          <div class="six wide tablet only column">
+            <p>
+              .six.wide.tablet.only.column
+            </p>
+          </div>
+        </div>
+        <div class="ui stackable grid">
+          <div class="mobile only column">
+            <p>
+              .mobile.only.column
+            </p>
+          </div>
+        </div>
+        <div class="ui grid">
+          <div class="ten wide mobile only column">
+            <p>
+              .ten.wide.mobile.only.column
+            </p>
+          </div>
+        </div>
+        <div class="ui three column stackable grid">
+          <div class="computer tablet only column">
+            <p>
+              .computer.tablet.only.column
+            </p>
+          </div>
+          <div class="computer tablet only column">
+            <p>
+              .computer.tablet.only.column
+            </p>
+          </div>
+          <div class="computer tablet only column">
+            <p>
+              .computer.tablet.only.column
+            </p>
+          </div>
+        </div>
+        <div class="ui section divider"></div>
+        <h2 class="ui header">
+          Column clearing
+        </h2>
+        <p>
+          Grid will automatically clear previous columns, which presents clear floats with uneven content.:
+        </p>
+        <div class="ui stackable grid">
+          <div class="four wide left floated column">
+            <p>
+              .four.wide.left.floated.column
+            </p>
+          </div>
+          <div class="five wide centered column">
+            <p>
+              .five.wide.centered.column
+            </p>
+          </div>
+          <div class="six wide right floated column">
+            <p>
+              .six.wide.right.floated.column
+            </p>
+          </div>
+        </div>
+        <div class="ui four column stackable grid">
+          <div class="left floated column">
+            <p>
+              .left.floated.column
+            </p>
+          </div>
+          <div class="right floated column">
+            <p>
+              .right.floated.column
+            </p>
+          </div>
+        </div>
+        <div class="ui section divider"></div>
+        <h2 class="ui header">
+          Reversed and doubling
+        </h2>
+        <p>
+          Reversed grid allows you to reverse the order of columns according to devices.
+        </p>
+        <p>
+          Doubling grid will double columns' width for each device jump.
+        </p>
+        <p>
+          Change the width of browser to see the responsive effects.
+        </p>
+        <div class="ui mobile reversed three column grid">
+          <div class="column">
+            <p>
+              Left
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              Middle
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              Right
+            </p>
+          </div>
+        </div>
+        <div class="ui three column doubling stackable grid">
+          <div class="column">
+            <p>
+              .column
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              .column
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              .column
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style type="text/css">
+      #page-header h1 {
+        font-size: 2.5em;
+      }
+      #page-header p {
+        font-size: 1.4em;
+      }
+      
+      .ui.container.grid {
+        margin-top: 2em;
+      }
+      .ui.container.grid p {
+        font-size: 1.2em;
+      }
+      .ui.container.grid .ui.grid .column {
+        background-color: rgba(86, 61, 124, 0.15);
+        border: solid 1px rgba(85, 61, 124, 0.2);
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+    </style>
+  </body>
+</html>
