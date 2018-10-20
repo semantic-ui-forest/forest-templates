@@ -15,10 +15,92 @@
     Semantic-UI.</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <style type="text/css">
+    body {
+      color: rgb(85, 85, 85)
+    }
+
+    .ui.borderless.menu {
+      margin-top: 0;
+    }
+
+    .ui.inverted.pointing.menu .active.item:after {
+      background-color: white !important;
+    }
+
+    #page-header > .ui.segment {
+      padding-top: 4rem;
+    }
+
+    #page-header > .ui.segment > .ui.huge.header {
+      font-size: 54px;
+    }
+
+    #article > .eleven.wide.column {
+      font-size: 18px;
+    }
+
+    #article .four.wide.column .ui.secondary.segment {
+      border: none;
+    }
+
+    .ui.footer.segment {
+      margin-bottom: 0;
+      padding-top: 40px;
+      padding-bottom: 40px
+    }
+
+    /* blockquote styles comes from bootstrap */
+    blockquote {
+      padding: 0.6rem 1rem 0.4rem;
+      margin: 0 0 0.8rem;
+      border-left: 5px solid #EEEEEE;
+    }
+
+    blockquote p {
+      line-height: 1.2rem;
+      margin-bottom: 0.3rem;
+      text-align: start !important;
+    }
+
+    blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    blockquote ul:last-child,
+    blockquote ol:last-child {
+      margin-bottom: 0;
+    }
+
+    blockquote footer,
+    blockquote small,
+    blockquote .small {
+      margin-bottom: 0.5rem;
+      display: block;
+      font-size: 80%;
+      line-height: 1.42857;
+      color: #999;
+      padding: 0;
+    }
+
+    blockquote footer:before,
+    blockquote small:before,
+    blockquote .small:before {
+      content: "— ";
+    }
+
+    blockquote cite:before {
+      content: "«";
+    }
+
+    blockquote cite:after {
+      content: "»";
+    }
+  </style>
 </head>
 
 <body>
-  <div class="ui borderless fixed blue inverted pointing menu">
+  <div class="ui borderless blue inverted pointing menu">
     <div class="ui container">
       <a class="header active item" href="#">Home</a>
       <a class="item" href="#">New feature</a>
@@ -30,18 +112,27 @@
   <div class="ui grid container">
     <div class="row" id="page-header">
       <div class="ui basic segment">
-        <h1 class="ui sub header">
-          The Semantic-UI Blog
+        <h1 class="ui huge header">
+          <div class="content">
+            The Semantic-UI Blog
+          </div>
+          <div class="sub header">
+            A simple example of creating a blog with Semanti-UI.
+          </div>
         </h1>
-        <span>A simple example of creating a blog with Semanti-UI.</span>
       </div>
     </div>
     <div class="row" id="article">
       <div class="eleven wide column">
-        <h2 class="ui sub header">
-          Sample blog post
+        <h2 class="ui large header">
+          <div class="content">
+            Sample blog post
+          </div>
+          <div class="sub header">
+            March 6, 2017 by <a href="#">Jack</a>
+          </div>
         </h2>
-        <span>March 6, 2017 by <a href="#">Jack</a></span>
+
         <div class="ui hidden divider"></div>
         <p>
           This blog post shows a few different types of content that's
@@ -50,15 +141,17 @@
         </p>
         <div class="ui divider"></div>
         <p>
-          Cum sociis natoque penatibus et magnis <a href="#">dis parturient
-            montes</a>, nascetur ridiculus mus.
-          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-          vestibulum. Sed posuere consectetur est at
+          Cum sociis natoque penatibus et magnis
+          <a href="#">dis parturient montes</a>,
+          nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem
+          lacinia quam venenatis vestibulum. Sed posuere consectetur est at
           lobortis. Cras mattis consectetur purus sit amet fermentum.
         </p>
-        <blockquote>Curabitur blandit tempus porttitor. Nullam quis risus eget
-          urna mollis ornare vel eu leo. Nullam id
-          dolor id nibh ultricies vehicula ut id elit.</blockquote>
+        <blockquote>
+          Curabitur blandit tempus porttitor. Nullam quis risus eget urna
+          mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula
+          ut id elit.
+        </blockquote>
         <p>
           Etiam porta sem malesuada magna mollis euismod. Cras mattis
           consectetur purus sit amet fermentum. Aenean
@@ -101,51 +194,40 @@
           commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
           amet risus.
         </p>
-        <div class="ui list">
-          <div class="item">
-            <div class="ui bulleted list">
-              <div class="item">
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et.
-              </div>
-              <div class="item">
-                Donec id elit non mi porta gravida at eget metus.
-              </div>
-              <div class="item">
-                Nulla vitae elit libero, a pharetra augue.
-              </div>
-            </div>
-          </div>
-        </div>
+        <ul>
+          <li>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+          </li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
         <p>
           Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit
           libero, a pharetra augue.
         </p>
-        <div class="ui list">
-          <div class="item">
-            <div class="ui ordered list">
-              <div class="item">
-                Vestibulum id ligula porta felis euismod semper.
-              </div>
-              <div class="item">
-                Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus.
-              </div>
-              <div class="item">
-                Maecenas sed diam eget risus varius blandit sit amet non magna.
-              </div>
-            </div>
-          </div>
-        </div>
+        <ol>
+          <li>Vestibulum id ligula porta felis euismod semper.</li>
+          <li>
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus.
+          </li>
+          <li>
+            Maecenas sed diam eget risus varius blandit sit amet non magna.
+          </li>
+        </ol>
         <p>
           Cras mattis consectetur purus sit amet fermentum. Sed posuere
           consectetur est at lobortis.
         </p>
         <div class="ui hidden divider"></div>
-        <h2 class="ui sub header">
-          Another blog post
+        <h2 class="ui large header">
+          <div class="content">
+            Another blog post
+          </div>
+          <div class="sub header">
+            April 1, 2027 by <a href="#">Mac</a>
+          </div>
         </h2>
-        <span>April 1, 2027 by <a href="#">Mac</a></span>
         <div class="ui hidden divider"></div>
         <p>
           Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -154,9 +236,11 @@
           posuere consectetur est at lobortis. Cras
           mattis consectetur purus sit amet fermentum.
         </p>
-        <blockquote>Curabitur blandit tempus porttitor. Nullam quis risus eget
+        <blockquote>
+          Curabitur blandit tempus porttitor. Nullam quis risus eget
           urna mollis ornare vel eu leo. Nullam id
-          dolor id nibh ultricies vehicula ut id elit.</blockquote>
+          dolor id nibh ultricies vehicula ut id elit.
+        </blockquote>
         <p>
           Etiam porta sem malesuada magna mollis euismod. Cras mattis
           consectetur purus sit amet fermentum. Aenean
@@ -170,10 +254,14 @@
           vestibulum at eros.
         </p>
         <div class="ui hidden divider"></div>
-        <h2 class="ui sub header">
-          New feature
+        <h2 class="ui large header">
+          <div class="content">
+            New feature
+          </div>
+          <div class="sub header">
+            Autumn 13, 2019 by <a href="#">Semantic</a>
+          </div>
         </h2>
-        <span>Autumn 13, 2019 by <a href="#">Semantic</a></span>
         <div class="ui hidden divider"></div>
         <p>
           Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -182,22 +270,13 @@
           posuere consectetur est at lobortis. Cras
           mattis consectetur purus sit amet fermentum.
         </p>
-        <div class="ui list">
-          <div class="item">
-            <div class="ui bulleted list">
-              <div class="item">
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et.
-              </div>
-              <div class="item">
-                Donec id elit non mi porta gravida at eget metus.
-              </div>
-              <div class="item">
-                Nulla vitae elit libero, a pharetra augue.
-              </div>
-            </div>
-          </div>
-        </div>
+        <ul>
+          <li>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+          </li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
         <p>
           Etiam porta sem malesuada magna mollis euismod. Cras mattis
           consectetur purus sit amet fermentum. Aenean
@@ -210,14 +289,14 @@
           risus, porta ac consectetur ac,
           vestibulum at eros.
         </p>
-        <div class="ui basic segment">
-          <div class="ui basic circular huge button">
-            <a href="#">Previous</a>
-          </div>
-          <div class="ui basic circular huge button">
-            <a href="#">Next</a>
-          </div>
+        <div class="ui hidden divider"></div>
+        <div class="ui basic circular huge button">
+          <a href="#">Previous</a>
         </div>
+        <div class="ui basic circular huge button">
+          <a href="#">Next</a>
+        </div>
+        <div class="ui hidden divider"></div>
       </div>
       <div class="four wide right floated column">
         <div class="ui secondary segment">
@@ -257,7 +336,6 @@
         <div class="ui list">
           <a class="item">GitHub</a>
           <a class="item">Twitter</a>
-          <a class="item">Google+</a>
           <a class="item">Facebook</a>
         </div>
       </div>
@@ -267,62 +345,10 @@
     <div class="ui center aligned container">
       <p>
         Blog template built for Semantic-UI by
-        <a href="https://github.com/semantic-ui-forest">@Semantic-UI-Forest</a>.
+        <a href="https://semantic-ui-forest.com">@Semantic-UI-Forest</a>.
       </p>
       <a href="#">Back to top</a>
     </div>
   </div>
-  <style type="text/css">
-    body {
-      font-family: Georgia, "Times New Roman", "Times", serif;
-    }
-
-    .ui.inverted.pointing.menu .active.item:after {
-      background-color: white !important;
-    }
-
-    .ui.sub.header {
-      text-transform: none;
-    }
-
-    #page-header {
-      margin-top: 4em;
-    }
-
-    #page-header h1 {
-      font-size: 60px;
-    }
-
-    #page-header span {
-      font-size: 20px;
-      color: grey;
-    }
-
-    #article {
-      font-size: 18px;
-      line-height: 1.3;
-    }
-
-    #article h2 {
-      font-size: 40px;
-    }
-
-    #article span {
-      color: grey;
-    }
-
-    #article .four.wide.column .ui.secondary.segment {
-      border: none;
-    }
-
-    #article .four.wide.column .ui.list .item {
-      font-size: 14px;
-    }
-
-    .ui.footer.segment {
-      margin-bottom: 0;
-    }
-  </style>
 </body>
-
 </html>
