@@ -1,0 +1,9 @@
+body {
+  background-color: #DADADA;
+}
+
+body > div,
+body > div > div,
+body > div > div > .ui.grid {
+  height: 100%;
+}
