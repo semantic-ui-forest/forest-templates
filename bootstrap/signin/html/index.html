@@ -11,10 +11,23 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Signin Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <style type="text/css">
+    body {
+      background-color: #eee;
+    }
+
+    .ui.container {
+      margin-top: 6rem;
+      max-width: 22rem !important;
+    }
+
+    .ui.large.form > .field:first-child {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,21 +38,19 @@
       </h1>
       <form class="ui large form">
         <div class="field">
-          <div class="ui left icon input">
-            <i class="user icon"></i><input name="email" placeholder="E-mail address"
-              type="text" />
+          <div class="ui input">
+            <input name="email" placeholder="Email address" type="text" />
           </div>
         </div>
         <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i><input name="password" placeholder="Password"
-              type="password" />
+          <div class="ui input">
+            <input name="password" placeholder="Password" type="password" />
           </div>
         </div>
         <div class="field">
           <div class="ui checkbox">
-            <input class="hidden" tabindex="0" type="checkbox" /><label>Remember
-              me</label>
+            <input class="hidden" tabindex="0" type="checkbox" />
+            <label>Remember me</label>
           </div>
         </div>
         <div class="ui fluid large primary submit button">
@@ -48,16 +59,6 @@
       </form>
     </div>
   </div>
-  <style type="text/css">
-    body {
-      background-color: #eee;
-    }
-
-    .ui.container {
-      margin-top: 6em;
-      max-width: 22em !important;
-    }
-  </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
   <script>
