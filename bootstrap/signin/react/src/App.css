@@ -1,0 +1,12 @@
+body {
+  background-color: #eee;
+}
+
+.ui.container {
+  margin-top: 6rem;
+  max-width: 22rem !important;
+}
+
+.ui.large.form > .field:first-child {
+  margin-bottom: 0;
+}
