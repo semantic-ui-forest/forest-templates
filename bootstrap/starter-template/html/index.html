@@ -11,42 +11,61 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Starter Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
-</head>
-
-<body>
-  <div class="ui massive fixed inverted borderless menu">
-    <div class="ui container">
-      <a class="header item" href="starter-template.html#">Project Name</a>
-      <a class="active item" href="starter-template.html#">Home</a>
-      <a class="item" href="starter-template.html#">About</a>
-      <a class="item" href="starter-template.html#">Contact</a>
-    </div>
-  </div>
-  <div class="ui main center aligned text container">
-    <h1 class="ui huge header">
-      Semantic UI starter template
-    </h1>
-    <p class="lead">
-      Use this document as a way to quickly start any new project.<br>All you
-      get is this text and a mostly barebones HTML document.
-    </p>
-  </div>
   <style type="text/css">
-    .main.container {
-      margin-top: 7em;
+    .ui.center.aligned.container {
+      margin-top: 4em;
     }
 
     p.lead {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 1.3em;
       color: #333333;
       line-height: 1.4;
       font-weight: 300;
     }
+
+    .ui.huge.header {
+      font-size: 36px;
+    }
+
+    .ui.inverted.menu {
+      border-radius: 0;
+    }
+
+    .ui.inverted.menu a.item {
+      color: rgb(157, 157, 157);
+      font-size: 16px;
+    }
+
+    .ui.inverted.menu .active.item {
+      background-color: #080808;
+    }
   </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="ui huge inverted borderless menu">
+      <div class="ui container">
+        <a class="header item" href="#root">Project Name</a>
+        <a class="active item" href="#root">Home</a>
+        <a class="item" href="#root">About</a>
+        <a class="item" href="#root">Contact</a>
+      </div>
+    </div>
+    <div class="ui center aligned text container">
+      <h1 class="ui huge header">
+        Semantic-UI starter template
+      </h1>
+      <p class="lead">
+        Use this document as a way to quickly start any new project.<br>All you
+        get is this text and a mostly barebones HTML document.
+      </p>
+    </div>
+  </div>
 </body>
 
 </html>
