@@ -30,7 +30,7 @@ class App extends Component {
             <Menu.Item>About</Menu.Item>
           </Container>
         </Menu>
-        <Grid container>
+        <Grid container stackable>
           <Grid.Row>
             <Segment basic style={{paddingTop: "4rem"}}>
               <Header as="h1" size="huge" style={{fontSize: "54px"}}>
