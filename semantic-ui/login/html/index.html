@@ -11,20 +11,30 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Login Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+
+    body > .ui.grid {
+      height: 100%;
+    }
+
+    .column {
+      max-width: 450px;
+    }
+  </style>
 </head>
 
-<body>
+<body id="root">
   <div class="ui middle aligned center aligned grid">
     <div class="column">
-      <h2 class="ui teal image header">
+      <h2 class="ui teal center aligned header">
         <img class="image" src="/static/images/logo.png" />
-        <div class="content">
-          Log-in to your account
-        </div>
+        Log-in to your account
       </h2>
       <form class="ui large form">
         <div class="ui stacked segment">
@@ -47,27 +57,10 @@
         <div class="ui error message"></div>
       </form>
       <div class="ui message">
-        New to us?<a href="login.html#"> Sign Up</a>
+        New to us?<a href="#root"> Sign Up</a>
       </div>
     </div>
   </div>
-  <style type="text/css">
-    body {
-      background-color: #DADADA;
-    }
-
-    body>.grid {
-      height: 100%;
-    }
-
-    .image {
-      margin-top: -100px;
-    }
-
-    .column {
-      max-width: 450px;
-    }
-  </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
   <script>
