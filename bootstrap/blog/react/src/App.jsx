@@ -50,7 +50,7 @@ class App extends Component {
                   Sample blog post
                 </Header.Content>
                 <Header.Subheader>
-                  March 6, 2017 by <a href="#">Jack</a>
+                  March 6, 2017 by <a href="#root">Jack</a>
                 </Header.Subheader>
               </Header>
               <Divider hidden />
@@ -62,7 +62,7 @@ class App extends Component {
               <div class="ui divider" />
               <p>
                 Cum sociis natoque penatibus et magnis {" "}
-                <a href="#">dis parturient montes</a>, nascetur ridiculus mus.
+                <a href="#root">dis parturient montes</a>, nascetur ridiculus mus.
                 Aenean eu leo quam. Pellentesque ornare sem lacinia quam
                 venenatis vestibulum. Sed posuere consectetur est at lobortis.
                 Cras mattis consectetur purus sit amet fermentum.
@@ -144,7 +144,7 @@ class App extends Component {
                   Another blog post
                 </Header.Content>
                 <Header.Subheader>
-                  April 1, 2027 by <a href="#">Mac</a>
+                  April 1, 2027 by <a href="#root">Mac</a>
                 </Header.Subheader>
               </Header>
               <Divider hidden />
@@ -179,7 +179,7 @@ class App extends Component {
                   New feature
                 </Header.Content>
                 <Header.Subheader>
-                  Autumn 13, 2019 by <a href="#">Semantic</a>
+                  Autumn 13, 2019 by <a href="#root">Semantic</a>
                 </Header.Subheader>
               </Header>
               <Divider hidden />
@@ -211,10 +211,10 @@ class App extends Component {
               </p>
               <Divider hidden />
               <Button basic circular size="huge">
-                <a href="#">Previous</a>
+                <a href="#root">Previous</a>
               </Button>
               <Button basic circular size="huge">
-                <a href="#">Next</a>
+                <a href="#root">Next</a>
               </Button>
               <Divider hidden />
             </Grid.Column>
@@ -260,7 +260,7 @@ class App extends Component {
               Blog template built for Semantic-UI by{" "}
               <a href="https://semantic-ui-forest.com">@Semantic-UI-Forest</a>.
             </p>
-            <a href="#">Back to top</a>
+            <a href="#root">Back to top</a>
           </Container>
         </Segment>
       </div>
