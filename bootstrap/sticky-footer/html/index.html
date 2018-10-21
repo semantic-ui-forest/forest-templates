@@ -11,29 +11,72 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Sticky Footer Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <style type="text/css">
+    body {
+      height: auto;
+    }
+
+    .ui.container {
+      max-width: 680px !important;
+      width: auto;
+    }
+
+    .ui.container.grid .column {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .ui.container.grid h1.ui.header {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      margin-top: 40px;
+      font-size: 36px;
+    }
+
+    .ui.footer.segment {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      background-color: #f5f5f5;
+    }
+
+    .ui.ui.footer.segment .ui.container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .ui.footer.segment p {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #777777;
+    }
+
+    p.lead {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 21px;
+      color: #333333;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="ui basic segment">
-    <div class="ui container grid">
-      <div class="row">
-        <div class="column">
-          <h1 class="ui huge header">
-            Sticky footer
-          </h1>
-          <div class="ui divider"></div>
-          <p class="lead">
-            Pin a footer segment to the bottom of the viewport in desktop
-            browsers with this custom HTML and CSS.
-          </p>
-          <p>
-          </p>
-        </div>
-      </div>
+  <div class="ui container grid">
+    <div class="column">
+      <h1 class="ui huge header">
+        Sticky footer
+      </h1>
+      <div class="ui divider"></div>
+      <p class="lead">
+        Pin a fixed-height footer to the bottom of the viewport in desktop
+        browsers with this custom HTML and CSS.
+      </p>
     </div>
   </div>
   <div class="ui footer basic segment">
@@ -43,34 +86,6 @@
       </p>
     </div>
   </div>
-  <style type="text/css">
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .ui.container {
-      max-width: 680px !important;
-    }
-
-    .ui.container.grid h1.ui.header {
-      margin-top: 1em;
-      font-size: 36px;
-    }
-
-    .ui.container.grid p.lead {
-      font-size: 21px;
-      line-height: 1.5;
-    }
-
-    .ui.footer.segment {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      margin-bottom: 0;
-      background-color: #f5f5f5;
-    }
-  </style>
 </body>
 
 </html>
