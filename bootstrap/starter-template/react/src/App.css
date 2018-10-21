@@ -1,0 +1,28 @@
+    .ui.center.aligned.container {
+      margin-top: 4em;
+    }
+
+    p.lead {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 1.3em;
+      color: #333333;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+
+    .ui.huge.header {
+      font-size: 36px;
+    }
+
+    .ui.inverted.menu {
+      border-radius: 0;
+    }
+
+    .ui.inverted.menu a.item {
+      color: rgb(157, 157, 157);
+      font-size: 16px;
+    }
+
+    .ui.inverted.menu .active.item {
+      background-color: #080808;
+    }
