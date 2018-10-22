@@ -1,0 +1,42 @@
+body {
+  color: rgb(85, 85, 85)
+}
+
+.ui.inverted.pointing.menu .active.item:after {
+  background-color: white !important;
+}
+
+/* blockquote styles comes from bootstrap */
+blockquote {
+  padding: 0.6rem 1rem 0.4rem;
+  margin: 0 0 0.8rem;
+  border-left: 5px solid #EEEEEE;
+}
+blockquote p {
+  line-height: 1.2rem;
+  margin-bottom: 0.3rem;
+  text-align: start !important;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+blockquote ul:last-child, blockquote ol:last-child {
+  margin-bottom: 0;
+}
+blockquote footer, blockquote small, blockquote .small {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857;
+  color: #999;
+  padding: 0;
+}
+blockquote footer:before, blockquote small:before, blockquote .small:before {
+  content: "— ";
+}
+blockquote cite:before {
+  content: "«";
+}
+blockquote cite:after {
+  content: "»";
+}
