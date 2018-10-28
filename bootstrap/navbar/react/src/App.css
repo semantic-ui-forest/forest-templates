@@ -1,0 +1,25 @@
+.ui.borderless.menu {
+  background-color: #f8f8f8;
+  margin-top: 1rem;
+}
+
+.ui.borderless.huge.menu .header.item {
+  font-size: 1.2em;
+}
+
+.ui.message {
+  background-color: rga(238, 238, 238);
+  box-shadow: none;
+  padding: 5em 4em;
+}
+
+.ui.message h1.ui.header {
+  font-size: 4.5em;
+}
+
+.ui.message p.lead {
+  font-size: 1.3em;
+  color: #333333;
+  line-height: 1.4;
+  font-weight: 300;
+}
