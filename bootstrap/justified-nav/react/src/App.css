@@ -1,0 +1,37 @@
+.ui.grid > .row h3.header {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.ui.grid > .row .ui.item.menu {
+  border: none;
+}
+
+.ui.grid > .row .ui.item.menu .item {
+  background-image: linear-gradient(to bottom, #f5f5f5 0, #e5e5e5 100%);
+  border: 1px solid #d5d5d5;
+  border-left-color: white;
+}
+
+.ui.grid > .row .ui.item.menu .item.active {
+  border-left: 0px none #777777;
+  box-shadow: inset 1px 4px 7px rgba(0, 0, 0, 0.15);
+}
+
+.ui.grid .row .ui.center.aligned.container h1 {
+  font-size: 63px;
+}
+
+.ui.grid .row .ui.center.aligned.container p {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.ui.grid .three.column.row h1 {
+  font-size: 30px;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
