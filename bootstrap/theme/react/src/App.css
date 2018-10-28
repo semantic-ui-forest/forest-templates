@@ -1,0 +1,36 @@
+.ui.massive.header {
+  font-size: 4em;
+}
+
+.ui.fixed.inverted.borderless.menu .header.item {
+  margin-left: -15px;
+}
+
+.ui.secondary.compact.menu#badges .item {
+  margin: 0;
+}
+
+.ui.fluid.vertical.menu > .item > .ui.header {
+  margin-bottom: 5px;
+}
+
+.ui.jumbotron.message {
+  padding: 6em 4em;
+  box-shadow: none;
+  background-color: #eeeeee;
+}
+
+.ui.jumbotron.message p {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.ui.dividing.header {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#content {
+  margin-top: 5em;
+  padding-bottom: 4em;
+}
