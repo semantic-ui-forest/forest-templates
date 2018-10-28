@@ -11,16 +11,41 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Fixed Top Navbar Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <style type="text/css">
+    .ui.borderless.big.menu .header.item {
+      font-size: 1.2rem;
+    }
+
+    .ui.message {
+      background-color: rga(238, 238, 238);
+      box-shadow: none;
+      padding: 5rem 4rem;
+    }
+
+    .ui.message h1.ui.header {
+      font-size: 4.5rem;
+    }
+
+    .ui.message p.lead {
+      font-size: 1.3rem;
+      color: #333333;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+
+    #content {
+      margin-top: 5rem;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="ui fixed borderless huge menu">
-    <div class="ui container grid">
-      <div class="computer only row">
+  <div id="root">
+    <div class="ui borderless big fixed fluid menu">
+      <div class="ui container">
         <a class="header item">Project Name</a>
         <a class="active item">Home</a>
         <a class="item">About</a>
@@ -50,139 +75,28 @@
             </div>
           </div>
         </a>
-        <div class="right menu">
-        </div>
       </div>
-      <div class="tablet mobile only row">
-        <a class="header item"> Project Name</a>
-        <div class="right menu">
-          <a class="menu item">
-            <div class="ui basic icon toggle button">
-              <i class="content icon"></i>
-            </div>
-          </a>
-        </div>
-        <div class="ui vertical accordion borderless fluid menu">
-          <a class="active item">Home</a>
-          <a class="item">About</a>
-          <a class="item">Contact</a>
-          <div class="item">
-            <div class="title">
-              Dropdown
-              <i class="dropdown icon"></i>
-            </div>
-            <div class="content">
-              <div class="item">
-                Action
-              </div>
-              <div class="item">
-                Another action
-              </div>
-              <div class="item">
-                Something else here
-              </div>
-              <div class="ui divider"></div>
-              <div class="header item">
-                Navbar header
-              </div>
-              <div class="item">
-                Seperated link
-              </div>
-              <div class="item">
-                One more seperated link
-              </div>
-            </div>
-          </div>
-          <div class="ui divider"></div>
-        </div>
+    </div>
+    <div class="ui container" id="content">
+      <div class="ui message">
+        <h1 class="ui huge header">
+          Navbar example
+        </h1>
+        <p class="lead">
+          This example is a quick exercise to illustrate how the default,
+          static navbar and fixed to top navbar work. It includes the
+          responsive CSS and HTML, so it also adapts to your viewport and
+          device.
+        </p>
+        <a class="ui big primary button">View navbar docs &raquo; </a>
       </div>
     </div>
   </div>
-  <div class="ui container">
-    <div class="ui message">
-      <h1 class="ui huge header">
-        Navbar example
-      </h1>
-      <p class="lead">
-        This example is a quick exercise to illustrate how the default, static
-        navbar and fixed to top navbar work. It includes the responsive CSS and
-        HTML, so it also adapts to your viewport and device.
-      </p>
-      <p class="lead">
-        To see the difference between static and fixed top navbars, just
-        scroll.
-      </p>
-      <a class="ui big primary button">View navbar docs &raquo; </a>
-    </div>
-  </div>
-  <style type="text/css">
-    body {
-      min-height: 2000px;
-    }
-
-    body>.ui.container {
-      margin-top: 6em;
-    }
-
-    .ui.fixed.borderless.menu {
-      background-color: #f8f8f8;
-    }
-
-    .ui.fixed.borderless.menu .row>a.header.item {
-      font-size: 1.2em;
-    }
-
-    .ui.vertical.menu {
-      display: none;
-      border: none;
-      box-shadow: none;
-      background-color: #f8f8f8;
-    }
-
-    .ui.vertical.menu>.item {
-      padding-left: 1.428em;
-    }
-
-    .ui.vertical.menu .item .title .dropdown.icon {
-      float: none;
-    }
-
-    .ui.vertical.menu .item .content .item {
-      padding: 0.5em 1em;
-    }
-
-    .ui.vertical.menu .header.item {
-      text-transform: uppercase;
-    }
-
-    .ui.message {
-      background-color: rga(238, 238, 238);
-      box-shadow: none;
-      padding: 5em 4em;
-    }
-
-    .ui.message h1.ui.header {
-      font-size: 4.5em;
-    }
-
-    .ui.message p.lead {
-      font-size: 1.3em;
-      color: #333333;
-      line-height: 1.4;
-      font-weight: 300;
-    }
-  </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
   <script>
     $(document).ready(function () {
       $('.ui.dropdown').dropdown();
-      $('.ui.accordion').accordion();
-
-      // bind "hide and show vertical menu" event to top right icon button
-      $('.ui.toggle.button').click(function () {
-        $('.ui.vertical.menu').toggle("250", "linear")
-      });
     });
   </script>
 </body>
