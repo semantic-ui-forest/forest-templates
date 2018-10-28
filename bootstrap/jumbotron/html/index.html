@@ -11,55 +11,71 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Jumbotron Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <style type="text/css">
+    .ui.form .inline.fields {
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    .ui.message {
+      background-color: #eeeeee;
+      box-shadow: none;
+      border-radius: 0;
+      margin-bottom: 4rem;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+    }
+
+    .ui.menu > .ui.container > .header.item {
+      font-size: 1.4rem;
+      margin-left: -20px;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="ui fixed borderless inverted menu">
-    <div class="ui container">
-      <a class="header item">Project Name</a>
-      <div class="right menu">
-        <div class="ui form">
-          <div class="inline fields">
-            <div class="field">
-              <input placeholder="Email" type="text" />
-            </div>
-            <div class="field">
-              <input placeholder="Password" type="text" />
-            </div>
-            <div class="field">
-              <div class="ui green button">
-                Sign in
+  <div id="root">
+    <div class="ui fixed borderless inverted menu">
+      <div class="ui container">
+        <a class="header item">Project Name</a>
+        <div class="right menu">
+          <form class="ui form">
+            <div class="inline fields">
+              <div class="field">
+                <input placeholder="Email" type="text" />
+              </div>
+              <div class="field">
+                <input placeholder="Password" type="text" />
+              </div>
+              <div class="field">
+                <button class="ui green button">
+                  Sign in
+                </button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
-  </div>
-  <div class="ui grid massive message">
-    <div class="ui container">
-      <div class="row">
-        <div class="h1 ui huge header">
+    <div class="ui massive message">
+      <div class="ui container">
+        <h1 class="ui huge header">
           Hello, world!
-        </div>
+        </h1>
         <p>
           This is a template for a simple marketing or informational website.
           It includes a large callout called a
           jumbotron and three supporting pieces of content. Use it as a
           starting point to create something more unique.
         </p>
-        <a class="ui large primary button">Learn more &raquo;</a>
+        <button class="ui large primary button">Learn more &raquo;</button>
       </div>
     </div>
-  </div>
-  <div class="ui hidden divider"></div>
-  <div class="ui container">
-    <div class="ui stackable grid">
-      <div class="three column row">
+    <div class="ui container">
+      <div class="ui three column stackable grid">
         <div class="column">
           <h1 class="ui header">
             Heading
@@ -72,7 +88,7 @@
             Donec sed odio dui.
           </p>
           <div class="ui small basic button">
-            View detailes &raquo;
+            View details &raquo;
           </div>
         </div>
         <div class="column">
@@ -87,7 +103,7 @@
             Donec sed odio dui.
           </p>
           <div class="ui small basic button">
-            View detailes &raquo;
+            View details &raquo;
           </div>
         </div>
         <div class="column">
@@ -102,36 +118,17 @@
             Donec sed odio dui.
           </p>
           <div class="ui small basic button">
-            View detailes &raquo;
+            View details &raquo;
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="column">
-          <div class="ui divider"></div>
-          <footer>
-            &copy; 2017 Company, Inc.
-          </footer>
-        </div>
-      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui divider"></div>
+      <footer>
+        &copy; 2017 Company, Inc.
+      </footer>
     </div>
   </div>
-  <style type="text/css">
-    .ui.form .inline.fields {
-      margin: 0.5em;
-    }
-
-    .ui.grid.message {
-      background-color: #eeeeee;
-      box-shadow: none;
-      border-radius: 0;
-    }
-
-    .ui.grid.message .row {
-      margin-top: 2.5em;
-      margin-bottom: 2.5em;
-    }
-  </style>
 </body>
 
 </html>
