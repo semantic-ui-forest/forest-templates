@@ -11,144 +11,157 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Narrow Jumbotron Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
-</head>
-
-<body>
-  <div class="ui container" id="narrow">
-    <div class="ui borderless massive menu">
-      <a class="header item">Project Name</a>
-      <div class="ui right secondary menu">
-        <a class="active item">Home</a>
-        <a class="item">Home</a>
-        <a class="item">Home</a>
-      </div>
-    </div>
-    <div class="ui message center aligned grid">
-      <h1 class="ui huge header">
-        Jumbotron heading
-      </h1>
-      <p class="lead">
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce
-        dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-        fermentum massa justo sit amet risus.
-      </p>
-      <a class="ui massive green button">Sign up today</a>
-    </div>
-    <div class="ui two column grid">
-      <div class="column">
-        <div class="row">
-          <h2 class="ui header">
-            Subheading
-          </h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
-            mollis interdum.
-          </p>
-        </div>
-        <div class="row">
-          <h2 class="ui header">
-            Subheading
-          </h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
-            mollis interdum.
-          </p>
-        </div>
-        <div class="row">
-          <h2 class="ui header">
-            Subheading
-          </h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
-            mollis interdum.
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="row">
-          <h2 class="ui header">
-            Subheading
-          </h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
-            mollis interdum.
-          </p>
-        </div>
-        <div class="row">
-          <h2 class="ui header">
-            Subheading
-          </h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
-            mollis interdum.
-          </p>
-        </div>
-        <div class="row">
-          <h2 class="ui header">
-            Subheading
-          </h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
-            mollis interdum.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="ui divider"></div>
-    <footer>
-      &copy; 2017 Company, Inc.
-    </footer>
-  </div>
   <style type="text/css">
-    #narrow.ui.container {
-      width: 50%;
+    @media only screen and (min-width: 768px) {
+      .ui.container {
+        width: 730px;
+        max-width: 730px;
+      }
     }
 
-    #narrow.ui.container>.ui.menu {
+    .ui.container>.ui.menu {
       border-width: 0 0 1px 0;
       border-radius: 0;
-      height: 4em;
+      height: 6rem;
+      box-shadow: none;
+      margin-bottom: 28px;
     }
 
-    #narrow.ui.container>.ui.menu .header.item {
+    .ui.container>.ui.menu .header.item {
       padding-left: 0;
-      font-size: 1.2em;
+      font-size: 1.6rem;
+      color: #777777;
     }
 
-    #narrow.ui.container .secondary.menu .item {
+    .ui.container .right.menu .item {
       color: #337ab7;
+      padding: 0.8em 0.6em;
+      margin: 1.6em 0.2em;
+      background: none;
+      transition: color 0.1s ease;
+      border-radius: 0.28571429rem;
+      font-size: 14px;
     }
 
-    #narrow.ui.container .secondary.menu .item.active {
+    .ui.container .right.menu .item.active {
       background-color: #337ab7;
       color: white;
     }
 
-    #narrow.ui.container .ui.message {
-      background-color: rga(238, 238, 238);
+    .ui.container>.ui.message {
+      background-color: rgb(238, 238, 238);
       box-shadow: none;
-      padding: 4em 2em;
+      padding: 4rem 2rem;
     }
 
-    #narrow.ui.container h1.ui.header {
-      font-size: 4.5em;
+    .ui.container h1.ui.header {
+      font-size: 2.5rem;
+      text-align: center;
     }
 
-    #narrow.ui.container p.lead {
-      font-size: 1.3em;
+    @media only screen and (min-width: 768px) {
+      .ui.container h1.ui.header {
+        font-size: 4.5rem;
+      }
+    }
+
+    .ui.container p.lead {
+      font-size: 1.5rem;
       color: #333333;
       line-height: 1.4;
       font-weight: 300;
     }
 
-    #narrow.ui.container .ui.grid .row {
-      margin-bottom: 1.5em;
+    .ui.container .ui.grid .row {
+      margin-bottom: 1.5rem;
     }
+
   </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="ui container">
+      <div class="ui borderless massive menu">
+        <a class="header item">Project Name</a>
+        <div class="right menu">
+          <a class="active item">Home</a>
+          <a class="item">About</a>
+          <a class="item">Contact</a>
+        </div>
+      </div>
+      <div class="ui message">
+        <div class="ui center aligned grid">
+          <h1 class="ui huge header">
+            Jumbotron heading
+          </h1>
+          <p class="lead">
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce
+            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus.
+          </p>
+          <a class="ui massive green button">Sign up today</a>
+        </div>
+      </div>
+      <div class="ui two column stackable very padded grid">
+        <div class="column">
+          <h2 class="ui header">
+            Subheading
+          </h2>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
+            mollis interdum.
+          </p>
+          <h2 class="ui header">
+            Subheading
+          </h2>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
+            mollis interdum.
+          </p>
+          <h2 class="ui header">
+            Subheading
+          </h2>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
+            mollis interdum.
+          </p>
+        </div>
+        <div class="column">
+          <h2 class="ui header">
+            Subheading
+          </h2>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
+            mollis interdum.
+          </p>
+          <h2 class="ui header">
+            Subheading
+          </h2>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
+            mollis interdum.
+          </p>
+          <h2 class="ui header">
+            Subheading
+          </h2>
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
+            mollis interdum.
+          </p>
+        </div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <div class="ui divider"></div>
+      <footer>
+        &copy; 2017 Company, Inc.
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>
