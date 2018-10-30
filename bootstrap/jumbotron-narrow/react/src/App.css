@@ -1,0 +1,63 @@
+@media only screen and (min-width: 768px) {
+  .ui.container {
+    width: 730px;
+    max-width: 730px;
+  }
+}
+
+.ui.container>.ui.menu {
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  height: 6rem;
+  box-shadow: none;
+  margin-bottom: 28px;
+}
+
+.ui.container>.ui.menu .header.item {
+  padding-left: 0;
+  font-size: 1.6rem;
+  color: #777777;
+}
+
+.ui.container .right.menu .item {
+  color: #337ab7;
+  padding: 0.8em 0.6em;
+  margin: 1.6em 0.2em;
+  background: none;
+  transition: color 0.1s ease;
+  border-radius: 0.28571429rem;
+  font-size: 14px;
+}
+
+.ui.container .right.menu .item.active {
+  background-color: #337ab7;
+  color: white;
+}
+
+.ui.container>.ui.message {
+  background-color: rgb(238, 238, 238);
+  box-shadow: none;
+  padding: 4rem 2rem;
+}
+
+.ui.container h1.ui.header {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.container h1.ui.header {
+    font-size: 4.5rem;
+  }
+}
+
+.ui.container p.lead {
+  font-size: 1.5rem;
+  color: #333333;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.ui.container .ui.grid .row {
+  margin-bottom: 1.5rem;
+}
