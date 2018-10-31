@@ -1,0 +1,76 @@
+@media only screen and (min-width: 768px) {
+  .ui.container {
+    width: 700px;
+    max-width: 700px;
+  }
+}
+
+.ui.inverted.menu {
+  background-color: rgb(51, 51, 51);
+}
+
+.ui.inverted.menu .item {
+  padding-bottom: 0;
+}
+
+.ui.inverted.menu .right.menu .item {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.ui.inverted.menu .header.item {
+  font-size: 32px;
+}
+
+.ui.inverted.menu .right.menu .item {
+  font-size: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.ui.inverted.menu .right.menu .active.item {
+  background-color: inherit;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.ui.inverted.vertical.segment {
+  height: 100vh;
+  background-color: rgb(51, 51, 51);
+}
+
+.ui.content.container {
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ui.content.container h1.header {
+  font-size: 36px;
+}
+
+.ui.content.container p {
+  font-size: 21px;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.ui.inverted.vertical.segment footer.ui.segment {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: gray;
+}
+
+.ui.inverted.vertical.segment footer.ui.segment a {
+  color: white;
+}
