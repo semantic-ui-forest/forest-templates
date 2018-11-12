@@ -1,0 +1,16 @@
+.ui.container h1.ui.header:first-child {
+  margin-top: 40px;
+  font-size: 2.5rem;
+}
+
+.ui.container p.header {
+  font-size: 1.4rem;
+  color: rgb(51, 51, 51);
+}
+
+.ui.container .ui.grid .column {
+  background-color: rgba(86, 61, 124, 0.15);
+  border: solid 1px rgba(85, 61, 124, 0.2);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
