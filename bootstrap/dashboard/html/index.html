@@ -11,10 +11,56 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Dashboard Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <style type="text/css">
+    #sidebar {
+      position: fixed;
+      height: 100vh;
+      background-color: #f5f5f5;
+      padding-top: 36px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    #sidebar .ui.menu>a.item {
+      padding: 10px 20px;
+      line-height: 20px;
+      color: #337ab7;
+      border-radius: 0 !important;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    #sidebar .ui.menu>a.item.active {
+      background-color: #337ab7;
+      color: white;
+      border: none !important;
+    }
+
+    #sidebar .ui.menu>a.item:hover {
+      background-color: #eee;
+      color: #23527c;
+    }
+
+    #content {
+      margin-left: 18.7%;
+      padding-top: 24px;
+      padding-left: 40px;
+      padding-right: 40px;
+      float: left;
+    }
+
+    #content h1 {
+      font-size: 36px;
+    }
+
+    #content .ui.dividing.header {
+      width: 100%
+    }
+
+  </style>
 </head>
 
 <body>
@@ -32,279 +78,210 @@
       <a class="item">Help</a>
     </div>
   </div>
-  <div class="ui grid">
-    <div class="row">
-      <div class="column" id="sidebar">
-        <div class="ui secondary vertical fluid menu">
-          <a class="active item">Overview</a>
-          <a class="item">Reports</a>
-          <a class="item">Analytics</a>
-          <a class="item">Export</a>
-          <div class="ui hidden divider"></div>
-          <a class="item">Nav item</a>
-          <a class="item">Nav item again</a>
-          <a class="item">One more nav</a>
-          <a class="item">Another nav item</a>
-          <a class="item">More navigation</a>
-          <div class="ui hidden divider"></div>
-          <a class="item">Macintosh</a>
-          <a class="item">Linux</a>
-          <a class="item">Windows</a>
-        </div>
+  <div class="ui padded grid">
+    <div class="three wide column" id="sidebar">
+      <div class="ui vertical borderless fluid text menu">
+        <a class="active item">Overview</a>
+        <a class="item">Reports</a>
+        <a class="item">Analytics</a>
+        <a class="item">Export</a>
+        <div class="ui hidden divider"></div>
+        <a class="item">Nav item</a>
+        <a class="item">Nav item again</a>
+        <a class="item">One more nav</a>
+        <a class="item">Another nav item</a>
+        <a class="item">More navigation</a>
+        <div class="ui hidden divider"></div>
+        <a class="item">Macintosh</a>
+        <a class="item">Linux</a>
+        <a class="item">Windows</a>
       </div>
-      <div class="column" id="content">
-        <div class="ui grid">
-          <div class="row">
-            <h1 class="ui huge header">
-              Dashboard
-            </h1>
-          </div>
-          <div class="ui divider"></div>
-          <div class="four column center aligned row">
-            <div class="column">
-              <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
-              <div class="ui hidden divider"></div>
-              <div class="ui large green label">
-                Label
-              </div>
-              <p>
-                Something else
-              </p>
+    </div>
+    <div class="thirteen wide column" id="content">
+      <div class="ui padded grid">
+        <div class="row">
+          <h1 class="ui huge dividing header">
+            Dashboard
+          </h1>
+        </div>
+        <div class="four column center aligned row">
+          <div class="column">
+            <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
+            <div class="ui hidden divider"></div>
+            <div class="ui large basic label">
+              Label
             </div>
-            <div class="column">
-              <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
-              <div class="ui hidden divider"></div>
-              <div class="ui large blue label">
-                Label
-              </div>
-              <p>
-                Something else
-              </p>
-            </div>
-            <div class="column">
-              <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
-              <div class="ui hidden divider"></div>
-              <div class="ui large pink label">
-                Label
-              </div>
-              <p>
-                Something else
-              </p>
-            </div>
-            <div class="column">
-              <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
-              <div class="ui hidden divider"></div>
-              <div class="ui large red label">
-                Label
-              </div>
-              <p>
-                Something else
-              </p>
-            </div>
+            <p>
+              Something else
+            </p>
           </div>
-          <div class="ui hidden section divider"></div>
-          <div class="row">
-            <h1 class="ui huge header">
-              Section title
-            </h1>
+          <div class="column">
+            <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
+            <div class="ui hidden divider"></div>
+            <div class="ui large basic label">
+              Label
+            </div>
+            <p>
+              Something else
+            </p>
           </div>
-          <div class="ui divider"></div>
-          <div class="row">
-            <table class="ui single line striped selectable table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="column">
+            <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
+            <div class="ui hidden divider"></div>
+            <div class="ui large basic label">
+              Label
+            </div>
+            <p>
+              Something else
+            </p>
           </div>
+          <div class="column">
+            <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
+            <div class="ui hidden divider"></div>
+            <div class="ui large basic label">
+              Label
+            </div>
+            <p>
+              Something else
+            </p>
+          </div>
+        </div>
+        <div class="ui hidden section divider"></div>
+        <div class="row">
+          <h1 class="ui huge dividing header">
+            Section title
+          </h1>
+        </div>
+        <div class="row">
+          <table class="ui very basic single line striped selectable table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1,001</td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+              </tr>
+              <tr>
+                <td>1,002</td>
+                <td>amet</td>
+                <td>consectetur</td>
+                <td>adipiscing</td>
+                <td>elit</td>
+              </tr>
+              <tr>
+                <td>1,003</td>
+                <td>Integer</td>
+                <td>nec</td>
+                <td>odio</td>
+                <td>Praesent</td>
+              </tr>
+              <tr>
+                <td>1,003</td>
+                <td>libero</td>
+                <td>Sed</td>
+                <td>cursus</td>
+                <td>ante</td>
+              </tr>
+              <tr>
+                <td>1,004</td>
+                <td>dapibus</td>
+                <td>diam</td>
+                <td>Sed</td>
+                <td>nisi</td>
+              </tr>
+              <tr>
+                <td>1,005</td>
+                <td>Nulla</td>
+                <td>quis</td>
+                <td>sem</td>
+                <td>at</td>
+              </tr>
+              <tr>
+                <td>1,006</td>
+                <td>nibh</td>
+                <td>elementum</td>
+                <td>imperdiet</td>
+                <td>Duis</td>
+              </tr>
+              <tr>
+                <td>1,007</td>
+                <td>sagittis</td>
+                <td>ipsum</td>
+                <td>Praesent</td>
+                <td>mauris</td>
+              </tr>
+              <tr>
+                <td>1,008</td>
+                <td>Fusce</td>
+                <td>nec</td>
+                <td>tellus</td>
+                <td>sed</td>
+              </tr>
+              <tr>
+                <td>1,009</td>
+                <td>augue</td>
+                <td>semper</td>
+                <td>porta</td>
+                <td>Mauris</td>
+              </tr>
+              <tr>
+                <td>1,010</td>
+                <td>massa</td>
+                <td>Vestibulum</td>
+                <td>lacinia</td>
+                <td>arcu</td>
+              </tr>
+              <tr>
+                <td>1,011</td>
+                <td>eget</td>
+                <td>nulla</td>
+                <td>Class</td>
+                <td>aptent</td>
+              </tr>
+              <tr>
+                <td>1,012</td>
+                <td>taciti</td>
+                <td>sociosqu</td>
+                <td>ad</td>
+                <td>litora</td>
+              </tr>
+              <tr>
+                <td>1,013</td>
+                <td>torquent</td>
+                <td>per</td>
+                <td>conubia</td>
+                <td>nostra</td>
+              </tr>
+              <tr>
+                <td>1,014</td>
+                <td>per</td>
+                <td>inceptos</td>
+                <td>himenaeos</td>
+                <td>Curabitur</td>
+              </tr>
+              <tr>
+                <td>1,015</td>
+                <td>sodales</td>
+                <td>ligula</td>
+                <td>in</td>
+                <td>libero</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </div>
-  <style type="text/css">
-    body {
-      display: relative;
-    }
-
-    #sidebar {
-      position: fixed;
-      top: 51.8px;
-      left: 0;
-      bottom: 0;
-      width: 18%;
-      background-color: #f5f5f5;
-      padding: 0px;
-    }
-
-    #sidebar .ui.menu {
-      margin: 2em 0 0;
-      font-size: 16px;
-    }
-
-    #sidebar .ui.menu>a.item {
-      color: #337ab7;
-      border-radius: 0 !important;
-    }
-
-    #sidebar .ui.menu>a.item.active {
-      background-color: #337ab7;
-      color: white;
-      border: none !important;
-    }
-
-    #sidebar .ui.menu>a.item:hover {
-      background-color: #4f93ce;
-      color: white;
-    }
-
-    #content {
-      margin-left: 19%;
-      width: 81%;
-      margin-top: 3em;
-      padding-left: 3em;
-      float: left;
-    }
-
-    #content>.ui.grid {
-      padding-right: 4em;
-      padding-bottom: 3em;
-    }
-
-    #content h1 {
-      font-size: 36px;
-    }
-
-    #content .ui.divider:not(.hidden) {
-      margin: 0;
-    }
-
-    #content table.ui.table {
-      border: none;
-    }
-
-    #content table.ui.table thead th {
-      border-bottom: 2px solid #eee !important;
-    }
-  </style>
 </body>
 
 </html>
