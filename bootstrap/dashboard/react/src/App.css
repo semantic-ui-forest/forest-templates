@@ -1,0 +1,44 @@
+#sidebar {
+  position: fixed;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding-top: 36px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#sidebar .ui.menu>a.item {
+  padding: 10px 20px;
+  line-height: 20px;
+  color: #337ab7;
+  border-radius: 0 !important;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#sidebar .ui.menu>a.item.active {
+  background-color: #337ab7;
+  color: white;
+  border: none !important;
+}
+
+#sidebar .ui.menu>a.item:hover {
+  background-color: #eee;
+  color: #23527c;
+}
+
+#content {
+  margin-left: 18.7%;
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  float: left;
+}
+
+#content h1 {
+  font-size: 36px;
+}
+
+#content .ui.dividing.header {
+  width: 100%
+}
