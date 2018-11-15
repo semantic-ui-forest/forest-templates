@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,160 +10,267 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Off-canvas Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <style type="text/css">
+    body {
+      padding-top: 56px;
+    }
+
+    .ui.grid {
+      margin-top: 0 !important;
+    }
+
+    .ui.vertical.menu {
+      width: auto;
+    }
+
+    .ui.right.sidebar.vertical.menu {
+      width: 15rem;
+    }
+
+    .three.wide.column>.ui.vertical.menu>a.item.active,
+    .ui.right.sidebar.vertical.menu>a.item.active,
+    .three.wide.column>.ui.vertical.menu>a.item.active:hover,
+    .ui.right.sidebar.vertical.menu>a.item.active:hover {
+      background-color: #337ab7;
+      color: white;
+      border: none !important;
+    }
+
+    .three.wide.column>.ui.vertical.menu>a.item:hover,
+    .ui.right.sidebar.vertical.menu>a.item:hover {
+      background-color: #f5f5f5;
+    }
+
+    .ui.fixed.borderless.menu {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .ui.fixed.borderless.menu .row>a.header.item {
+      font-size: 1.2rem;
+    }
+
+    .ui.mobile.only.grid .ui.fixed.borderless.menu .right.menu button.ui.button {
+      padding: 8px 12px;
+    }
+
+    .ui.message {
+      background-color: rgba(238, 238, 238);
+      box-shadow: none;
+      padding: 5rem 4rem;
+    }
+
+    .ui.message h1.ui.header {
+      font-size: 4.5rem;
+    }
+
+    .ui.message p.lead {
+      font-size: 1.3rem;
+      color: #333333;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .ui.message h1.ui.header {
+        font-size: 2rem;
+      }
+    }
+
+    button.ui.top.right.attached.button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom-right-radius: 0;
+      padding-right: 0.75rem;
+    }
+
+    .pushable {
+      overflow-x: visible;
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+      height: unset;
+    }
+
+    .ui.right.sidebar {
+      margin-top: 1rem !important;
+      height: auto !important;
+    }
+
+    footer {
+      padding: 24px 0;
+    }
+
+  </style>
 </head>
 
 <body>
-  <div class="ui top fixed borderless huge inverted menu">
-    <div class="ui container grid">
-      <div class="computer only row">
+  <div class="ui tablet computer only grid">
+    <div class="ui top fixed borderless huge inverted menu">
+      <div class="ui container">
         <a class="header item">Project Name</a>
         <a class="active item">Home</a>
         <a class="item">About</a>
         <a class="item">Contact</a>
       </div>
-      <div class="tablet mobile only row">
-        <a class="header item"> Project Name</a>
-        <div class="right menu">
-          <a class="menu item">
-            <div class="ui icon toggle basic inverted button">
-              <i class="content large icon"></i>
+    </div>
+    <div class="ui container">
+      <div class="ui padded grid">
+        <div class="thirteen wide column">
+          <div class="ui message">
+            <h1 class="ui huge header">
+              Hello, world!
+            </h1>
+            <p class="lead">
+              This is a simple example to show the off-canvas layout pattern in
+              Semantic-UI, click the green button to see off-canvas left
+              sidebar coming in and out of the page, and try to change the
+              viewport size to see right sidebar toggle button. You could check
+              out more wonderful effects here:
+              <a target="_blank" href="http://semantic-ui.com/modules/sidebar.html#/examples">Semantic-UI/sidebar
+                examples</a>.
+            </p>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="ui grid">
+            <div class="three column row">
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
             </div>
-          </a>
+            <div class="three column row">
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="ui divider"></div>
+          <footer>
+            &copy; 2017 Company, Inc.
+          </footer>
         </div>
-        <div class="ui vertical borderless fluid inverted menu">
-          <a class="active item">Home</a>
-          <a class="item">About</a>
-          <a class="item">Contact</a>
+        <div class="three wide column">
+          <div class="ui vertical menu">
+            <a class="active item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+            <a class="item">Link</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="ui stackable grid container">
-    <div class="computer only row">
-      <div class="thirteen wide column">
-        <div class="ui message">
-          <h1 class="ui huge header">
-            Hello, world!
-          </h1>
-          <p class="lead">
-            This is a simple example to show the off-canvas layout pattern in
-            Semantic-UI, click the green button to see off-canvas left sidebar
-            coming in and out of the page, and try to change the viewport size
-            to see right sidebar toggle button. You could check out more
-            wonderful effects here:
-            <a target="_blank" href="http://semantic-ui.com/modules/sidebar.html#/examples">
-              Semantic-UI/sidebar examples
-            </a>.
-          </p>
-          <div class="ui hidden divider"></div>
-          <div class="ui green button">
-            <i class="left arrow icon"></i>
-            Toggle left sidebar
-          </div>
+
+  <div class="ui mobile only grid">
+    <div class="ui top fixed borderless huge inverted menu">
+      <a class="header item">Project Name</a>
+      <div class="right menu">
+        <div class="item">
+          <button class="ui icon toggle basic inverted button">
+            <i class="content icon"></i>
+          </button>
         </div>
-        <div class="ui hidden section divider"></div>
-        <div class="ui stackable grid">
-          <div class="three column row">
-            <div class="column">
-              <h1 class="ui header">
-                Heading
-              </h1>
-              <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
-              </p>
-              <div class="ui small basic button">
-                View detailes &raquo;
-              </div>
-            </div>
-            <div class="column">
-              <h1 class="ui header">
-                Heading
-              </h1>
-              <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
-              </p>
-              <div class="ui small basic button">
-                View detailes &raquo;
-              </div>
-            </div>
-            <div class="column">
-              <h1 class="ui header">
-                Heading
-              </h1>
-              <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
-              </p>
-              <div class="ui small basic button">
-                View detailes &raquo;
-              </div>
-            </div>
-          </div>
-          <div class="three column row">
-            <div class="column">
-              <h1 class="ui header">
-                Heading
-              </h1>
-              <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
-              </p>
-              <div class="ui small basic button">
-                View detailes &raquo;
-              </div>
-            </div>
-            <div class="column">
-              <h1 class="ui header">
-                Heading
-              </h1>
-              <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
-              </p>
-              <div class="ui small basic button">
-                View detailes &raquo;
-              </div>
-            </div>
-            <div class="column">
-              <h1 class="ui header">
-                Heading
-              </h1>
-              <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.
-              </p>
-              <div class="ui small basic button">
-                View detailes &raquo;
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="ui hidden divider"></div>
-        <div class="ui divider"></div>
-        <footer>
-          &copy; 2017 Company, Inc.
-        </footer>
       </div>
-      <div class="three wide column">
-        <div class="ui vertical menu">
+      <div class="ui vertical borderless fluid inverted menu" style="display: none">
+        <a class="active item">Home</a>
+        <a class="item">About</a>
+        <a class="item">Contact</a>
+      </div>
+    </div>
+    <div class="ui container">
+      <div class="ui padded grid">
+        <div class="ui right sidebar vertical menu">
           <a class="active item">Link</a>
           <a class="item">Link</a>
           <a class="item">Link</a>
@@ -179,15 +285,9 @@
           <a class="item">Link</a>
           <a class="item">Link</a>
         </div>
-      </div>
-    </div>
-    <div class="tablet mobile only row pushable">
-      <div class="ui basic segment pusher">
-        <div class="ui container">
+        <div class="row pusher">
           <div class="ui message">
-            <div class="ui blue right floated icon button">
-              Toggle right sidebar<i class="right arrow icon"></i>
-            </div>
+            <button class="ui top right attached tiny blue button">Toggle nav</button>
             <h1 class="ui huge header">
               Hello, world!
             </h1>
@@ -197,245 +297,122 @@
               sidebar coming in and out of the page, and try to change the
               viewport size to see right sidebar toggle button. You could check
               out more wonderful effects here:
-              <a target="_blank" href="http://semantic-ui.com/modules/sidebar.html#/examples">
-                Semantic-UI/sidebar examples
-              </a>.
+              <a target="_blank" href="http://semantic-ui.com/modules/sidebar.html#/examples">Semantic-UI/sidebar
+                examples</a>.
             </p>
+          </div>
+          <div class="ui hidden divider"></div>
+          <div class="row">
+            <div class="ui two column grid">
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+              <div class="column">
+                <h1 class="ui header">
+                  Heading
+                </h1>
+                <p>
+                  Donec id elit non mi porta gravida at eget metus. Fusce
+                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                  sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <button class="ui small basic button">
+                  View detailes &raquo;
+                </button>
+              </div>
+            </div>
             <div class="ui hidden divider"></div>
-            <div class="ui green button">
-              <i class="left arrow icon"></i>
-              Toggle left sidebar
-            </div>
-          </div>
-          <div class="ui hidden section divider"></div>
-          <div class="ui stackable grid">
-            <div class="three column row">
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <div class="ui small basic button">
-                  View detailes &raquo;
-                </div>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <div class="ui small basic button">
-                  View detailes &raquo;
-                </div>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <div class="ui small basic button">
-                  View detailes &raquo;
-                </div>
-              </div>
-            </div>
-            <div class="three column row">
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <div class="ui small basic button">
-                  View detailes &raquo;
-                </div>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <div class="ui small basic button">
-                  View detailes &raquo;
-                </div>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <div class="ui small basic button">
-                  View detailes &raquo;
-                </div>
-              </div>
-            </div>
+            <div class="ui divider"></div>
+            <footer>
+              &copy; 2017 Company, Inc.
+            </footer>
           </div>
         </div>
-        <div class="ui hidden divider"></div>
-        <div class="ui divider"></div>
-        <div class="ui basic footer segment">
-          <p>
-            &copy; 2017 Company, Inc.
-          </p>
-        </div>
-      </div>
-      <div class="ui right sidebar vertical menu">
-        <a class="active item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
-        <a class="item">Link</a>
       </div>
     </div>
   </div>
-  <div class="ui left inverted labeled icon inline vertical menu sidebar">
-    <div class="ui section hidden divider"></div>
-    <a class="item"><i class="home icon" />Home</a>
-    <a class="item"><i class="block layout icon" />Topics</a>
-    <a class="item"><i class="smile icon" />Friends</a>
-    <a class="item"><i class="calendar icon" />History</a>
-  </div>
-
-  <style type="text/css">
-    .three.wide.column>.ui.vertical.menu,
-    .ui.right.sidebar.vertical.menu {
-      height: 520px !important;
-      border-radius: 4px !important;
-    }
-
-    .three.wide.column>.ui.vertical.menu>a.item,
-    .ui.right.sidebar.vertical.menu>a.item {
-      color: #337ab7;
-    }
-
-    .three.wide.column>.ui.vertical.menu>a.item.active,
-    .ui.right.sidebar.vertical.menu>a.item.active {
-      background-color: #337ab7;
-      color: white;
-      border: none !important;
-    }
-
-    .three.wide.column>.ui.vertical.menu>a.item:hover,
-    .ui.right.sidebar.vertical.menu>a.item:hover {
-      background-color: #4f93ce;
-      color: white;
-    }
-
-    .ui.grid>.computer.only.row>.column {
-      margin-top: 4em;
-    }
-
-    .three.wide.column>.ui.vertical.menu {
-      margin-top: 1.5em;
-    }
-
-    .ui.right.sidebar.vertical.menu {
-      margin-top: 6em !important;
-    }
-
-    .tablet.mobile.only.row .ui.container {
-      padding-top: 4em !important;
-    }
-
-    .ui.fixed.borderless.menu .row>a.header.item {
-      font-size: 1.2em;
-    }
-
-    .ui.fixed.borderless.menu .ui.vertical.menu {
-      display: none;
-      border: none;
-      box-shadow: none;
-    }
-
-    .ui.fixed.borderless.menu .ui.vertical.menu>.item {
-      padding-left: 1.428em;
-    }
-
-    .ui.message {
-      background-color: rga(238, 238, 238);
-      box-shadow: none;
-      padding: 5em 4em;
-      margin-top: 2em !important;
-    }
-
-    .ui.message h1.ui.header {
-      font-size: 4.5em;
-    }
-
-    .ui.message p.lead {
-      font-size: 1.3em;
-      color: #333333;
-      line-height: 1.4;
-      font-weight: 300;
-    }
-
-    .ui.footer.basic.segment,
-    footer {
-      padding: 0 0 2em 0;
-    }
-
-  </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
   <script>
     $(document).ready(function () {
       // hide and open menu on small screen
       $('.ui.toggle.button').click(function () {
-        $('.mobile.tablet.only.row .ui.vertical.menu').toggle("250",
-          "linear")
+        $('.mobile.only.grid .ui.vertical.menu').toggle(100);
       });
 
       // toggle right sidebar
-      $('.ui.right.sidebar').sidebar({
-          context: $('.pusher.segment'),
-          dimPage: false,
-          closeable: false
-        })
-        .sidebar('setting', 'transition', 'push')
-        .sidebar('attach events', '.ui.blue.button');
-
-      // toggle left sidebar
-      $('.ui.left.sidebar').sidebar({
-          context: $('body')
-        })
-        .sidebar('setting', 'transition', 'scale down')
-        .sidebar('attach events', '.ui.green.button');
+      $('.ui.sidebar').sidebar({
+        context: $('.row.pusher'),
+        dimPage: false
+      }).sidebar('attach events', '.ui.top.attached.blue.button');
     });
 
   </script>
