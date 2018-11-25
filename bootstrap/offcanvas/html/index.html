@@ -90,14 +90,13 @@
 
     .pushable {
       overflow-x: visible;
-      padding-top: 1rem !important;
-      padding-bottom: 1rem !important;
-      height: unset;
     }
 
     .ui.right.sidebar {
-      margin-top: 1rem !important;
       height: auto !important;
+      margin-top: 1rem !important;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     footer {
@@ -269,7 +268,7 @@
       </div>
     </div>
     <div class="ui container">
-      <div class="ui padded grid">
+      <div class="ui padded one column grid pushable">
         <div class="ui right sidebar vertical menu">
           <a class="active item">Link</a>
           <a class="item">Link</a>
@@ -285,7 +284,7 @@
           <a class="item">Link</a>
           <a class="item">Link</a>
         </div>
-        <div class="row pusher">
+        <div class="column pusher">
           <div class="ui message">
             <button class="ui top right attached tiny blue button">Toggle nav</button>
             <h1 class="ui huge header">
@@ -302,99 +301,97 @@
             </p>
           </div>
           <div class="ui hidden divider"></div>
-          <div class="row">
-            <div class="ui two column grid">
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <button class="ui small basic button">
-                  View detailes &raquo;
-                </button>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <button class="ui small basic button">
-                  View detailes &raquo;
-                </button>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <button class="ui small basic button">
-                  View detailes &raquo;
-                </button>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <button class="ui small basic button">
-                  View detailes &raquo;
-                </button>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <button class="ui small basic button">
-                  View detailes &raquo;
-                </button>
-              </div>
-              <div class="column">
-                <h1 class="ui header">
-                  Heading
-                </h1>
-                <p>
-                  Donec id elit non mi porta gravida at eget metus. Fusce
-                  dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                  nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                  sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-                <button class="ui small basic button">
-                  View detailes &raquo;
-                </button>
-              </div>
+          <div class="ui two column grid">
+            <div class="column">
+              <h1 class="ui header">
+                Heading
+              </h1>
+              <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce
+                dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                sem malesuada magna mollis euismod. Donec sed odio dui.
+              </p>
+              <button class="ui small basic button">
+                View detailes &raquo;
+              </button>
             </div>
-            <div class="ui hidden divider"></div>
-            <div class="ui divider"></div>
-            <footer>
-              &copy; 2017 Company, Inc.
-            </footer>
+            <div class="column">
+              <h1 class="ui header">
+                Heading
+              </h1>
+              <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce
+                dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                sem malesuada magna mollis euismod. Donec sed odio dui.
+              </p>
+              <button class="ui small basic button">
+                View detailes &raquo;
+              </button>
+            </div>
+            <div class="column">
+              <h1 class="ui header">
+                Heading
+              </h1>
+              <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce
+                dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                sem malesuada magna mollis euismod. Donec sed odio dui.
+              </p>
+              <button class="ui small basic button">
+                View detailes &raquo;
+              </button>
+            </div>
+            <div class="column">
+              <h1 class="ui header">
+                Heading
+              </h1>
+              <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce
+                dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                sem malesuada magna mollis euismod. Donec sed odio dui.
+              </p>
+              <button class="ui small basic button">
+                View detailes &raquo;
+              </button>
+            </div>
+            <div class="column">
+              <h1 class="ui header">
+                Heading
+              </h1>
+              <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce
+                dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                sem malesuada magna mollis euismod. Donec sed odio dui.
+              </p>
+              <button class="ui small basic button">
+                View detailes &raquo;
+              </button>
+            </div>
+            <div class="column">
+              <h1 class="ui header">
+                Heading
+              </h1>
+              <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce
+                dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                nibh, ut fermentum massa justo sit amet risus. Etiam porta
+                sem malesuada magna mollis euismod. Donec sed odio dui.
+              </p>
+              <button class="ui small basic button">
+                View detailes &raquo;
+              </button>
+            </div>
           </div>
+          <div class="ui hidden divider"></div>
+          <div class="ui divider"></div>
+          <footer>
+            &copy; 2017 Company, Inc.
+          </footer>
         </div>
       </div>
     </div>
@@ -410,7 +407,7 @@
 
       // toggle right sidebar
       $('.ui.sidebar').sidebar({
-        context: $('.row.pusher'),
+        context: $('.pushable'),
         dimPage: false
       }).sidebar('attach events', '.ui.top.attached.blue.button');
     });
