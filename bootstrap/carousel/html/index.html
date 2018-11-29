@@ -11,14 +11,149 @@
   <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
   <meta content="PPType" name="author" />
   <meta content="#ffffff" name="theme-color" />
-  <title>Semantic-UI-Forest, collection of design, themes and templates for
-    Semantic-UI.</title>
+  <title>Carousel Template for Semantic-UI</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"
     type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <style type="text/css">
+    .ui.inverted.segment {
+      background-color: #777;
+    }
+
+    .ui.vertical.segment:not(.inverted) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    .six.wide.column img {
+      width: 100%;
+    }
+
+    .ui.borderless.inverted.menu {
+      background-color: #2f2f2f;
+      border-radius: 4px;
+      flex-wrap: wrap;
+    }
+
+    .ui.borderless.inverted.menu .active.item {
+      background-color: black;
+    }
+
+    span.sub {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .ten.wide.column h1 {
+      font-size: 3rem;
+    }
+
+    .ten.wide.column p {
+      font-size: 1.5rem;
+    }
+
+    p code {
+      color: #c7254e;
+      background-color: #f9f2f4;
+      border-radius: 4px;
+    }
+
+    .ui.tablet.computer.only.padded.grid {
+      position: absolute;
+      z-index: 8;
+      width: 100%;
+      top: 1rem;
+    }
+
+    .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+      display: none;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+      float: unset;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+      content: "\f0d7"
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+      position: static;
+      width: 100%;
+      background-color: unset;
+      border: none;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item {
+      background-color: rgb(47, 47, 47);
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+      margin-top: 6px;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .header,
+    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    .slide .ui.inverted.vertical.segment {
+      padding-top: 16rem;
+      padding-bottom: 4rem;
+      height: 600px;
+    }
+
+    .slide .ui.text.container {
+      max-width: 70%;
+    }
+
+    .slick-prev.slick-arrow {
+      padding-left: 8rem;
+      padding-right: calc(8rem + 20px);
+      display: inline-block;
+      height: 100%;
+      z-index: 32;
+      background: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+    }
+
+    .slick-next.slick-arrow {
+      padding-left: 8rem;
+      padding-right: calc(8rem + 20px);
+      display: inline-block;
+      height: 100%;
+      z-index: 32;
+      background: linear-gradient(to left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+    }
+
+    @media only screen and (max-width: 767px) {
+      .slick-prev.slick-arrow {
+        padding-left: 4rem;
+        padding-right: calc(4rem + 20px);
+      }
+
+      .slick-next.slick-arrow {
+        padding-left: 4rem;
+        padding-right: calc(4rem + 20px);
+      }
+    }
+
+    .slick-dots {
+      bottom: 15px;
+    }
+
+    .slide .ui.segment h1 {
+      font-size: 3rem;
+    }
+
+    .slide .ui.segment p {
+      font-size: 1.5rem;
+    }
+
+  </style>
 </head>
 
 <body>
-  <div class="ui inverted vertical center aligned segment" id="whole">
+  <div class="ui tablet computer only padded grid">
     <div class="ui container">
       <div class="ui black inverted borderless huge fluid menu">
         <a class="header item">Project Name</a>
@@ -52,137 +187,155 @@
         </a>
       </div>
     </div>
-    <div class="ui grid">
-      <div class="three column row" id="slide">
-        <div class="active column" data-tab="1">
-          <div class="ui inverted vertical center aligned segment">
-            <div class="ui active text container">
-              <h1 class="ui inverted header">
-                Example headline.
-              </h1>
-              <p>Note: If you're viewing this page via a <code>file://</code>
-                URL, the "next" and "previous" Glyphicon buttons on the left
-                and right might not load/display properly due to web browser
-                security rules.
-              </p>
-              <div class="ui huge primary button">
-                Sign up today
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column" data-tab="2">
-          <div class="ui inverted vertical center aligned segment">
-            <div class="ui active text container">
-              <h1 class="ui inverted header">
-                Another example headline.
-              </h1>
-              <p>
-                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                Donec id elit non mi porta gravida at eget metus. Nullam id
-                dolor id nibh ultricies vehicula ut id elit.
-              </p>
-              <div class="ui huge primary button">
-                Learn more
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column" data-tab="3">
-          <div class="ui inverted vertical center aligned segment">
-            <div class="ui active text container">
-              <h1 class="ui inverted header">
-                One more for good measure
-              </h1>
-              <p>
-                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                Donec id elit non mi porta gravida at eget metus. Nullam id
-                dolor id nibh ultricies vehicula ut id elit.
-              </p>
-              <div class="ui huge primary button">
-                Browse gallery
-              </div>
-            </div>
-          </div>
+  </div>
+  <div class="ui mobile only grid">
+    <div class="ui top fixed black inverted borderless huge fluid menu">
+      <a class="header item">Project Name</a>
+      <div class="right menu">
+        <div class="item">
+          <button class="ui icon toggle basic inverted button">
+            <i class="content icon"></i>
+          </button>
         </div>
       </div>
-      <div class="row" id="bubble">
-        <div class="ui center aligned container">
-          <div class="ui circular icon green mini button"></div>
-          <div class="ui circular icon mini button"></div>
-          <div class="ui circular icon mini button"></div>
+      <div class="ui vertical borderless fluid inverted menu">
+        <a class="active item">Home</a>
+        <a class="item">About</a>
+        <a class="item">Contact</a>
+        <a class="ui dropdown item">
+          Dropdown
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">
+              Action
+            </div>
+            <div class="item">
+              Another action
+            </div>
+            <div class="item">
+              Something else here
+            </div>
+            <div class="ui divider"></div>
+            <div class="header">
+              Navbar header
+            </div>
+            <div class="item">
+              Seperated link
+            </div>
+            <div class="item">
+              One more seperated link
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="ui inverted vertical center aligned segment">
+      <div class="ui active text container">
+        <h1 class="ui inverted header">
+          Example headline.
+        </h1>
+        <p>Note: If you're viewing this page via a <code>file://</code>
+          URL, the "next" and "previous" Glyphicon buttons on the left
+          and right might not load/display properly due to web browser
+          security rules.
+        </p>
+        <div class="ui huge primary button">
+          Sign up today
         </div>
       </div>
     </div>
-    <div class="ui grid" id="control">
-      <div class="row">
-        <div class="three wide left floated column">
-          <div class="ui basic big button" id="left">
-            <i class="left chevron big icon"></i>
+    <div>
+      <div class="ui inverted vertical center aligned segment">
+        <div class="ui active text container">
+          <h1 class="ui inverted header">
+            Another example headline.
+          </h1>
+          <p>
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+            Donec id elit non mi porta gravida at eget metus. Nullam id
+            dolor id nibh ultricies vehicula ut id elit.
+          </p>
+          <div class="ui huge primary button">
+            Learn more
           </div>
         </div>
-        <div class="three wide right floated column">
-          <div class="ui basic big button" id="right">
-            <i class="right chevron big icon"></i>
+      </div>
+    </div>
+    <div>
+      <div class="ui inverted vertical center aligned segment">
+        <div class="ui active text container">
+          <h1 class="ui inverted header">
+            One more for good measure
+          </h1>
+          <p>
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+            Donec id elit non mi porta gravida at eget metus. Nullam id
+            dolor id nibh ultricies vehicula ut id elit.
+          </p>
+          <div class="ui huge primary button">
+            Browse gallery
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="ui section hidden divider"></div>
-  <div class="ui three column center aligned stackable grid container">
-    <div class="column">
-      <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
-      <h1 class="ui header">
-        Heading
-      </h1>
-      <p></p>
-      Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
-      Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus,
-      porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-      magna.
-      <div class="ui basic button">
-        View details &raquo;
-      </div>
-    </div>
-    <div class="column">
-      <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
-      <h1 class="ui header">
-        Heading
-      </h1>
-      <p>
-        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
-        Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus,
-        porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-        magna.
-      </p>
-      <div class="ui basic button">
-        View details &raquo;
-      </div>
-    </div>
-    <div class="column">
-      <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
-      <h1 class="ui header">
-        Heading
-      </h1>
-      <p>
-        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
-        Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus,
-        porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-        magna.
-      </p>
-      <div class="ui basic button">
-        View details &raquo;
-      </div>
-    </div>
-  </div>
-  <div class="ui section divider"></div>
-  <div class="ui grid container">
-    <div class="ui relaxed divided items">
-      <div class="item">
-        <div class="middle aligned content">
+  <div class="ui container">
+    <div class="ui vertical segment">
+      <div class="ui three column stackable center aligned grid container">
+        <div class="column">
+          <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
           <h1 class="ui header">
-            First featurette heading. <span class="disabled">It'll blow your
+            Heading
+          </h1>
+          <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+            risus, porta ac consectetur ac, vestibulum at eros. Praesent
+            commodo cursus magna.
+          </p>
+          <div class="ui basic button">
+            View details &raquo;
+          </div>
+        </div>
+        <div class="column">
+          <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
+          <h1 class="ui header">
+            Heading
+          </h1>
+          <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+            risus, porta ac consectetur ac, vestibulum at eros. Praesent
+            commodo cursus magna.
+          </p>
+          <div class="ui basic button">
+            View details &raquo;
+          </div>
+        </div>
+        <div class="column">
+          <img class="ui centered small circular image" src="/static/images/wireframe/square-image.png" />
+          <h1 class="ui header">
+            Heading
+          </h1>
+          <p>
+            Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo
+            risus, porta ac consectetur ac, vestibulum at eros. Praesent
+            commodo cursus magna.
+          </p>
+          <div class="ui basic button">
+            View details &raquo;
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui vertical segment">
+      <div class="ui stackable grid">
+        <div class="ten wide column">
+          <h1 class="ui header">
+            First featurette heading. <span class="sub">It'll blow your
               mind.</span>
           </h1>
           <div class="description">
@@ -194,17 +347,19 @@
             </p>
           </div>
         </div>
-        <div class="ui right floated large image">
+        <div class="six wide right aligned column">
           <img src="/static/images/wireframe/square-image.png" />
         </div>
       </div>
-      <div class="item">
-        <div class="ui large image">
+    </div>
+    <div class="ui vertical segment">
+      <div class="ui stackable grid">
+        <div class="six wide column">
           <img src="/static/images/wireframe/square-image.png" />
         </div>
-        <div class="middle aligned content">
+        <div class="ten wide column">
           <h1 class="ui header">
-            Oh yeah, <span class="disabled">it's that good.</span>
+            Oh yeah, <span class="sub">it's that good.</span>
           </h1>
           <div class="description">
             <p>
@@ -216,10 +371,12 @@
           </div>
         </div>
       </div>
-      <div class="item">
-        <div class="middle aligned content">
+    </div>
+    <div class="ui vertical segment">
+      <div class="ui stackable grid">
+        <div class="ten wide column">
           <h1 class="ui header">
-            And lastly, <span class="disabled">this one.</span>
+            And lastly, <span class="sub">this one.</span>
           </h1>
           <div class="description">
             <p>
@@ -230,196 +387,44 @@
             </p>
           </div>
         </div>
-        <div class="ui right floated large image">
+        <div class="six wide right aligned column">
           <img src="/static/images/wireframe/square-image.png" />
         </div>
       </div>
     </div>
-  </div>
-  <div class="ui hidden divider"></div>
-  <div class="ui footer container">
-    <div class="ui divider"></div>
-    <div class="ui two column grid">
-      <div class="column">
-        <p>
-          &copy; 2017 Company, Inc. ·<a href="#">Privacy ·</a><a
-            href="#">Terms</a>
-        </p>
+    <footer class="ui vertical segment">
+      <div class="ui two column grid">
+        <div class="column">
+          <p>
+            &copy; 2017 Company, Inc.
+            · <a href="#">Privacy</a>
+            · <a href="#">Terms</a>
+          </p>
+        </div>
+        <div class="right aligned column">
+          <a href="#">Back to top</a>
+        </div>
       </div>
-      <div class="right floated two wide column">
-        <a href="#">Back to top</a>
-      </div>
-    </div>
+    </footer>
   </div>
-  <style type="text/css">
-    body .ui.inverted.segment {
-      background-color: #777;
-    }
-
-    #whole.segment {
-      height: 500px;
-    }
-
-    .ui.borderless.inverted.menu {
-      background-color: #2f2f2f;
-      border-radius: 4px;
-    }
-
-    .ui.borderless.inverted.menu .active.item {
-      background-color: black;
-    }
-
-    p code {
-      background-color: white;
-      border-radius: 4px;
-    }
-
-    #slide.row {
-      width: 300vw !important;
-      overflow: hidden;
-      position: absolute;
-      margin-top: 5em;
-    }
-
-    #slide.row .column {
-      padding: 0 !important;
-    }
-
-    #slide.row .column h1.header {
-      font-size: 2.5em;
-    }
-
-    #slide.row .column p {
-      font-size: 1.4em;
-      line-height: 1.4;
-    }
-
-    #control.grid {
-      position: relative;
-      top: 7em;
-    }
-
-    #control.grid .ui.button {
-      box-shadow: none;
-    }
-
-    #control.grid .ui.button:hover {
-      background: transparent !important;
-    }
-
-    #control.grid .ui.button .icon {
-      color: #bfbfbf;
-    }
-
-    #control.grid .ui.button .icon:hover {
-      background: transparent;
-      color: white;
-    }
-
-    #bubble.row {
-      position: absolute;
-      bottom: 0;
-    }
-
-    .ui.grid .ui.items .item .content {
-      align-self: center;
-    }
-
-    .ui.grid .ui.items .item .content h1 {
-      font-size: 3.5em;
-    }
-
-    .ui.grid .ui.items .item .content h1 span.disabled {
-      color: grey;
-    }
-
-    .ui.grid .ui.items .item .content p {
-      font-size: 1.5em;
-      line-height: 1.5;
-    }
-
-    .ui.footer.container {
-      font-size: 1.2em;
-    }
-  </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.ui.dropdown').dropdown();
-
-      // make the corresponding bubble button change color
-      function activate() {
-        $('#bubble .button').eq($('#slide.row .column').first().attr(
-          'data-tab') - 1).addClass('green').siblings().removeClass(
-          'green');
-      };
-
-      // The slide or carousel effect here is actually a moving amination of a three viewport wide row
-      // left button: first make slide row animate to left
-      // then move the active column to the outer right
-      function leftMove() {
-        var columns = $('#slide .column');
-        var active = $('#slide .active.column');
-        var width = active.outerWidth();
-        $('#slide.row').animate({
-          left: -1 * width,
-          right: width
-        }, 600, "swing", function () {
-          active.removeClass('active');
-          active.next().addClass('active');
-          $(this).removeAttr('style');
-          active.detach().appendTo($('#slide.row'));
-          activate();
-        });
-      };
-      $('#left').click(leftMove);
-
-      // right button: first move the last column(right) to the first(left)
-      // at the same time, set the left and right position of the whole row, make visible column in the middle
-      // then make the row animate to right, and remove "left" and "right" style
-      function rightMove() {
-        var columns = $('#slide .column');
-        var active = $('#slide .active.column');
-        var width = active.outerWidth();
-        columns.last().detach().prependTo($('#slide.row'));
-        $('#slide.row').css({
-          "left": -width,
-          "right": -width
-        });
-        $('#slide.row').animate({
-          left: 0,
-          right: -2 * width
-        }, 600, "swing", function () {
-          active.removeClass('active');
-          columns.last().addClass('active');
-          $(this).removeAttr('style');
-          activate();
-        });
-      };
-      $('#right').click(rightMove);
-
-      // when click the small circular button, these happen:
-      // 1. make the whole row animate left and the corresponding column visible(left=0)
-      // 2. move all the columns on the left(prevAll) to right
-      // 3. remove the "left" position style of the row, make the target column at the very left
-      // 4. make the button "green" or any other color
-      $('#bubble .button').click(function () {
-        var index = $(this).index() + 1;
-        var target = $('[data-tab=' + index + ']');
-        var targetLeft = target.position().left;
-        $('#slide.row').animate({
-          left: -1 * targetLeft
-        }, 600, "swing", function () {
-          target.prevAll().detach().appendTo($(this));
-          $(this).removeAttr('style');
-          activate();
-        });
+      $('.ui.toggle.button').click(function () {
+        $('.mobile.only.grid .ui.vertical.menu').toggle(100);
       });
 
-      // by default, slide every 10 seconds
-      setInterval(leftMove, 10000);
+      $('.ui.dropdown').dropdown();
+
+      $('.slide').slick({
+        autoplay: true,
+        dots: true,
+        speed: 500
+      });
     });
+
   </script>
 </body>
 
