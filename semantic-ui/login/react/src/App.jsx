@@ -21,6 +21,7 @@ class App extends Component {
           <Grid.Column style={{ maxWidth: 450 }}>
             <Header as="h2" color="teal" textAlign="center">
               <img src="/static/images/logo.png" alt="logo" className="image" />
+              {' '}
               Log-in to your account
             </Header>
             <Form size="large">
@@ -44,7 +45,7 @@ class App extends Component {
               </Segment>
             </Form>
             <Message>
-              New to us? <a href="#root">Sign up</a>
+              New to us? <a href="#root">Sign Up</a>
             </Message>
           </Grid.Column>
         </Grid>
