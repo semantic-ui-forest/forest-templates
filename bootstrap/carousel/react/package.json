@@ -8,7 +8,7 @@
     "react-scripts": "2.0.5",
     "react-slick": "^0.23.2",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.82.5"
+    "semantic-ui-react": "0.83.0"
   },
   "scripts": {
     "start": "react-scripts start",
