@@ -56,6 +56,8 @@
       color: #c7254e;
       background-color: #f9f2f4;
       border-radius: 4px;
+      margin-left: .5rem;
+      margin-right: .5rem;
     }
 
     .ui.tablet.computer.only.padded.grid {
@@ -107,6 +109,10 @@
       max-width: 70%;
     }
 
+    .slick-dotted.slick-slider {
+      margin-bottom: 0;
+    }
+
     .slick-prev.slick-arrow {
       padding-left: 8rem;
       padding-right: calc(8rem + 20px);
@@ -155,41 +161,41 @@
 <body>
   <div class="ui tablet computer only padded grid">
     <div class="ui container">
-      <div class="ui black inverted borderless huge fluid menu">
+      <div class="ui inverted borderless huge menu">
         <a class="header item">Project Name</a>
         <a class="active item">Home</a>
         <a class="item">About</a>
         <a class="item">Contact</a>
-        <a class="ui dropdown item">
+        <div class="ui dropdown item">
           Dropdown
           <i class="dropdown icon"></i>
           <div class="menu">
-            <div class="item">
+            <a class="item">
               Action
-            </div>
-            <div class="item">
+            </a>
+            <a class="item">
               Another action
-            </div>
-            <div class="item">
+            </a>
+            <a class="item">
               Something else here
-            </div>
+            </a>
             <div class="ui divider"></div>
             <div class="header">
               Navbar header
             </div>
-            <div class="item">
+            <a class="item">
               Seperated link
-            </div>
-            <div class="item">
+            </a>
+            <a class="item">
               One more seperated link
-            </div>
+            </a>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
   <div class="ui mobile only grid">
-    <div class="ui top fixed black inverted borderless huge fluid menu">
+    <div class="ui top fixed inverted borderless huge menu">
       <a class="header item">Project Name</a>
       <div class="right menu">
         <div class="item">
@@ -198,35 +204,35 @@
           </button>
         </div>
       </div>
-      <div class="ui vertical borderless fluid inverted menu">
+      <div class="ui vertical borderless inverted fluid menu">
         <a class="active item">Home</a>
         <a class="item">About</a>
         <a class="item">Contact</a>
-        <a class="ui dropdown item">
+        <div class="ui dropdown item">
           Dropdown
           <i class="dropdown icon"></i>
           <div class="menu">
-            <div class="item">
+            <a class="item">
               Action
-            </div>
-            <div class="item">
+            </a>
+            <a class="item">
               Another action
-            </div>
-            <div class="item">
+            </a>
+            <a class="item">
               Something else here
-            </div>
+            </a>
             <div class="ui divider"></div>
             <div class="header">
               Navbar header
             </div>
-            <div class="item">
+            <a class="item">
               Seperated link
-            </div>
-            <div class="item">
+            </a>
+            <a class="item">
               One more seperated link
-            </div>
+            </a>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -236,47 +242,43 @@
         <h1 class="ui inverted header">
           Example headline.
         </h1>
-        <p>Note: If you're viewing this page via a <code>file://</code>
-          URL, the "next" and "previous" Glyphicon buttons on the left
-          and right might not load/display properly due to web browser
-          security rules.
+        <p>
+          Note: If you're viewing this page via a <code>file://</code> URL,
+          the "next" and "previous" Glyphicon buttons on the left and right
+          might not load/display properly due to web browser security rules.
         </p>
         <div class="ui huge primary button">
           Sign up today
         </div>
       </div>
     </div>
-    <div>
-      <div class="ui inverted vertical center aligned segment">
-        <div class="ui active text container">
-          <h1 class="ui inverted header">
-            Another example headline.
-          </h1>
-          <p>
-            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-            Donec id elit non mi porta gravida at eget metus. Nullam id
-            dolor id nibh ultricies vehicula ut id elit.
-          </p>
-          <div class="ui huge primary button">
-            Learn more
-          </div>
+    <div class="ui inverted vertical center aligned segment">
+      <div class="ui active text container">
+        <h1 class="ui inverted header">
+          Another example headline.
+        </h1>
+        <p>
+          Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+          elit non mi porta gravida at eget metus. Nullam id dolor id nibh
+          ultricies vehicula ut id elit.
+        </p>
+        <div class="ui huge primary button">
+          Learn more
         </div>
       </div>
     </div>
-    <div>
-      <div class="ui inverted vertical center aligned segment">
-        <div class="ui active text container">
-          <h1 class="ui inverted header">
-            One more for good measure
-          </h1>
-          <p>
-            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-            Donec id elit non mi porta gravida at eget metus. Nullam id
-            dolor id nibh ultricies vehicula ut id elit.
-          </p>
-          <div class="ui huge primary button">
-            Browse gallery
-          </div>
+    <div class="ui inverted vertical center aligned segment">
+      <div class="ui active text container">
+        <h1 class="ui inverted header">
+          One more for good measure
+        </h1>
+        <p>
+          Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+          elit non mi porta gravida at eget metus. Nullam id dolor id nibh
+          ultricies vehicula ut id elit.
+        </p>
+        <div class="ui huge primary button">
+          Browse gallery
         </div>
       </div>
     </div>
@@ -338,14 +340,12 @@
             First featurette heading. <span class="sub">It'll blow your
               mind.</span>
           </h1>
-          <div class="description">
-            <p>
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
+          <p>
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
         </div>
         <div class="six wide right aligned column">
           <img src="/static/images/wireframe/square-image.png" />
@@ -361,14 +361,12 @@
           <h1 class="ui header">
             Oh yeah, <span class="sub">it's that good.</span>
           </h1>
-          <div class="description">
-            <p>
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
+          <p>
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
         </div>
       </div>
     </div>
@@ -378,14 +376,12 @@
           <h1 class="ui header">
             And lastly, <span class="sub">this one.</span>
           </h1>
-          <div class="description">
-            <p>
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
+          <p>
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
         </div>
         <div class="six wide right aligned column">
           <img src="/static/images/wireframe/square-image.png" />
@@ -395,11 +391,9 @@
     <footer class="ui vertical segment">
       <div class="ui two column grid">
         <div class="column">
-          <p>
-            &copy; 2017 Company, Inc.
-            · <a href="#">Privacy</a>
-            · <a href="#">Terms</a>
-          </p>
+          &copy; 2017 Company, Inc.
+          · <a href="#">Privacy</a>
+          · <a href="#">Terms</a>
         </div>
         <div class="right aligned column">
           <a href="#">Back to top</a>
