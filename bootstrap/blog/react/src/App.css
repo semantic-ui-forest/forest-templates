@@ -2,8 +2,34 @@ body {
   color: rgb(85, 85, 85)
 }
 
+.ui.borderless.menu {
+  margin-top: 0;
+}
+
 .ui.inverted.pointing.menu .active.item:after {
   background-color: white !important;
+}
+
+.ui.basic.segment {
+  padding-top: 4rem;
+}
+
+.ui.basic.segment > .ui.huge.header {
+  font-size: 54px;
+}
+
+.eleven.wide.column {
+  font-size: 18px;
+}
+
+.four.wide.column .ui.secondary.segment {
+  border: none;
+}
+
+footer.ui.segment {
+  margin-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 40px
 }
 
 /* blockquote styles comes from bootstrap */
@@ -12,18 +38,25 @@ blockquote {
   margin: 0 0 0.8rem;
   border-left: 5px solid #EEEEEE;
 }
+
 blockquote p {
   line-height: 1.2rem;
   margin-bottom: 0.3rem;
   text-align: start !important;
 }
+
 blockquote p:last-child {
   margin-bottom: 0;
 }
-blockquote ul:last-child, blockquote ol:last-child {
+
+blockquote ul:last-child,
+blockquote ol:last-child {
   margin-bottom: 0;
 }
-blockquote footer, blockquote small, blockquote .small {
+
+blockquote footer,
+blockquote small,
+blockquote .small {
   margin-bottom: 0.5rem;
   display: block;
   font-size: 80%;
@@ -31,12 +64,17 @@ blockquote footer, blockquote small, blockquote .small {
   color: #999;
   padding: 0;
 }
-blockquote footer:before, blockquote small:before, blockquote .small:before {
+
+blockquote footer:before,
+blockquote small:before,
+blockquote .small:before {
   content: "— ";
 }
+
 blockquote cite:before {
   content: "«";
 }
+
 blockquote cite:after {
   content: "»";
 }

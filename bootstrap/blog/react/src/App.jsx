@@ -32,11 +32,9 @@ class App extends Component {
         </Menu>
         <Grid container stackable>
           <Grid.Row>
-            <Segment basic style={{paddingTop: "4rem"}}>
-              <Header as="h1" size="huge" style={{fontSize: "54px"}}>
-                <Header.Content>
-                  The Semantic-UI Blog
-                </Header.Content>
+            <Segment basic>
+              <Header as="h1" size="huge">
+                <Header.Content>The Semantic-UI Blog</Header.Content>
                 <Header.Subheader>
                   A simple example of creating a blog with Semantic-UI.
                 </Header.Subheader>
@@ -44,11 +42,9 @@ class App extends Component {
             </Segment>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={11} style={{fontSize: "18px"}}>
+            <Grid.Column width={11}>
               <Header size="large" as="h2">
-                <Header.Content>
-                  Sample blog post
-                </Header.Content>
+                <Header.Content>Sample blog post</Header.Content>
                 <Header.Subheader>
                   March 6, 2017 by <a href="#root">Jack</a>
                 </Header.Subheader>
@@ -61,9 +57,9 @@ class App extends Component {
               </p>
               <div class="ui divider" />
               <p>
-                Cum sociis natoque penatibus et magnis {" "}
-                <a href="#root">dis parturient montes</a>, nascetur ridiculus mus.
-                Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                Cum sociis natoque penatibus et magnis{" "}
+                <a href="#root">dis parturient montes</a>, nascetur ridiculus
+                mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
                 venenatis vestibulum. Sed posuere consectetur est at lobortis.
                 Cras mattis consectetur purus sit amet fermentum.
               </p>
@@ -136,13 +132,9 @@ class App extends Component {
                 Cras mattis consectetur purus sit amet fermentum. Sed posuere
                 consectetur est at lobortis.
               </p>
-
               <Divider hidden />
-
               <Header size="large" as="h2">
-                <Header.Content>
-                  Another blog post
-                </Header.Content>
+                <Header.Content>Another blog post</Header.Content>
                 <Header.Subheader>
                   April 1, 2027 by <a href="#root">Mac</a>
                 </Header.Subheader>
@@ -171,13 +163,9 @@ class App extends Component {
                 ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta
                 ac consectetur ac, vestibulum at eros.
               </p>
-
               <Divider hidden />
-
               <Header size="large" as="h2">
-                <Header.Content>
-                  New feature
-                </Header.Content>
+                <Header.Content>New feature</Header.Content>
                 <Header.Subheader>
                   Autumn 13, 2019 by <a href="#root">Semantic</a>
                 </Header.Subheader>
@@ -212,15 +200,15 @@ class App extends Component {
               <Divider hidden />
               <Button basic circular size="huge">
                 <a href="#root">Previous</a>
-              </Button>
+              </Button>{" "}
               <Button basic circular size="huge">
                 <a href="#root">Next</a>
               </Button>
               <Divider hidden />
             </Grid.Column>
             <Grid.Column width={4} floated="right">
-              <Segment secondary style={{border: "none"}}>
-                <Header as="h5">About</Header>
+              <Segment secondary>
+                <Header as="h4">About</Header>
                 <p>
                   Etiam porta <i>sem malesuada magna mollis euismod</i>. Cras
                   mattis consectetur purus sit amet fermentum. Aenean lacinia
@@ -254,7 +242,7 @@ class App extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Segment secondary style={{paddingBottom: "40px", paddingTop: "40px"}}>
+        <Segment secondary as="footer">
           <Container textAlign="center">
             <p>
               Blog template built for Semantic-UI by{" "}
