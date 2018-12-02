@@ -6,13 +6,11 @@ import {
   Button,
   Container,
   Divider,
-  Dropdown,
   Form,
   Grid,
   Header,
   Menu,
   Message,
-  Segment
 } from "semantic-ui-react";
 
 import "./App.css";
