@@ -38,11 +38,6 @@ footer.ui.basic.segment {
   margin-bottom: 0;
 }
 
-footer.ui.basic.segment .ui.container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 footer.ui.basic.segment p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #777777;
