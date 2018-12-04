@@ -28,7 +28,7 @@ class App extends Component {
             </p>
           </Grid.Column>
         </Grid>
-        <Segment basic className="footer">
+        <Segment basic className="footer" as="footer">
           <Container>
             <p>Place sticky footer content here.</p>
           </Container>
