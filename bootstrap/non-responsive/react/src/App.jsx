@@ -51,6 +51,7 @@ class App extends Component {
               <Form>
                 <Form.Field inline>
                   <Form.Input placeholder="Search" type="text" as="input" />
+                  {' '}
                   <Button type="submit">Submit</Button>
                 </Form.Field>
               </Form>
@@ -75,7 +76,7 @@ class App extends Component {
               <Header size="huge" as="h1">
                 Non-responsive Semantic-UI
               </Header>
-              <p class="lead">
+              <p className="lead">
                 In fact, Semantic-UI's grid system, container and many other
                 components are by default "non-responsive", they will{" "}
                 <b>grow</b>
@@ -86,7 +87,7 @@ class App extends Component {
                 vertically on a small screen, unless you add "stackable" to it.
                 You can also fix the container's width with simple CSS.
               </p>
-              <p class="lead">
+              <p className="lead">
                 Here are some keywords related to responsiveness:
               </p>
               <List bulleted>
@@ -111,7 +112,7 @@ class App extends Component {
                 </List.Item>
               </List>
               <Divider section />
-              <Header size="big" as="h2">
+              <Header size="huge" as="h2">
                 What changes
               </Header>
               <p>
@@ -120,11 +121,11 @@ class App extends Component {
                 browser viewport, some contents will be compressed together and
                 not be visible.
               </p>
-              <Header size="big" as="h2">
+              <Header size="huge" as="h2">
                 Regarding navbars
               </Header>
               <p />
-              <Header size="big" as="h2">
+              <Header size="huge" as="h2">
                 Browsers, scrolling, and fixed elements
               </Header>
               <p>
@@ -140,7 +141,7 @@ class App extends Component {
                 The only solution is a responsive layout or using a non-fixed
                 element.
               </p>
-              <Header size="big" as="h2">
+              <Header size="huge" as="h2">
                 Non-responsive grid system
               </Header>
               <Grid columns="3">
