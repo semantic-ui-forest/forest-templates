@@ -2,13 +2,7 @@ import React, { Component } from "react";
 
 import "semantic-ui-css/semantic.min.css";
 
-import {
-  Container,
-  Divider,
-  Grid,
-  Header,
-  Segment
-} from "semantic-ui-react";
+import { Container, Divider, Grid, Header, Segment } from "semantic-ui-react";
 
 import "./App.css";
 
