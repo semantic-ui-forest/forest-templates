@@ -17,18 +17,49 @@
       min-height: 2000px;
     }
 
-    .ui.borderless.big.menu {
-      border-radius: 0;
+    .ui.borderless.menu {
+      background-color: #f8f8f8;
+      box-shadow: none;
+      flex-wrap: wrap;
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
     }
 
-    .ui.borderless.big.menu .header.item {
-      font-size: 1.2rem;
+    .ui.borderless.menu .header.item {
+      font-size: 18px;
+      font-weight: 400;
     }
 
-    .ui.message {
+    .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+      display: none;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+      float: unset;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+      content: "\f0d7"
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+      position: static;
+      width: 100%;
+      background-color: unset;
+      border: none;
+      box-shadow: none;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+      margin-top: 6px;
+    }
+
+    .ui.container > .ui.message {
       background-color: rga(238, 238, 238);
       box-shadow: none;
       padding: 5rem 4rem;
+      margin-top: 1rem;
     }
 
     .ui.message h1.ui.header {
@@ -41,16 +72,12 @@
       line-height: 1.4;
       font-weight: 300;
     }
-
-    #content {
-      margin-top: 3rem;
-    }
   </style>
 </head>
 
 <body>
-  <div id="root">
-    <div class="ui borderless big fluid menu">
+  <div class="ui tablet computer only padded grid">
+    <div class="ui borderless fluid huge menu">
       <div class="ui container">
         <a class="header item">Project Name</a>
         <a class="active item">Home</a>
@@ -81,29 +108,83 @@
             </div>
           </div>
         </a>
+        <div class="right menu">
+          <a class="item">Default</a>
+          <a class="active item">Static top</a>
+          <a class="item">Fixed top</a>
+        </div>
       </div>
     </div>
-    <div class="ui container" id="content">
-      <div class="ui message">
-        <h1 class="ui huge header">
-          Navbar example
-        </h1>
-        <p class="lead">
-          This example is a quick exercise to illustrate how the default,
-          static navbar and fixed to top navbar work. It includes the
-          responsive CSS and HTML, so it also adapts to your viewport and
-          device.
-        </p>
-        <a class="ui big primary button">View navbar docs &raquo; </a>
+  </div>
+  <div class="ui mobile only padded grid">
+    <div class="ui borderless huge fluid menu">
+      <a class="header item">Project Name</a>
+      <div class="right menu">
+        <div class="item">
+          <button class="ui icon toggle basic button">
+            <i class="content icon"></i>
+          </button>
+        </div>
       </div>
+      <div class="ui vertical borderless fluid menu">
+        <a class="active item">Home</a>
+        <a class="item">About</a>
+        <a class="item">Contact</a>
+        <div class="ui dropdown item">
+          Dropdown<i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item">
+              Action
+            </a>
+            <a class="item">
+              Another action
+            </a>
+            <a class="item">
+              Something else here
+            </a>
+            <div class="ui divider"></div>
+            <div class="header">
+              Navbar header
+            </div>
+            <a class="item">
+              Seperated link
+            </a>
+            <a class="item">
+              One more seperated link
+            </a>
+          </div>
+        </div>
+        <a class="item">Default</a>
+        <a class="active item">Static top</a>
+        <a class="item">Fixed top</a>
+      </div>
+    </div>
+  </div>
+  <div class="ui container">
+    <div class="ui message">
+      <h1 class="ui huge header">
+        Navbar example
+      </h1>
+      <p class="lead">
+        This example is a quick exercise to illustrate how the default,
+        static navbar and fixed to top navbar work. It includes the
+        responsive CSS and HTML, so it also adapts to your viewport and
+        device.
+      </p>
+      <a class="ui big primary button">View navbar docs &raquo; </a>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
   <script>
     $(document).ready(function () {
+      $('.ui.toggle.button').click(function () {
+        $('.mobile.only.grid .ui.vertical.menu').toggle(100);
+      });
+
       $('.ui.dropdown').dropdown();
     });
+
   </script>
 </body>
 
