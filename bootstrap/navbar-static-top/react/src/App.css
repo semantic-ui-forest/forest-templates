@@ -2,14 +2,49 @@ body {
   min-height: 2000px;
 }
 
-.ui.borderless.huge.menu .header.item {
-  font-size: 1.2rem;
+.ui.borderless.menu {
+  background-color: #f8f8f8;
+  box-shadow: none;
+  flex-wrap: wrap;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.ui.message {
+.ui.borderless.menu .header.item {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+  display: none;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+  float: unset;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+  content: "\f0d7"
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  position: static;
+  width: 100%;
+  background-color: unset;
+  border: none;
+  box-shadow: none;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  margin-top: 6px;
+}
+
+.ui.container > .ui.message {
   background-color: rga(238, 238, 238);
   box-shadow: none;
   padding: 5rem 4rem;
+  margin-top: 1rem;
 }
 
 .ui.message h1.ui.header {
@@ -21,8 +56,4 @@ body {
   color: #333333;
   line-height: 1.4;
   font-weight: 300;
-}
-
-#content {
-  margin-top: 3rem;
 }
