@@ -29,6 +29,13 @@
       margin-top: 1em;
       margin-bottom: 1em;
     }
+
+    @media only screen and (max-width: 767px) {
+      .ui.grid .ui.stackable.grid {
+        margin-left: 0!important;
+        margin-right: 0!important;
+      }
+    }
   </style>
 </head>
 
@@ -51,7 +58,7 @@
       automatically stack. If you want it to shrink rather than stack, you can
       remove the "stackable" class.
     </p>
-    <div class="ui three column stackable grid">
+    <div class="ui three column stackable padded grid">
       <div class="column">
         <p>
           .column
@@ -78,7 +85,7 @@
       single horizontal block. More than that, and columns start stacking no
       matter the viewport.
     </p>
-    <div class="ui stackable grid">
+    <div class="ui stackable padded grid">
       <div class="four wide column">
         <p>
           .four.wide.column
@@ -102,7 +109,7 @@
     <p>
       Get two columns starting at desktops and scaling to large desktops.
     </p>
-    <div class="ui stackable grid">
+    <div class="ui stackable padded grid">
       <div class="ten wide column">
         <p>
           .ten.wide.column
@@ -132,7 +139,7 @@
       larger column. At mobile device sizes, tablets and down, these columns and
       their nested columns will stack.
     </p>
-    <div class="ui stackable grid">
+    <div class="ui stackable padded grid">
       <div class="ten wide column">
         <p>
           .ten.wide.column
@@ -170,7 +177,7 @@
       Here, you would see the computer, tablet, mobile only columns appear
       and disappear when you change the browser's viewport width.
     </p>
-    <div class="ui stackable grid">
+    <div class="ui stackable padded grid">
       <div class="ten wide computer only column">
         <p>
           .ten.wide.computer.only.column
@@ -182,7 +189,7 @@
         </p>
       </div>
     </div>
-    <div class="ui three column stackable grid">
+    <div class="ui three column stackable padded grid">
       <div class="computer only column">
         <p>
           .computer.only.column
@@ -199,7 +206,7 @@
         </p>
       </div>
     </div>
-    <div class="ui two column stackable grid">
+    <div class="ui two column stackable padded grid">
       <div class="column">
         <p>
           .column
@@ -215,7 +222,7 @@
     <h2 class="ui header">
       Mixed: mobile, tablet and desktop
     </h2>
-    <div class="ui stackable grid">
+    <div class="ui stackable padded grid">
       <div class="ten wide computer only column">
         <p>
           .ten.wide.computer.only.column
@@ -227,7 +234,7 @@
         </p>
       </div>
     </div>
-    <div class="ui stackable grid">
+    <div class="ui stackable padded grid">
       <div class="ten wide tablet only column">
         <p>
           .ten.wide.tablet.only.column
@@ -239,21 +246,21 @@
         </p>
       </div>
     </div>
-    <div class="ui stackable grid">
+    <div class="ui stackable padded grid">
       <div class="mobile only column">
         <p>
           .mobile.only.column
         </p>
       </div>
     </div>
-    <div class="ui stackable grid">
+    <div class="ui stackable padded grid">
       <div class="ten wide mobile only column">
         <p>
           .ten.wide.mobile.only.column
         </p>
       </div>
     </div>
-    <div class="ui three column stackable grid">
+    <div class="ui three column stackable padded grid">
       <div class="computer tablet only column">
         <p>
           .computer.tablet.only.column
@@ -278,33 +285,26 @@
       Grid will automatically clear previous columns, which presents clear
       floats with uneven content.
     </p>
-    <div class="ui stackable grid">
-      <div class="four wide left floated column">
-        <p>
-          .four.wide.left.floated.column
-        </p>
+    <div class="ui padded grid">
+      <div class="eight wide mobile four wide tablet four wide computer column">
+        <p>.eight.wide.mobile</p>
+        <p>.four.wide.tablet</p>
+        <p>.four.wide.computer</p>
       </div>
-      <div class="five wide column">
-        <p>
-          .five.wide.centered.column
-        </p>
+      <div class="eight wide mobile four wide tablet four wide computer column">
+        <p>.eight.wide.mobile</p>
+        <p>.four.wide.tablet</p>
+        <p>.four.wide.computer</p>
       </div>
-      <div class="six wide right floated column">
-        <p>
-          .six.wide.right.floated.column
-        </p>
+      <div class="eight wide mobile four wide tablet four wide computer column">
+        <p>.eight.wide.mobile</p>
+        <p>.four.wide.tablet</p>
+        <p>.four.wide.computer</p>
       </div>
-    </div>
-    <div class="ui four column stackable grid">
-      <div class="left floated column">
-        <p>
-          .left.floated.column
-        </p>
-      </div>
-      <div class="right floated column">
-        <p>
-          .right.floated.column
-        </p>
+      <div class="eight wide mobile four wide tablet four wide computer column">
+        <p>.eight.wide.mobile</p>
+        <p>.four.wide.tablet</p>
+        <p>.four.wide.computer</p>
       </div>
     </div>
     <div class="ui section divider"></div>
@@ -321,7 +321,7 @@
     <p>
       Change the width of browser to see the responsive effects.
     </p>
-    <div class="ui mobile reversed three column grid">
+    <div class="ui mobile reversed three column padded grid">
       <div class="column">
         <p>
           Left
@@ -338,7 +338,7 @@
         </p>
       </div>
     </div>
-    <div class="ui three column doubling stackable grid">
+    <div class="ui three column doubling stackable padded grid">
       <div class="column">
         <p>
           .column

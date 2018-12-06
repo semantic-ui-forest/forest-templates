@@ -14,3 +14,10 @@
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+@media only screen and (max-width: 767px) {
+  .ui.grid .ui.stackable.grid {
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+}

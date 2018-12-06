@@ -29,7 +29,7 @@ class App extends Component {
             will automatically stack. If you want it to shrink rather than
             stack, you can remove the "stackable" class.
           </p>
-          <Grid stackable columns={3}>
+          <Grid stackable padded columns={3}>
             <Grid.Column>
               <p>.column</p>
             </Grid.Column>
@@ -48,7 +48,7 @@ class App extends Component {
             for a single horizontal block. More than that, and columns start
             stacking no matter the viewport.
           </p>
-          <Grid stackable>
+          <Grid stackable padded>
             <Grid.Column width={4}>
               <p>.four.wide.column</p>
             </Grid.Column>
@@ -64,7 +64,7 @@ class App extends Component {
           <p>
             Get two columns starting at desktops and scaling to large desktops.
           </p>
-          <Grid stackable>
+          <Grid stackable padded>
             <Grid.Column width={10}>
               <p>.ten.wide.column</p>
             </Grid.Column>
@@ -84,7 +84,7 @@ class App extends Component {
             widths) within the larger column. At mobile device sizes, tablets
             and down, these columns and their nested columns will stack.
           </p>
-          <Grid stackable>
+          <Grid stackable padded>
             <Grid.Column width={10}>
               <p>.ten.wide.column</p>
               <Grid stackable>
@@ -112,7 +112,7 @@ class App extends Component {
             Here, you would see the computer, tablet, mobile only columns appear
             and disappear when you change the browser's viewport width.
           </p>
-          <Grid stackable>
+          <Grid stackable padded>
             <Grid.Column only="computer" width={10}>
               <p>.ten.wide.computer.only.column</p>
             </Grid.Column>
@@ -120,7 +120,7 @@ class App extends Component {
               <p>.six.wide.computer.only.column</p>
             </Grid.Column>
           </Grid>
-          <Grid stackable columns={3}>
+          <Grid stackable padded columns={3}>
             <Grid.Column only="computer">
               <p>.computer.only.column</p>
             </Grid.Column>
@@ -131,7 +131,7 @@ class App extends Component {
               <p>.computer.only.column</p>
             </Grid.Column>
           </Grid>
-          <Grid stackable columns={2}>
+          <Grid stackable padded columns={2}>
             <Grid.Column>
               <p>.column</p>
             </Grid.Column>
@@ -141,7 +141,7 @@ class App extends Component {
           </Grid>
           <Divider section />
           <Header as="h2">Mixed: mobile, tablet and desktop</Header>
-          <Grid stackable>
+          <Grid stackable padded>
             <Grid.Column width={10} only="computer">
               <p>.ten.wide.computer.only.column</p>
             </Grid.Column>
@@ -149,7 +149,7 @@ class App extends Component {
               <p>.six.wide.computer.only.column</p>
             </Grid.Column>
           </Grid>
-          <Grid stackable>
+          <Grid stackable padded>
             <Grid.Column width={10} only="tablet">
               <p>.ten.wide.tablet.only.column</p>
             </Grid.Column>
@@ -157,17 +157,17 @@ class App extends Component {
               <p>.six.wide.tablet.only.column</p>
             </Grid.Column>
           </Grid>
-          <Grid stackable>
+          <Grid stackable padded>
             <Grid.Column only="mobile">
               <p>.mobile.only.column</p>
             </Grid.Column>
           </Grid>
-          <Grid stackable>
+          <Grid stackable padded>
             <Grid.Column width={10} only="mobile">
               <p>.ten.wide.mobile.only.column</p>
             </Grid.Column>
           </Grid>
-          <Grid stackable columns={3}>
+          <Grid stackable padded columns={3}>
             <Grid.Column only="computer tablet">
               <p>.computer.tablet.only.column</p>
             </Grid.Column>
@@ -179,28 +179,31 @@ class App extends Component {
             </Grid.Column>
           </Grid>
           <Divider section />
-          <Header as="h2">Column clearning</Header>
+          <Header as="h2">Column clearing</Header>
           <p>
             Grid will automatically clear previous columns, which presents clear
             floats with uneven content.
           </p>
-          <Grid stackable>
-            <Grid.Column width={4} floated="left">
-              <p>.four.wide.left.floated.column</p>
+          <Grid padded>
+            <Grid.Column mobile={8} tablet={4} computer={4}>
+              <p>.eight.wide.mobile</p>
+              <p>.four.wide.tablet</p>
+              <p>.four.wide.computer</p>
             </Grid.Column>
-            <Grid.Column width={5} centered>
-              <p>.five.wide.left.floated.column</p>
+            <Grid.Column mobile={8} tablet={4} computer={4}>
+              <p>.eight.wide.mobile</p>
+              <p>.four.wide.tablet</p>
+              <p>.four.wide.computer</p>
             </Grid.Column>
-            <Grid.Column width={6} floated="right">
-              <p>.six.wide.right.floated.column</p>
+            <Grid.Column mobile={8} tablet={4} computer={4}>
+              <p>.eight.wide.mobile</p>
+              <p>.four.wide.tablet</p>
+              <p>.four.wide.computer</p>
             </Grid.Column>
-          </Grid>
-          <Grid stackable columns={4}>
-            <Grid.Column floated="left">
-              <p>.left.floated.column</p>
-            </Grid.Column>
-            <Grid.Column floated="right">
-              <p>.right.floated.column</p>
+            <Grid.Column mobile={8} tablet={4} computer={4}>
+              <p>.eight.wide.mobile</p>
+              <p>.four.wide.tablet</p>
+              <p>.four.wide.computer</p>
             </Grid.Column>
           </Grid>
           <Divider section />
@@ -211,7 +214,7 @@ class App extends Component {
           </p>
           <p>Doubling grid will double columns' width for each device jump.</p>
           <p>Change the width of browser to see the responsive effects.</p>
-          <Grid reversed="mobile" columns={3}>
+          <Grid padded reversed="mobile" columns={3}>
             <Grid.Column>
               <p>Left</p>
             </Grid.Column>
@@ -222,7 +225,7 @@ class App extends Component {
               <p>Right</p>
             </Grid.Column>
           </Grid>
-          <Grid doubling stackable columns={3}>
+          <Grid doubling stackable padded columns={3}>
             <Grid.Column>
               <p>.column</p>
             </Grid.Column>
