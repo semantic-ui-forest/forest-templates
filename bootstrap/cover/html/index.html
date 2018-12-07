@@ -18,34 +18,40 @@
         width: 700px;
         max-width: 700px;
       }
+
+      nav.ui.container .ui.header {
+        float: left;
+        margin-top: 12px;
+      }
+
+      nav.ui.container .ui.inverted.compact.menu {
+        float: right
+      }
     }
 
-    .ui.inverted.menu {
+    .ui.inverted.vertical.center.aligned.segment {
+      padding-top: 36px;
+    }
+
+    nav.ui.container .ui.inverted.compact.menu {
       background-color: rgb(51, 51, 51);
     }
 
-    .ui.inverted.menu .item {
+    nav.ui.container .ui.inverted.compact.menu .item {
       padding-bottom: 0;
     }
 
-    .ui.inverted.menu .right.menu .item {
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-
-    .ui.inverted.menu .header.item {
-      font-size: 32px;
-    }
-
-    .ui.inverted.menu .right.menu .item {
+    nav.ui.container .ui.inverted.compact.menu .item {
       font-size: 16px;
       padding-left: 0px;
       padding-right: 0px;
+      padding-bottom: 14px;
       margin-left: 16px;
       margin-right: 16px;
+      border-radius: 0;
     }
 
-    .ui.inverted.menu .right.menu .active.item {
+    nav.ui.container .ui.inverted.compact.menu .active.item {
       background-color: inherit;
       border-bottom-color: white;
       border-bottom-style: solid;
@@ -95,18 +101,16 @@
 
 <body>
   <div class="ui inverted vertical center aligned segment">
-    <div class="ui container">
-      <div class="ui borderless inverted menu">
-        <div class="header item">
-          Cover
-        </div>
-        <div class="right menu">
-          <a class="active item">Home</a>
-          <a class="item">Feature</a>
-          <a class="item">Contact</a>
-        </div>
+    <nav class="ui container">
+      <h1 class="ui inverted header">
+        Cover
+      </h1>
+      <div class="ui borderless inverted compact menu">
+        <a class="active item">Home</a>
+        <a class="item">Feature</a>
+        <a class="item">Contact</a>
       </div>
-    </div>
+    </nav>
     <div class="ui content container">
       <h1 class="ui inverted header">
         Cover your page.

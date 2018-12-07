@@ -2,13 +2,7 @@ import React, { Component } from "react";
 
 import "semantic-ui-css/semantic.min.css";
 
-import {
-  Button,
-  Container,
-  Header,
-  Menu,
-  Segment
-} from "semantic-ui-react";
+import { Button, Container, Header, Menu, Segment } from "semantic-ui-react";
 
 import "./App.css";
 
@@ -17,14 +11,14 @@ class App extends Component {
     return (
       <div className="App">
         <Segment inverted vertical textAlign="center">
-          <Container>
-            <Menu borderless inverted>
-              <Menu.Item header>Cover</Menu.Item>
-              <Menu.Menu position="right">
-                <Menu.Item active>Home</Menu.Item>
-                <Menu.Item>Feature</Menu.Item>
-                <Menu.Item>Contact</Menu.Item>
-              </Menu.Menu>
+          <Container as="nav">
+            <Header inverted as="h1">
+              Cover
+            </Header>
+            <Menu borderless compact inverted>
+              <Menu.Item active>Home</Menu.Item>
+              <Menu.Item>Feature</Menu.Item>
+              <Menu.Item>Contact</Menu.Item>
             </Menu>
           </Container>
           <Container className="content">
