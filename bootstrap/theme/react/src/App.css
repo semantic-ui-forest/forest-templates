@@ -34,3 +34,8 @@
   margin-top: 5em;
   padding-bottom: 4em;
 }
+
+.ui.celled.table tr td:first-child,
+.ui.celled.table tr th:first-child {
+  border-left: 1px solid rgba(34, 36, 38, .1);
+}
