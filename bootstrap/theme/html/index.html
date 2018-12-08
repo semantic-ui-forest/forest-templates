@@ -57,11 +57,346 @@
   </style>
 </head>
 
-<body>
-  <div id="root">
-    <div class="ui fixed inverted borderless huge menu">
-      <div class="ui container">
-        <a class="header item" href="#root">Semantic-UI theme</a>
+<body id="root">
+  <div class="ui fixed inverted borderless huge menu">
+    <div class="ui container">
+      <a class="header item" href="#root">Semantic-UI theme</a>
+      <a class="active item" href="#root">Home</a>
+      <a class="item" href="#root">About</a>
+      <a class="item" href="#root">Contact</a>
+      <div class="ui dropdown item">
+        Dropdown
+        <div class="i dropdown icon"></div>
+        <div class="menu">
+          <a class="item" href="#root">Action</a>
+          <a class="item" href="#root">Another action</a>
+          <a class="item" href="#root">Something else here</a>
+          <div class="ui fitted divider"></div>
+          <div class="header">
+            Nav header
+          </div>
+          <a class="item" href="#root">Separated link</a>
+          <a class="item" href="#root">One more separated link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div class="ui container">
+      <div class="ui jumbotron message">
+        <div class="ui massive header">
+          Theme example
+        </div>
+        <p>
+          This is a template showcasing the optional theme stylesheet included
+          in Semantic-UI. Use it as a starting point to create something more
+          unique by building on or modifying it.
+        </p>
+      </div>
+
+      <h1 class="ui dividing header">
+        Buttons
+      </h1>
+      <p>
+        <button class="ui large button">Default</button>
+        <button class="ui large blue button">Primary</button>
+        <button class="ui large green button">Success</button>
+        <button class="ui large teal button">Teal</button>
+        <button class="ui large orange button">Warning</button>
+        <button class="ui large red button">Danger</button>
+        <button class="ui large basic button">Link</button>
+      </p>
+      <p>
+        <button class="ui medium button">Default</button>
+        <button class="ui medium blue button">Primary</button>
+        <button class="ui medium green button">Success</button>
+        <button class="ui medium teal button">Teal</button>
+        <button class="ui medium orange button">Warning</button>
+        <button class="ui medium red button">Danger</button>
+        <button class="ui medium basic button">Link</button>
+      </p>
+      <p>
+        <button class="ui small button">Default</button>
+        <button class="ui small blue button">Primary</button>
+        <button class="ui small green button">Success</button>
+        <button class="ui small teal button">Teal</button>
+        <button class="ui small orange button">Warning</button>
+        <button class="ui small red button">Danger</button>
+        <button class="ui small basic button">Link</button>
+      </p>
+      <p>
+        <button class="ui mini button">Default</button>
+        <button class="ui mini blue button">Primary</button>
+        <button class="ui mini green button">Success</button>
+        <button class="ui mini teal button">Teal</button>
+        <button class="ui mini orange button">Warning</button>
+        <button class="ui mini red button">Danger</button>
+        <button class="ui mini basic button">Link</button>
+      </p>
+
+      <h1 class="ui dividing header">
+        Tables
+      </h1>
+      <div class="ui stackable grid">
+        <div class="eight wide column">
+          <table class="ui very basic table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Tdornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>tde Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="eight wide column">
+          <table class="ui very basic striped table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Tdornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>tde Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="eight wide column ">
+          <table class="ui celled table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Tdornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td colspan="2">Larry tde Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="eight wide column">
+          <table class="ui very basic table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Tdornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td colspan="2">Larry tde Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h1 class="ui dividing header">
+        Thumbnails
+      </h1>
+      <img class="ui small image" src="/static/images/wireframe/square-image.png" />
+
+      <h1 class="ui dividing header">
+        Labels
+      </h1>
+      <p>
+        <div class="ui massive label">Default</div>
+        <div class="ui massive blue label">Primary</div>
+        <div class="ui massive green label">Success</div>
+        <div class="ui massive teal label">Info</div>
+        <div class="ui massive orange label">Warning</div>
+        <div class="ui massive red label">Danger</div>
+      </p>
+      <p>
+        <div class="ui huge label">Default</div>
+        <div class="ui huge blue label">Primary</div>
+        <div class="ui huge green label">Success</div>
+        <div class="ui huge teal label">Info</div>
+        <div class="ui huge orange label">Warning</div>
+        <div class="ui huge red label">Danger</div>
+      </p>
+      <p>
+        <div class="ui big label">Default</div>
+        <div class="ui big blue label">Primary</div>
+        <div class="ui big green label">Success</div>
+        <div class="ui big teal label">Info</div>
+        <div class="ui big orange label">Warning</div>
+        <div class="ui big red label">Danger</div>
+      </p>
+      <p>
+        <div class="ui large label">Default</div>
+        <div class="ui large blue label">Primary</div>
+        <div class="ui large green label">Success</div>
+        <div class="ui large teal label">Info</div>
+        <div class="ui large orange label">Warning</div>
+        <div class="ui large red label">Danger</div>
+      </p>
+      <p>
+        <div class="ui medium label">Default</div>
+        <div class="ui medium blue label">Primary</div>
+        <div class="ui medium green label">Success</div>
+        <div class="ui medium teal label">Info</div>
+        <div class="ui medium orange label">Warning</div>
+        <div class="ui medium red label">Danger</div>
+      </p>
+      <p>
+        <div class="ui small label">Default</div>
+        <div class="ui small blue label">Primary</div>
+        <div class="ui small green label">Success</div>
+        <div class="ui small teal label">Info</div>
+        <div class="ui small orange label">Warning</div>
+        <div class="ui small red label">Danger</div>
+      </p>
+      <p>
+        <div class="ui tiny label">Default</div>
+        <div class="ui tiny blue label">Primary</div>
+        <div class="ui tiny green label">Success</div>
+        <div class="ui tiny teal label">Info</div>
+        <div class="ui tiny orange label">Warning</div>
+        <div class="ui tiny red label">Danger</div>
+      </p>
+      <p>
+        <div class="ui mini label">Default</div>
+        <div class="ui mini blue label">Primary</div>
+        <div class="ui mini green label">Success</div>
+        <div class="ui mini teal label">Info</div>
+        <div class="ui mini orange label">Warning</div>
+        <div class="ui mini red label">Danger</div>
+      </p>
+
+      <h1 class="ui dividing header">
+        Badges
+      </h1>
+      <a class="item" href="#root">
+        Inbox
+        <div class="ui small circular label">42</div>
+      </a>
+      <p></p>
+      <div class="ui secondary compact menu" id="badges">
+        <a class="active item" href="#root">
+          Home
+          <div class="ui small circular label">42</div>
+        </a>
+        <a class="item" href="#root">
+          Profile
+          <div class="ui small circular label">53</div>
+        </a>
+        <a class="item" href="#root">
+          Messages
+          <div class="ui small circular label">3</div>
+        </a>
+      </div>
+
+      <h1 class="ui dividing header">
+        Dropdown menus
+      </h1>
+      <div class="ui vertical borderless menu">
+        <a class="active item">Action</a>
+        <a class="item">Another action</a>
+        <a class="item">Something else here</a>
+        <div class="ui fitted divider"></div>
+        <a class="item" href="#root">Separated link</a>
+      </div>
+
+      <h1 class="ui dividing header">
+        Navs
+      </h1>
+      <div class="ui tabular menu">
+        <a class="active item" data-tab="home">Home</a>
+        <a class="item" data-tab="profile">Profile</a>
+        <a class="item" data-tab="messages">Messages</a>
+      </div>
+      <div class="ui secondary menu">
+        <a class="active item">Home</a>
+        <a class="item">Profile</a>
+        <a class="item">Messages</a>
+      </div>
+
+      <h1 class="ui dividing header">
+        Navbars
+      </h1>
+      <div class="ui borderless menu">
+        <a class="header item" href="#root">Project name</a>
         <a class="active item" href="#root">Home</a>
         <a class="item" href="#root">About</a>
         <a class="item" href="#root">Contact</a>
@@ -81,545 +416,208 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="content">
-      <div class="ui container">
-        <div class="ui jumbotron message">
-          <div class="ui massive header">
-            Theme example
+      <div class="ui inverted borderless menu">
+        <a class="header item" href="#root">Project Name</a>
+        <a class="active item" href="#root">Home</a>
+        <a class="item" href="#root">About</a>
+        <a class="item" href="#root">Contact</a>
+        <div class="ui dropdown item">
+          Dropdown
+          <div class="i dropdown icon"></div>
+          <div class="menu">
+            <a class="item" href="#root">Action</a>
+            <a class="item" href="#root">Another action</a>
+            <a class="item" href="#root">Something else here</a>
+            <div class="ui fitted divider"></div>
+            <div class="header">Nav header</div>
+            <a class="item" href="#root">Separated link</a>
+            <a class="item" href="#root">One more separated link</a>
           </div>
-          <p>
-            This is a template showcasing the optional theme stylesheet included
-            in Semantic-UI. Use it as a starting point to create something more
-            unique by building on or modifying it.
-          </p>
         </div>
+      </div>
 
-        <h1 class="ui dividing header">
-          Buttons
-        </h1>
-        <p>
-          <button class="ui large button">Default</button>
-          <button class="ui large blue button">Primary</button>
-          <button class="ui large green button">Success</button>
-          <button class="ui large teal button">Teal</button>
-          <button class="ui large orange button">Warning</button>
-          <button class="ui large red button">Danger</button>
-          <button class="ui large basic button">Link</button>
-        </p>
-        <p>
-          <button class="ui medium button">Default</button>
-          <button class="ui medium blue button">Primary</button>
-          <button class="ui medium green button">Success</button>
-          <button class="ui medium teal button">Teal</button>
-          <button class="ui medium orange button">Warning</button>
-          <button class="ui medium red button">Danger</button>
-          <button class="ui medium basic button">Link</button>
-        </p>
-        <p>
-          <button class="ui small button">Default</button>
-          <button class="ui small blue button">Primary</button>
-          <button class="ui small green button">Success</button>
-          <button class="ui small teal button">Teal</button>
-          <button class="ui small orange button">Warning</button>
-          <button class="ui small red button">Danger</button>
-          <button class="ui small basic button">Link</button>
-        </p>
-        <p>
-          <button class="ui mini button">Default</button>
-          <button class="ui mini blue button">Primary</button>
-          <button class="ui mini green button">Success</button>
-          <button class="ui mini teal button">Teal</button>
-          <button class="ui mini orange button">Warning</button>
-          <button class="ui mini red button">Danger</button>
-          <button class="ui mini basic button">Link</button>
-        </p>
+      <h1 class="ui dividing header">
+        Alerts
+      </h1>
+      <div class="ui success message">
+        <div class="content">
+          <b>Well done!</b>
+          You successfully read this important alert message.
+        </div>
+      </div>
+      <div class="ui info message">
+        <div class="content">
+          <b>Heads up!</b>
+          This alert needs your attention, but it's not super important.
+        </div>
+      </div>
+      <div class="ui warning message">
+        <div class="content">
+          <b>Warning!</b>
+          Best check yo self, you're not looking too good.
+        </div>
+      </div>
+      <div class="ui error message">
+        <div class="content">
+          <b>Oh snap!</b>
+          Change a few things up and try submitting again.
+        </div>
+      </div>
 
-        <h1 class="ui dividing header">
-          Tables
-        </h1>
-        <div class="ui stackable grid">
-          <div class="eight wide column">
-            <table class="ui very basic table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Tdornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>tde Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="eight wide column">
-            <table class="ui very basic striped table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Tdornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>tde Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="eight wide column ">
-            <table class="ui celled table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="2">1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Tdornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td colspan="2">Larry tde Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="eight wide column">
-            <table class="ui very basic table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Tdornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td colspan="2">Larry tde Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
+      <h1 class="ui dividing header">
+        Progress bars
+      </h1>
+      <div class="ui blue progress" data-percent="60">
+        <div class="bar"></div>
+      </div>
+      <div class="ui green progress" data-percent="40">
+        <div class="bar"></div>
+      </div>
+      <div class="ui teal progress" data-percent="20">
+        <div class="bar"></div>
+      </div>
+      <div class="ui orange progress" data-percent="60">
+        <div class="bar"></div>
+      </div>
+      <div class="ui red progress" data-percent="80">
+        <div class="bar"></div>
+      </div>
+      <h1 class="ui dividing header">
+        List groups
+      </h1>
+      <div class="ui three column grid">
+        <div class="column">
+          <div class="ui fluid vertical menu">
+            <a class="item">
+              Cras justo odio
+            </a>
+            <a class="item">
+              Dapibus ac facilisis in
+            </a>
+            <a class="item">
+              Morbi leo risus
+            </a>
+            <a class="item">
+              Porta ac consectetur ac
+            </a>
+            <a class="item">
+              Vestibulum at eros
+            </a>
           </div>
         </div>
+        <div class="column">
+          <div class="ui fluid vertical menu">
+            <a class="active item">
+              Cras justo odio
+            </a>
+            <a class="item">
+              Dapibus ac facilisis in
+            </a>
+            <a class="item">
+              Morbi leo risus
+            </a>
+            <a class="item">
+              Porta ac consectetur ac
+            </a>
+            <a class="item">
+              Vestibulum at eros
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid vertical menu">
+            <a class="active item">
+              <h1 class="ui medium header">
+                List group item heading
+              </h1>
+              Donec id elit non mi porta gravida at eget metus. Maecenas sed
+              diam eget risus varius blandit.
+            </a>
+            <a class="item">
+              <h1 class="ui medium header">
+                List group item heading
+              </h1>
+              Donec id elit non mi porta gravida at eget metus. Maecenas sed
+              diam eget risus varius blandit.
+            </a>
+            <a class="item">
+              <h1 class="ui medium header">
+                List group item heading
+              </h1>
+              Donec id elit non mi porta gravida at eget metus. Maecenas sed
+              diam eget risus varius blandit.
+            </a>
+          </div>
+        </div>
+      </div>
 
-        <h1 class="ui dividing header">
-          Thumbnails
-        </h1>
-        <img class="ui small image" src="/static/images/wireframe/square-image.png" />
+      <h1 class="ui dividing header">
+        Panels
+      </h1>
+      <div class="ui three column grid">
+        <div class="column">
+          <div class="ui top attached message">
+            Panel title
+          </div>
+          <div class="ui bottom attached segment">
+            Panel content
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui top attached success message">
+            Panel title
+          </div>
+          <div class="ui bottom attached segment">
+            Panel content
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui top attached warning message">
+            Panel title
+          </div>
+          <div class="ui bottom attached segment">
+            Panel content
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui top attached blue message">
+            Panel title
+          </div>
+          <div class="ui bottom attached segment">
+            Panel content
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui top attached inverted message">
+            Panel title
+          </div>
+          <div class="ui bottom attached segment">
+            Panel content
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui top attached error message">
+            Panel title
+          </div>
+          <div class="ui bottom attached segment">
+            Panel content
+          </div>
+        </div>
+      </div>
 
-        <h1 class="ui dividing header">
-          Labels
-        </h1>
+      <h1 class="ui dividing header">
+        Wells
+      </h1>
+      <div class="ui secondary segment">
         <p>
-          <div class="ui massive label">Default</div>
-          <div class="ui massive blue label">Primary</div>
-          <div class="ui massive green label">Success</div>
-          <div class="ui massive teal label">Info</div>
-          <div class="ui massive orange label">Warning</div>
-          <div class="ui massive red label">Danger</div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed
+          diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Praesent commodo cursus magna,
+          vel scelerisque nisl consectetur et. Cras mattis consectetur purus
+          sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat
+          porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia
+          bibendum nulla sed consectetur.
         </p>
-        <p>
-          <div class="ui huge label">Default</div>
-          <div class="ui huge blue label">Primary</div>
-          <div class="ui huge green label">Success</div>
-          <div class="ui huge teal label">Info</div>
-          <div class="ui huge orange label">Warning</div>
-          <div class="ui huge red label">Danger</div>
-        </p>
-        <p>
-          <div class="ui big label">Default</div>
-          <div class="ui big blue label">Primary</div>
-          <div class="ui big green label">Success</div>
-          <div class="ui big teal label">Info</div>
-          <div class="ui big orange label">Warning</div>
-          <div class="ui big red label">Danger</div>
-        </p>
-        <p>
-          <div class="ui large label">Default</div>
-          <div class="ui large blue label">Primary</div>
-          <div class="ui large green label">Success</div>
-          <div class="ui large teal label">Info</div>
-          <div class="ui large orange label">Warning</div>
-          <div class="ui large red label">Danger</div>
-        </p>
-        <p>
-          <div class="ui medium label">Default</div>
-          <div class="ui medium blue label">Primary</div>
-          <div class="ui medium green label">Success</div>
-          <div class="ui medium teal label">Info</div>
-          <div class="ui medium orange label">Warning</div>
-          <div class="ui medium red label">Danger</div>
-        </p>
-        <p>
-          <div class="ui small label">Default</div>
-          <div class="ui small blue label">Primary</div>
-          <div class="ui small green label">Success</div>
-          <div class="ui small teal label">Info</div>
-          <div class="ui small orange label">Warning</div>
-          <div class="ui small red label">Danger</div>
-        </p>
-        <p>
-          <div class="ui tiny label">Default</div>
-          <div class="ui tiny blue label">Primary</div>
-          <div class="ui tiny green label">Success</div>
-          <div class="ui tiny teal label">Info</div>
-          <div class="ui tiny orange label">Warning</div>
-          <div class="ui tiny red label">Danger</div>
-        </p>
-        <p>
-          <div class="ui mini label">Default</div>
-          <div class="ui mini blue label">Primary</div>
-          <div class="ui mini green label">Success</div>
-          <div class="ui mini teal label">Info</div>
-          <div class="ui mini orange label">Warning</div>
-          <div class="ui mini red label">Danger</div>
-        </p>
-
-        <h1 class="ui dividing header">
-          Badges
-        </h1>
-        <a class="item" href="#root">
-          Inbox
-          <div class="ui small circular label">42</div>
-        </a>
-        <p></p>
-        <div class="ui secondary compact menu" id="badges">
-          <a class="active item" href="#root">
-            Home
-            <div class="ui small circular label">42</div>
-          </a>
-          <a class="item" href="#root">
-            Profile
-            <div class="ui small circular label">53</div>
-          </a>
-          <a class="item" href="#root">
-            Messages
-            <div class="ui small circular label">3</div>
-          </a>
-        </div>
-
-        <h1 class="ui dividing header">
-          Dropdown menus
-        </h1>
-        <div class="ui vertical borderless menu">
-          <a class="active item">Action</a>
-          <a class="item">Another action</a>
-          <a class="item">Something else here</a>
-          <div class="ui fitted divider"></div>
-          <a class="item" href="#root">Separated link</a>
-        </div>
-
-        <h1 class="ui dividing header">
-          Navs
-        </h1>
-        <div class="ui tabular menu">
-          <a class="active item" data-tab="home">Home</a>
-          <a class="item" data-tab="profile">Profile</a>
-          <a class="item" data-tab="messages">Messages</a>
-        </div>
-        <div class="ui secondary menu">
-          <a class="active item">Home</a>
-          <a class="item">Profile</a>
-          <a class="item">Messages</a>
-        </div>
-
-        <h1 class="ui dividing header">
-          Navbars
-        </h1>
-        <div class="ui borderless menu">
-          <a class="header item" href="#root">Project name</a>
-          <a class="active item" href="#root">Home</a>
-          <a class="item" href="#root">About</a>
-          <a class="item" href="#root">Contact</a>
-          <div class="ui dropdown item">
-            Dropdown
-            <div class="i dropdown icon"></div>
-            <div class="menu">
-              <a class="item" href="#root">Action</a>
-              <a class="item" href="#root">Another action</a>
-              <a class="item" href="#root">Something else here</a>
-              <div class="ui fitted divider"></div>
-              <div class="header">
-                Nav header
-              </div>
-              <a class="item" href="#root">Separated link</a>
-              <a class="item" href="#root">One more separated link</a>
-            </div>
-          </div>
-        </div>
-        <div class="ui inverted borderless menu">
-          <a class="header item" href="#root">Project Name</a>
-          <a class="active item" href="#root">Home</a>
-          <a class="item" href="#root">About</a>
-          <a class="item" href="#root">Contact</a>
-          <div class="ui dropdown item">
-            Dropdown
-            <div class="i dropdown icon"></div>
-            <div class="menu">
-              <a class="item" href="#root">Action</a>
-              <a class="item" href="#root">Another action</a>
-              <a class="item" href="#root">Something else here</a>
-              <div class="ui fitted divider"></div>
-              <div class="header">Nav header</div>
-              <a class="item" href="#root">Separated link</a>
-              <a class="item" href="#root">One more separated link</a>
-            </div>
-          </div>
-        </div>
-
-        <h1 class="ui dividing header">
-          Alerts
-        </h1>
-        <div class="ui success message">
-          <div class="content">
-            <b>Well done!</b>
-            You successfully read this important alert message.
-          </div>
-        </div>
-        <div class="ui info message">
-          <div class="content">
-            <b>Heads up!</b>
-            This alert needs your attention, but it's not super important.
-          </div>
-        </div>
-        <div class="ui warning message">
-          <div class="content">
-            <b>Warning!</b>
-            Best check yo self, you're not looking too good.
-          </div>
-        </div>
-        <div class="ui error message">
-          <div class="content">
-            <b>Oh snap!</b>
-            Change a few things up and try submitting again.
-          </div>
-        </div>
-
-        <h1 class="ui dividing header">
-          Progress bars
-        </h1>
-        <div class="ui blue progress" data-percent="60">
-          <div class="bar"></div>
-        </div>
-        <div class="ui green progress" data-percent="40">
-          <div class="bar"></div>
-        </div>
-        <div class="ui teal progress" data-percent="20">
-          <div class="bar"></div>
-        </div>
-        <div class="ui orange progress" data-percent="60">
-          <div class="bar"></div>
-        </div>
-        <div class="ui red progress" data-percent="80">
-          <div class="bar"></div>
-        </div>
-        <h1 class="ui dividing header">
-          List groups
-        </h1>
-        <div class="ui three column grid">
-          <div class="column">
-            <div class="ui fluid vertical menu">
-              <a class="item">
-                Cras justo odio
-              </a>
-              <a class="item">
-                Dapibus ac facilisis in
-              </a>
-              <a class="item">
-                Morbi leo risus
-              </a>
-              <a class="item">
-                Porta ac consectetur ac
-              </a>
-              <a class="item">
-                Vestibulum at eros
-              </a>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid vertical menu">
-              <a class="active item">
-                Cras justo odio
-              </a>
-              <a class="item">
-                Dapibus ac facilisis in
-              </a>
-              <a class="item">
-                Morbi leo risus
-              </a>
-              <a class="item">
-                Porta ac consectetur ac
-              </a>
-              <a class="item">
-                Vestibulum at eros
-              </a>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui fluid vertical menu">
-              <a class="active item">
-                <h1 class="ui medium header">
-                  List group item heading
-                </h1>
-                Donec id elit non mi porta gravida at eget metus. Maecenas sed
-                diam eget risus varius blandit.
-              </a>
-              <a class="item">
-                <h1 class="ui medium header">
-                  List group item heading
-                </h1>
-                Donec id elit non mi porta gravida at eget metus. Maecenas sed
-                diam eget risus varius blandit.
-              </a>
-              <a class="item">
-                <h1 class="ui medium header">
-                  List group item heading
-                </h1>
-                Donec id elit non mi porta gravida at eget metus. Maecenas sed
-                diam eget risus varius blandit.
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <h1 class="ui dividing header">
-          Panels
-        </h1>
-        <div class="ui three column grid">
-          <div class="column">
-            <div class="ui top attached message">
-              Panel title
-            </div>
-            <div class="ui bottom attached segment">
-              Panel content
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui top attached success message">
-              Panel title
-            </div>
-            <div class="ui bottom attached segment">
-              Panel content
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui top attached warning message">
-              Panel title
-            </div>
-            <div class="ui bottom attached segment">
-              Panel content
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui top attached blue message">
-              Panel title
-            </div>
-            <div class="ui bottom attached segment">
-              Panel content
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui top attached inverted message">
-              Panel title
-            </div>
-            <div class="ui bottom attached segment">
-              Panel content
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui top attached error message">
-              Panel title
-            </div>
-            <div class="ui bottom attached segment">
-              Panel content
-            </div>
-          </div>
-        </div>
-
-        <h1 class="ui dividing header">
-          Wells
-        </h1>
-        <div class="ui secondary segment">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed
-            diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Praesent commodo cursus magna,
-            vel scelerisque nisl consectetur et. Cras mattis consectetur purus
-            sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat
-            porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia
-            bibendum nulla sed consectetur.
-          </p>
-        </div>
       </div>
     </div>
   </div>
