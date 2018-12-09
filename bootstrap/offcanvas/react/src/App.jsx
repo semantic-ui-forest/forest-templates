@@ -71,10 +71,7 @@ class App extends Component {
                     off-canvas left sidebar coming in and out of the page, and
                     try to change the viewport size to see right sidebar toggle
                     button. You could check out more wonderful effects here:{" "}
-                    <a
-                      target="_blank"
-                      href="http://semantic-ui.com/modules/sidebar.html#/examples"
-                    >
+                    <a href="http://semantic-ui.com/modules/sidebar.html#/examples">
                       Semantic-UI/sidebar examples
                     </a>
                     .
@@ -229,6 +226,7 @@ class App extends Component {
                 as={Menu}
                 vertical
                 direction="right"
+                animation="uncover"
                 visible={this.state.sidebarVisible}
               >
                 <Menu.Item active as="a">
@@ -266,10 +264,7 @@ class App extends Component {
                     off-canvas left sidebar coming in and out of the page, and
                     try to change the viewport size to see right sidebar toggle
                     button. You could check out more wonderful effects here:{" "}
-                    <a
-                      target="_blank"
-                      href="http://semantic-ui.com/modules/sidebar.html#/examples"
-                    >
+                    <a href="http://semantic-ui.com/modules/sidebar.html#/examples">
                       Semantic-UI/sidebar examples
                     </a>
                     .

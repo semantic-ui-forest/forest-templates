@@ -37,10 +37,6 @@ body {
   font-size: 1.2rem;
 }
 
-.ui.mobile.only.grid .ui.fixed.borderless.menu .right.menu button.ui.button {
-  padding: 8px 12px;
-}
-
 .ui.message {
   background-color: rgba(238, 238, 238);
   box-shadow: none;
@@ -86,4 +82,15 @@ button.ui.top.right.attached.button {
 
 footer {
   padding: 24px 0;
+}
+
+/* Note that semantic-ui-react's sidebar's implementation has a bug when
+considering sidebar's width, maybe I can propose a PR for this.
+
+Ref:
+https://github.com/Semantic-Org/Semantic-UI/blob/HEAD/src/definitions/modules/sidebar.js#L217 */
+
+.ui.visible.right.sidebar~.fixed,
+.ui.visible.right.sidebar~.pusher {
+  transform: translate3d(-210px, 0, 0);
 }

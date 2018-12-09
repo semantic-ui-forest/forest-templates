@@ -51,10 +51,6 @@
       font-size: 1.2rem;
     }
 
-    .ui.mobile.only.grid .ui.fixed.borderless.menu .right.menu button.ui.button {
-      padding: 8px 12px;
-    }
-
     .ui.message {
       background-color: rgba(238, 238, 238);
       box-shadow: none;
@@ -87,6 +83,7 @@
     }
 
     .pushable {
+      height: unset;
       overflow-x: visible;
     }
 
@@ -406,6 +403,7 @@
       // toggle right sidebar
       $('.ui.sidebar').sidebar({
         context: $('.pushable'),
+        animation: "slide along",
         dimPage: false
       }).sidebar('attach events', '.ui.top.attached.blue.button');
     });
