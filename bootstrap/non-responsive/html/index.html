@@ -58,143 +58,141 @@
   </style>
 </head>
 
-<body>
-  <div id="root">
-    <div class="ui top fixed borderless menu">
-      <div class="ui container">
-        <div class="header item">Project Name</div>
-        <div class="active item">Home</div>
-        <div class="item">About</div>
-        <div class="item">Contact</div>
-        <div class="ui dropdown item">
-          Dropdown
-          <i class="dropdown icon"></i>
-          <div class="menu">
-            <div class="item">
-              Action
-            </div>
-            <div class="item">
-              Another action
-            </div>
-            <div class="item">
-              Something else here
-            </div>
-            <div class="ui divider"></div>
-            <div class="header">
-              Navbar header
-            </div>
-            <div class="item">
-              Seperated link
-            </div>
-            <div class="item">
-              One more seperated link
-            </div>
+<body id="root">
+  <div class="ui top fixed borderless menu">
+    <div class="ui container">
+      <div class="header item">Project Name</div>
+      <div class="active item">Home</div>
+      <div class="item">About</div>
+      <div class="item">Contact</div>
+      <div class="ui dropdown item">
+        Dropdown
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">
+            Action
           </div>
-        </div>
-        <div class="item">
-          <div class="ui form">
-            <div class="inline field">
-              <input placeholder="Search" type="text" />
-              <button class="ui button" type="submit">
-                Submit
-              </button>
-            </div>
+          <div class="item">
+            Another action
           </div>
-        </div>
-        <div class="right menu">
-          <a class="item" href="#root">Link</a>
-          <a class="item" href="#root">Link</a>
-          <a class="item" href="#root">Link</a>
+          <div class="item">
+            Something else here
+          </div>
+          <div class="ui divider"></div>
+          <div class="header">
+            Navbar header
+          </div>
+          <div class="item">
+            Seperated link
+          </div>
+          <div class="item">
+            One more seperated link
+          </div>
         </div>
       </div>
-    </div>
-    <div class="ui container grid">
-      <div class="row">
-        <div class="ui basic segment">
-          <h1 class="ui huge header">
-            Non-responsive Semantic-UI
-          </h1>
-          <p class="lead">
-            In fact, Semantic-UI's grid system, container and many other
-            components are by default "non-responsive", they will <b>grow</b>
-            or
-            <b>shrink</b> as screen width changes, but they will not stack
-            vertically on a small screen, unless you add "stackable" to it. You
-            can also fix the container's width with simple CSS.
-          </p>
-          <p class="lead">
-            Here are some keywords related to responsiveness:
-          </p>
-          <div class="ui bulleted list">
-            <div class="item">
-              <b>Stackable</b>: stack the items vertically on small screens
-            </div>
-            <div class="item">
-              <b>Doubling</b>: double the items' width on every screen width
-              breakpoint jump
-            </div>
-            <div class="item">
-              <b>Computer, tablet, mobile only</b>: only show the elements on
-              specific devices.
-            </div>
-            <div class="item">
-              <b>Fluid</b>: make the elements take all the possible space
-              horizontally
-            </div>
-            <div class="item">
-              <b>Unstackable</b>: never stack the elements even on small
-              screens
-            </div>
+      <div class="item">
+        <div class="ui form">
+          <div class="inline field">
+            <input placeholder="Search" type="text" />
+            <button class="ui button" type="submit">
+              Submit
+            </button>
           </div>
-          <div class="ui section divider"></div>
-          <h2 class="ui big header">
-            What changes
-          </h2>
-          <p>
-            Note that we have set the container's width to 970px and max-width
-            to
-            none on this page, so on small screens or narrower browser
-            viewport,
-            some contents will be compressed together and not be visible.
-          </p>
-          <h2 class="ui big header">
-            Regarding navbars
-          </h2>
-          <p>
-          </p>
-          <h2 class="ui big header">
-            Browsers, scrolling, and fixed elements
-          </h2>
-          <p>
-            Non-responsive layouts highlight a key drawback to fixed elements.
-            Any fixed component, such as a fixed navbar, will not be scrollable
-            when the viewport becomes narrower than the page content. In other
-            words, given the non-responsive container width of 970px and a
-            viewport of 800px, you'll potentially hide 170px of content.
-          </p>
-          <p>
-            There is no way around this as it's default browser behavior. The
-            only solution is a responsive layout or using a non-fixed element.
-          </p>
-          <h2 class="ui big header">
-            Non-responsive grid system
-          </h2>
-          <div class="ui three column grid">
-            <div class="column">
-              <p>
-                One third
-              </p>
-            </div>
-            <div class="column">
-              <p>
-                One third
-              </p>
-            </div>
-            <div class="column">
-              <p>
-                One third
-              </p>
-            </div>
+        </div>
+      </div>
+      <div class="right menu">
+        <a class="item" href="#root">Link</a>
+        <a class="item" href="#root">Link</a>
+        <a class="item" href="#root">Link</a>
+      </div>
+    </div>
+  </div>
+  <div class="ui container grid">
+    <div class="row">
+      <div class="ui basic segment">
+        <h1 class="ui huge header">
+          Non-responsive Semantic-UI
+        </h1>
+        <p class="lead">
+          In fact, Semantic-UI's grid system, container and many other
+          components are by default "non-responsive", they will <b>grow</b>
+          or
+          <b>shrink</b> as screen width changes, but they will not stack
+          vertically on a small screen, unless you add "stackable" to it. You
+          can also fix the container's width with simple CSS.
+        </p>
+        <p class="lead">
+          Here are some keywords related to responsiveness:
+        </p>
+        <div class="ui bulleted list">
+          <div class="item">
+            <b>Stackable</b>: stack the items vertically on small screens
+          </div>
+          <div class="item">
+            <b>Doubling</b>: double the items' width on every screen width
+            breakpoint jump
+          </div>
+          <div class="item">
+            <b>Computer, tablet, mobile only</b>: only show the elements on
+            specific devices.
+          </div>
+          <div class="item">
+            <b>Fluid</b>: make the elements take all the possible space
+            horizontally
+          </div>
+          <div class="item">
+            <b>Unstackable</b>: never stack the elements even on small
+            screens
+          </div>
+        </div>
+        <div class="ui section divider"></div>
+        <h2 class="ui big header">
+          What changes
+        </h2>
+        <p>
+          Note that we have set the container's width to 970px and max-width
+          to
+          none on this page, so on small screens or narrower browser
+          viewport,
+          some contents will be compressed together and not be visible.
+        </p>
+        <h2 class="ui big header">
+          Regarding navbars
+        </h2>
+        <p>
+        </p>
+        <h2 class="ui big header">
+          Browsers, scrolling, and fixed elements
+        </h2>
+        <p>
+          Non-responsive layouts highlight a key drawback to fixed elements.
+          Any fixed component, such as a fixed navbar, will not be scrollable
+          when the viewport becomes narrower than the page content. In other
+          words, given the non-responsive container width of 970px and a
+          viewport of 800px, you'll potentially hide 170px of content.
+        </p>
+        <p>
+          There is no way around this as it's default browser behavior. The
+          only solution is a responsive layout or using a non-fixed element.
+        </p>
+        <h2 class="ui big header">
+          Non-responsive grid system
+        </h2>
+        <div class="ui three column grid">
+          <div class="column">
+            <p>
+              One third
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              One third
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              One third
+            </p>
           </div>
         </div>
       </div>
