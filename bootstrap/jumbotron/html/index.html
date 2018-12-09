@@ -14,7 +14,6 @@
     type="text/css">
   <style type="text/css">
     .ui.form .inline.fields {
-      margin-top: 8px;
       margin-bottom: 0;
     }
 
@@ -27,33 +26,79 @@
       padding-bottom: 4rem;
     }
 
-    .ui.menu > .ui.container > .header.item {
+    .ui.menu>.ui.container>.header.item {
       font-size: 1.4rem;
       margin-left: -20px;
     }
+
+    .ui.borderless.menu {
+      box-shadow: none;
+      flex-wrap: wrap;
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+      display: none;
+    }
+
   </style>
 </head>
 
 <body id="root">
-  <div class="ui fixed borderless inverted menu">
-    <div class="ui container">
+  <div class="ui tablet computer only padded grid">
+    <div class="ui top fixed borderless inverted fluid menu">
+      <div class="ui container">
+        <a class="header item">Project Name</a>
+        <div class="right menu">
+          <div class="item">
+            <form class="ui form">
+              <div class="inline fields">
+                <div class="field">
+                  <input placeholder="Email" type="text" />
+                </div>
+                <div class="field">
+                  <input placeholder="Password" type="password" />
+                </div>
+                <div class="field">
+                  <button class="ui green button">
+                    Sign in
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui mobile only padded grid">
+    <div class="ui top fixed borderless fluid inverted huge menu">
       <a class="header item">Project Name</a>
       <div class="right menu">
-        <form class="ui form">
-          <div class="inline fields">
+        <div class="item">
+          <button class="ui icon toggle basic inverted button">
+            <i class="content icon"></i>
+          </button>
+        </div>
+      </div>
+      <div class="ui vertical borderless inverted fluid menu">
+        <div class="item">
+          <form class="ui form">
             <div class="field">
               <input placeholder="Email" type="text" />
             </div>
             <div class="field">
-              <input placeholder="Password" type="text" />
+              <input placeholder="Password" type="password" />
             </div>
             <div class="field">
               <button class="ui green button">
                 Sign in
               </button>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -125,6 +170,16 @@
       &copy; 2017 Company, Inc.
     </footer>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.ui.toggle.button').click(function () {
+        $('.mobile.only.grid .ui.vertical.menu').toggle(100);
+      });
+    });
+
+  </script>
 </body>
 
 </html>
