@@ -139,16 +139,16 @@ class App extends Component {
             <Divider inverted section />
             <Image centered size="mini" src="/static/images/logo.png" />
             <List horizontal inverted divided link size="small">
-              <List.Item as="a" href="#">
+              <List.Item as="a" href="#root">
                 Site Map
               </List.Item>
-              <List.Item as="a" href="#">
+              <List.Item as="a" href="#root">
                 Contact Us
               </List.Item>
-              <List.Item as="a" href="#">
+              <List.Item as="a" href="#root">
                 Terms and Conditions
               </List.Item>
-              <List.Item as="a" href="#">
+              <List.Item as="a" href="#root">
                 Privacy Policy
               </List.Item>
             </List>
