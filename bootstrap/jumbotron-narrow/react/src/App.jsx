@@ -9,7 +9,7 @@ import {
   Grid,
   Header,
   Menu,
-  Message,
+  Message
 } from "semantic-ui-react";
 
 import "./App.css";
@@ -33,61 +33,55 @@ class App extends Component {
                 Jumbotron heading
               </Header>
               <p className="lead">
-                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justo sit amet risus.
               </p>
               <Button size="massive" color="green">
                 Sign up today
               </Button>
             </Grid>
           </Message>
-          <Grid stackable padded="very" columns="two">
+          <Grid stackable padded columns="two">
             <Grid.Column>
-              <Header as="h2">
-                Subheading
-              </Header>
+              <Header as="h2">Subheading</Header>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+                Donec id elit non mi porta gravida at eget metus. Maecenas
+                faucibus mollis interdum.
               </p>
-              <Header as="h2">
-                Subheading
-              </Header>
+              <Header as="h2">Subheading</Header>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+                Donec id elit non mi porta gravida at eget metus. Maecenas
+                faucibus mollis interdum.
               </p>
-              <Header as="h2">
-                Subheading
-              </Header>
+              <Header as="h2">Subheading</Header>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+                Donec id elit non mi porta gravida at eget metus. Maecenas
+                faucibus mollis interdum.
               </p>
             </Grid.Column>
             <Grid.Column>
-              <Header as="h2">
-                Subheading
-              </Header>
+              <Header as="h2">Subheading</Header>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+                Donec id elit non mi porta gravida at eget metus. Maecenas
+                faucibus mollis interdum.
               </p>
-              <Header as="h2">
-                Subheading
-              </Header>
+              <Header as="h2">Subheading</Header>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+                Donec id elit non mi porta gravida at eget metus. Maecenas
+                faucibus mollis interdum.
               </p>
-              <Header as="h2">
-                Subheading
-              </Header>
+              <Header as="h2">Subheading</Header>
               <p>
-                Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+                Donec id elit non mi porta gravida at eget metus. Maecenas
+                faucibus mollis interdum.
               </p>
             </Grid.Column>
           </Grid>
           <Divider hidden />
           <Divider hidden />
           <Divider />
-          <footer>
-            &copy; 2017 Company, Inc.
-          </footer>
+          <footer>&copy; 2017 Company, Inc.</footer>
         </Container>
       </div>
     );
