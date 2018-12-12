@@ -17,15 +17,11 @@
       font-size: 4em;
     }
 
-    .ui.fixed.inverted.borderless.menu a.header.item {
-      margin-left: -15px;
-    }
-
     .ui.secondary.compact.menu#badges .item {
       margin: 0;
     }
 
-    .ui.fluid.vertical.menu > .item > .ui.header {
+    .ui.fluid.vertical.menu>.item>.ui.header {
       margin-bottom: 5px;
     }
 
@@ -54,29 +50,117 @@
     .ui.celled.table tr th:first-child {
       border-left: 1px solid rgba(34, 36, 38, .1);
     }
+
+    .ui.borderless.menu {
+      box-shadow: none;
+      flex-wrap: wrap;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+      display: none;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+      float: unset;
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+      content: "\f0d7"
+    }
+
+    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+      position: static;
+      width: 100%;
+      background-color: unset;
+      border: none;
+      box-shadow: none;
+      margin-top: 6px;
+    }
+
+    .ui.mobile.only.grid .ui.inverted.vertical.menu .ui.dropdown.item .menu .header,
+    .ui.mobile.only.grid .ui.inverted.vertical.menu .ui.dropdown.item .menu .item {
+      color: rgba(255, 255, 255, .9) !important;
+    }
+
   </style>
 </head>
 
 <body id="root">
-  <div class="ui fixed inverted borderless huge menu">
-    <div class="ui container">
-      <a class="header item" href="#root">Semantic-UI theme</a>
-      <a class="active item" href="#root">Home</a>
-      <a class="item" href="#root">About</a>
-      <a class="item" href="#root">Contact</a>
-      <div class="ui dropdown item">
-        Dropdown
-        <div class="i dropdown icon"></div>
-        <div class="menu">
-          <a class="item" href="#root">Action</a>
-          <a class="item" href="#root">Another action</a>
-          <a class="item" href="#root">Something else here</a>
-          <div class="ui fitted divider"></div>
-          <div class="header">
-            Nav header
+  <div class="ui tablet computer only padded grid">
+    <div class="ui top fixed inverted borderless menu">
+      <div class="ui container">
+        <a class="header item">Project Name</a>
+        <a class="active item">Home</a>
+        <a class="item">About</a>
+        <a class="item">Contact</a>
+        <a class="ui dropdown item">
+          Dropdown
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">
+              Action
+            </div>
+            <div class="item">
+              Another action
+            </div>
+            <div class="item">
+              Something else here
+            </div>
+            <div class="ui divider"></div>
+            <div class="header">
+              Navbar header
+            </div>
+            <div class="item">
+              Seperated link
+            </div>
+            <div class="item">
+              One more seperated link
+            </div>
           </div>
-          <a class="item" href="#root">Separated link</a>
-          <a class="item" href="#root">One more separated link</a>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="ui mobile only grid">
+    <div class="ui top fixed inverted borderless menu">
+      <a class="header item">Project Name</a>
+      <div class="right menu">
+        <div class="item">
+          <button class="ui icon toggle basic inverted button">
+            <i class="content icon"></i>
+          </button>
+        </div>
+      </div>
+      <div class="ui vertical inverted borderless fluid menu">
+        <a class="active item">Home</a>
+        <a class="item">About</a>
+        <a class="item">Contact</a>
+        <div class="ui dropdown item">
+          Dropdown
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item">
+              Action
+            </a>
+            <a class="item">
+              Another action
+            </a>
+            <a class="item">
+              Something else here
+            </a>
+            <div class="ui divider"></div>
+            <div class="header">
+              Navbar header
+            </div>
+            <a class="item">
+              Seperated link
+            </a>
+            <a class="item">
+              One more seperated link
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -139,7 +223,7 @@
       </h1>
       <div class="ui stackable grid">
         <div class="eight wide column">
-          <table class="ui very basic table">
+          <table class="ui very basic unstackable table">
             <thead>
               <tr>
                 <th>#</th>
@@ -171,7 +255,7 @@
           </table>
         </div>
         <div class="eight wide column">
-          <table class="ui very basic striped table">
+          <table class="ui very basic striped unstackable table">
             <thead>
               <tr>
                 <th>#</th>
@@ -203,7 +287,7 @@
           </table>
         </div>
         <div class="eight wide column ">
-          <table class="ui celled table">
+          <table class="ui celled unstackable table">
             <thead>
               <tr>
                 <th>#</th>
@@ -239,7 +323,7 @@
           </table>
         </div>
         <div class="eight wide column">
-          <table class="ui very basic table">
+          <table class="ui very basic unstackable table">
             <thead>
               <tr>
                 <th>#</th>
@@ -395,43 +479,160 @@
       <h1 class="ui dividing header">
         Navbars
       </h1>
-      <div class="ui borderless menu">
-        <a class="header item" href="#root">Project name</a>
-        <a class="active item" href="#root">Home</a>
-        <a class="item" href="#root">About</a>
-        <a class="item" href="#root">Contact</a>
-        <div class="ui dropdown item">
-          Dropdown
-          <div class="i dropdown icon"></div>
-          <div class="menu">
-            <a class="item" href="#root">Action</a>
-            <a class="item" href="#root">Another action</a>
-            <a class="item" href="#root">Something else here</a>
-            <div class="ui fitted divider"></div>
-            <div class="header">
-              Nav header
-            </div>
-            <a class="item" href="#root">Separated link</a>
-            <a class="item" href="#root">One more separated link</a>
+      <div class="ui tablet computer only padded grid">
+        <div class="ui borderless fluid menu">
+          <div class="ui container">
+            <a class="header item">project name</a>
+            <a class="active item">home</a>
+            <a class="item">about</a>
+            <a class="item">contact</a>
+            <a class="ui dropdown item">
+              dropdown
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item">
+                  action
+                </div>
+                <div class="item">
+                  another action
+                </div>
+                <div class="item">
+                  something else here
+                </div>
+                <div class="ui divider"></div>
+                <div class="header">
+                  navbar header
+                </div>
+                <div class="item">
+                  seperated link
+                </div>
+                <div class="item">
+                  one more seperated link
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      <div class="ui inverted borderless menu">
-        <a class="header item" href="#root">Project Name</a>
-        <a class="active item" href="#root">Home</a>
-        <a class="item" href="#root">About</a>
-        <a class="item" href="#root">Contact</a>
-        <div class="ui dropdown item">
-          Dropdown
-          <div class="i dropdown icon"></div>
-          <div class="menu">
-            <a class="item" href="#root">Action</a>
-            <a class="item" href="#root">Another action</a>
-            <a class="item" href="#root">Something else here</a>
-            <div class="ui fitted divider"></div>
-            <div class="header">Nav header</div>
-            <a class="item" href="#root">Separated link</a>
-            <a class="item" href="#root">One more separated link</a>
+      <div class="ui mobile only padded grid">
+        <div class="ui borderless fluid menu">
+          <a class="header item">project name</a>
+          <div class="right menu">
+            <div class="item">
+              <button class="ui icon toggle basic button">
+                <i class="content icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="ui vertical borderless fluid menu">
+            <a class="active item">home</a>
+            <a class="item">about</a>
+            <a class="item">contact</a>
+            <div class="ui dropdown item">
+              dropdown
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <a class="item">
+                  action
+                </a>
+                <a class="item">
+                  another action
+                </a>
+                <a class="item">
+                  something else here
+                </a>
+                <div class="ui divider"></div>
+                <div class="header">
+                  navbar header
+                </div>
+                <a class="item">
+                  seperated link
+                </a>
+                <a class="item">
+                  one more seperated link
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui hidden divider"></div>
+
+      <div class="ui tablet computer only padded grid">
+        <div class="ui borderless inverted fluid menu">
+          <div class="ui container">
+            <a class="header item">project name</a>
+            <a class="active item">home</a>
+            <a class="item">about</a>
+            <a class="item">contact</a>
+            <a class="ui dropdown item">
+              dropdown
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item">
+                  action
+                </div>
+                <div class="item">
+                  another action
+                </div>
+                <div class="item">
+                  something else here
+                </div>
+                <div class="ui divider"></div>
+                <div class="header">
+                  navbar header
+                </div>
+                <div class="item">
+                  seperated link
+                </div>
+                <div class="item">
+                  one more seperated link
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="ui mobile only padded grid">
+        <div class="ui borderless inverted fluid menu">
+          <a class="header item">project name</a>
+          <div class="right menu">
+            <div class="item">
+              <button class="ui icon toggle inverted basic button">
+                <i class="content icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="ui vertical borderless inverted fluid menu">
+            <a class="active item">home</a>
+            <a class="item">about</a>
+            <a class="item">contact</a>
+            <div class="ui dropdown item">
+              dropdown
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <a class="item">
+                  action
+                </a>
+                <a class="item">
+                  another action
+                </a>
+                <a class="item">
+                  something else here
+                </a>
+                <div class="ui divider"></div>
+                <div class="header">
+                  navbar header
+                </div>
+                <a class="item">
+                  seperated link
+                </a>
+                <a class="item">
+                  one more seperated link
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -485,7 +686,7 @@
       <h1 class="ui dividing header">
         List groups
       </h1>
-      <div class="ui three column grid">
+      <div class="ui three column stackable grid">
         <div class="column">
           <div class="ui fluid vertical menu">
             <a class="item">
@@ -554,7 +755,7 @@
       <h1 class="ui dividing header">
         Panels
       </h1>
-      <div class="ui three column grid">
+      <div class="ui three column stackable grid">
         <div class="column">
           <div class="ui top attached message">
             Panel title
@@ -626,13 +827,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.ui.dropdown').dropdown({
-        on: 'click'
+      $('.ui.toggle.button').click(function () {
+        let menu = $(this).parent().parent().parent();
+        $('.ui.vertical.menu', menu).toggle(100);
       });
+
+      $('.ui.dropdown').dropdown();
+
       $('.ui.progress').progress({
         showActivity: false
       });
     });
+
   </script>
 </body>
 
