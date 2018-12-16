@@ -9,6 +9,7 @@ import {
   Dropdown,
   Grid,
   Header,
+  Icon,
   Image,
   Label,
   Menu,
@@ -21,41 +22,116 @@ import {
 import "./App.css";
 
 class App extends Component {
+  state = {
+    dropdownMenuStyle: {
+      topNavbar: {
+        display: "none"
+      },
+      firstNavbar: {
+        display: "none"
+      },
+      secondNavbar: {
+        display: "none"
+      }
+    }
+  };
+
+  handleToggleDropdownMenu = navKey => {
+    let newState = Object.assign({}, this.state);
+    if (newState.dropdownMenuStyle[navKey].display === "none") {
+      newState.dropdownMenuStyle[navKey] = { display: "flex" };
+    } else {
+      newState.dropdownMenuStyle[navKey] = { display: "none" };
+    }
+
+    this.setState(newState);
+  };
+
   render() {
     return (
       <div className="App">
-        <Menu borderless inverted fixed="top" size="huge">
-          <Container>
-            <Menu.Item header as="a" href="#root">
-              Semantic-UI theme
+        <Grid padded className="tablet computer only">
+          <Menu borderless inverted fixed="top">
+            <Container>
+              <Menu.Item header as="a" href="#root">
+                Project Name
+              </Menu.Item>
+              <Menu.Item active as="a" href="#root">
+                Home
+              </Menu.Item>
+              <Menu.Item as="a" href="#root">
+                About
+              </Menu.Item>
+              <Menu.Item as="a" href="#root">
+                Contact
+              </Menu.Item>
+              <Dropdown item text="Dropdown">
+                <Dropdown.Menu>
+                  <Dropdown.Item as="a" href="#root">
+                    Action
+                  </Dropdown.Item>
+                  <Dropdown.Item as="a" href="#root">
+                    Another Action
+                  </Dropdown.Item>
+                  <Dropdown.Item as="a" href="#root">
+                    Something else here
+                  </Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item as="a" href="#root">
+                    Separated link
+                  </Dropdown.Item>
+                  <Dropdown.Item as="a" href="#root">
+                    One more separated link
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Container>
+          </Menu>
+        </Grid>
+        <Grid padded className="mobile only">
+          <Menu borderless inverted fixed="top">
+            <Menu.Item header as="a">
+              Project Name
             </Menu.Item>
-            <Menu.Item active as="a" href="#root">
-              Home
-            </Menu.Item>
-            <Menu.Item as="a" href="#root">About</Menu.Item>
-            <Menu.Item as="a" href="#root">Contact</Menu.Item>
-            <Dropdown item text="Dropdown">
-              <Dropdown.Menu>
-                <Dropdown.Item as="a" href="#root">
-                  Action
-                </Dropdown.Item>
-                <Dropdown.Item as="a" href="#root">
-                  Another Action
-                </Dropdown.Item>
-                <Dropdown.Item as="a" href="#root">
-                  Something else here
-                </Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item as="a" href="#root">
-                  Separated link
-                </Dropdown.Item>
-                <Dropdown.Item as="a" href="#root">
-                  One more separated link
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </Container>
-        </Menu>
+            <Menu.Menu position="right">
+              <Menu.Item>
+                <Button
+                  icon
+                  basic
+                  inverted
+                  toggle
+                  onClick={() => this.handleToggleDropdownMenu("topNavbar")}
+                >
+                  <Icon name="content" />
+                </Button>
+              </Menu.Item>
+            </Menu.Menu>
+            <Menu
+              vertical
+              inverted
+              borderless
+              fluid
+              style={this.state.dropdownMenuStyle.topNavbar}
+            >
+              <Menu.Item active as="a">
+                Home
+              </Menu.Item>
+              <Menu.Item as="a">About</Menu.Item>
+              <Menu.Item as="a">Contact</Menu.Item>
+              <Dropdown text="Dropdown" className="item">
+                <Dropdown.Menu>
+                  <Dropdown.Item as="a">Action</Dropdown.Item>
+                  <Dropdown.Item as="a">Another action</Dropdown.Item>
+                  <Dropdown.Item as="a">Something else here</Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Header>Navbar header</Dropdown.Header>
+                  <Dropdown.Item as="a">Seperated link</Dropdown.Item>
+                  <Dropdown.Item as="a">One more seperated link</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Menu>
+          </Menu>
+        </Grid>
         <div id="content">
           <Container>
             <Message className="jumbotron">
@@ -160,7 +236,7 @@ class App extends Component {
             </Header>
             <Grid stackable>
               <Grid.Column width={8}>
-                <Table basic="very">
+                <Table unstackable basic="very">
                   <Table.Header>
                     <Table.Row>
                       <Table.HeaderCell>#</Table.HeaderCell>
@@ -192,7 +268,7 @@ class App extends Component {
                 </Table>
               </Grid.Column>
               <Grid.Column width={8}>
-                <Table basic="very" striped>
+                <Table unstackable basic="very" striped>
                   <Table.Header>
                     <Table.Row>
                       <Table.HeaderCell>#</Table.HeaderCell>
@@ -224,7 +300,7 @@ class App extends Component {
                 </Table>
               </Grid.Column>
               <Grid.Column width={8}>
-                <Table celled>
+                <Table unstackable celled>
                   <Table.Header>
                     <Table.Row>
                       <Table.HeaderCell>#</Table.HeaderCell>
@@ -260,7 +336,7 @@ class App extends Component {
                 </Table>
               </Grid.Column>
               <Grid.Column width={8}>
-                <Table basic="very">
+                <Table unstackable basic="very">
                   <Table.Header>
                     <Table.Row>
                       <Table.HeaderCell>#</Table.HeaderCell>
@@ -515,69 +591,179 @@ class App extends Component {
             <Header dividing as="h1">
               Navbars
             </Header>
-            <Menu borderless>
-              <Menu.Item header href="#root">
-                Project name
-              </Menu.Item>
-              <Menu.Item active href="#root">
-                Home
-              </Menu.Item>
-              <Menu.Item href="#root">About</Menu.Item>
-              <Menu.Item href="#root">Contact</Menu.Item>
-              <Dropdown item text="Dropdown">
-                <Dropdown.Menu>
-                  <Dropdown.Item as="a" href="#root">
-                    Action
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    Another Action
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    Something else here
-                  </Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Header>Nav header</Dropdown.Header>
-                  <Dropdown.Item as="a" href="#root">
-                    Separated link
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    One more separated link
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Menu>
-            <Menu inverted borderless>
-              <Menu.Item header href="#root">
-                Project name
-              </Menu.Item>
-              <Menu.Item active href="#root">
-                Home
-              </Menu.Item>
-              <Menu.Item href="#root">About</Menu.Item>
-              <Menu.Item href="#root">Contact</Menu.Item>
-              <Dropdown item text="Dropdown">
-                <Dropdown.Menu>
-                  <Dropdown.Item as="a" href="#root">
-                    Action
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    Another Action
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    Something else here
-                  </Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Header>Nav header</Dropdown.Header>
-                  <Dropdown.Item as="a" href="#root">
-                    Separated link
-                  </Dropdown.Item>
-                  <Dropdown.Item as="a" href="#root">
-                    One more separated link
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Menu>
+            <Grid padded className="tablet computer only">
+              <Menu borderless inverted fluid>
+                <Container>
+                  <Menu.Item header as="a" href="#root">
+                    Project Name
+                  </Menu.Item>
+                  <Menu.Item active as="a" href="#root">
+                    Home
+                  </Menu.Item>
+                  <Menu.Item as="a" href="#root">
+                    About
+                  </Menu.Item>
+                  <Menu.Item as="a" href="#root">
+                    Contact
+                  </Menu.Item>
+                  <Dropdown item text="Dropdown">
+                    <Dropdown.Menu>
+                      <Dropdown.Item as="a" href="#root">
+                        Action
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        Another Action
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        Something else here
+                      </Dropdown.Item>
+                      <Dropdown.Divider />
+                      <Dropdown.Item as="a" href="#root">
+                        Separated link
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        One more separated link
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Container>
+              </Menu>
+            </Grid>
+            <Grid padded className="mobile only">
+              <Menu borderless inverted fluid>
+                <Menu.Item header as="a">
+                  Project Name
+                </Menu.Item>
+                <Menu.Menu position="right">
+                  <Menu.Item>
+                    <Button
+                      icon
+                      basic
+                      inverted
+                      toggle
+                      onClick={() =>
+                        this.handleToggleDropdownMenu("firstNavbar")
+                      }
+                    >
+                      <Icon name="content" />
+                    </Button>
+                  </Menu.Item>
+                </Menu.Menu>
+                <Menu
+                  vertical
+                  inverted
+                  borderless
+                  fluid
+                  style={this.state.dropdownMenuStyle.firstNavbar}
+                >
+                  <Menu.Item active as="a">
+                    Home
+                  </Menu.Item>
+                  <Menu.Item as="a">About</Menu.Item>
+                  <Menu.Item as="a">Contact</Menu.Item>
+                  <Dropdown text="Dropdown" className="item">
+                    <Dropdown.Menu>
+                      <Dropdown.Item as="a">Action</Dropdown.Item>
+                      <Dropdown.Item as="a">Another action</Dropdown.Item>
+                      <Dropdown.Item as="a">Something else here</Dropdown.Item>
+                      <Dropdown.Divider />
+                      <Dropdown.Header>Navbar header</Dropdown.Header>
+                      <Dropdown.Item as="a">Seperated link</Dropdown.Item>
+                      <Dropdown.Item as="a">
+                        One more seperated link
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Menu>
+              </Menu>
+            </Grid>
 
+            <Divider hidden />
+
+            <Grid padded className="tablet computer only">
+              <Menu borderless fluid>
+                <Container>
+                  <Menu.Item header as="a" href="#root">
+                    Project Name
+                  </Menu.Item>
+                  <Menu.Item active as="a" href="#root">
+                    Home
+                  </Menu.Item>
+                  <Menu.Item as="a" href="#root">
+                    About
+                  </Menu.Item>
+                  <Menu.Item as="a" href="#root">
+                    Contact
+                  </Menu.Item>
+                  <Dropdown item text="Dropdown">
+                    <Dropdown.Menu>
+                      <Dropdown.Item as="a" href="#root">
+                        Action
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        Another Action
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        Something else here
+                      </Dropdown.Item>
+                      <Dropdown.Divider />
+                      <Dropdown.Item as="a" href="#root">
+                        Separated link
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        One more separated link
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Container>
+              </Menu>
+            </Grid>
+            <Grid padded className="mobile only">
+              <Menu borderless fluid>
+                <Menu.Item header as="a">
+                  Project Name
+                </Menu.Item>
+                <Menu.Menu position="right">
+                  <Menu.Item>
+                    <Button
+                      icon
+                      basic
+                      toggle
+                      onClick={() =>
+                        this.handleToggleDropdownMenu("secondNavbar")
+                      }
+                    >
+                      <Icon name="content" />
+                    </Button>
+                  </Menu.Item>
+                </Menu.Menu>
+                <Menu
+                  vertical
+                  borderless
+                  fluid
+                  style={this.state.dropdownMenuStyle.secondNavbar}
+                >
+                  <Menu.Item active as="a">
+                    Home
+                  </Menu.Item>
+                  <Menu.Item as="a">About</Menu.Item>
+                  <Menu.Item as="a">Contact</Menu.Item>
+                  <Dropdown text="Dropdown" className="item">
+                    <Dropdown.Menu>
+                      <Dropdown.Item as="a">Action</Dropdown.Item>
+                      <Dropdown.Item as="a">Another action</Dropdown.Item>
+                      <Dropdown.Item as="a">Something else here</Dropdown.Item>
+                      <Dropdown.Divider />
+                      <Dropdown.Header>Navbar header</Dropdown.Header>
+                      <Dropdown.Item as="a">Seperated link</Dropdown.Item>
+                      <Dropdown.Item as="a">
+                        One more seperated link
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Menu>
+              </Menu>
+            </Grid>
             <Header dividing as="h1">
               Alerts
             </Header>

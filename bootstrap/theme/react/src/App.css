@@ -2,15 +2,11 @@
   font-size: 4em;
 }
 
-.ui.fixed.inverted.borderless.menu .header.item {
-  margin-left: -15px;
-}
-
 .ui.secondary.compact.menu#badges .item {
   margin: 0;
 }
 
-.ui.fluid.vertical.menu > .item > .ui.header {
+.ui.fluid.vertical.menu>.item>.ui.header {
   margin-bottom: 5px;
 }
 
@@ -38,4 +34,37 @@
 .ui.celled.table tr td:first-child,
 .ui.celled.table tr th:first-child {
   border-left: 1px solid rgba(34, 36, 38, .1);
+}
+
+.ui.borderless.menu {
+  box-shadow: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+  display: none;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+  float: unset;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+  content: "\f0d7"
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  position: static;
+  width: 100%;
+  background-color: unset;
+  border: none;
+  box-shadow: none;
+  margin-top: 6px;
+}
+
+.ui.mobile.only.grid .ui.inverted.vertical.menu .ui.dropdown.item .menu .header,
+.ui.mobile.only.grid .ui.inverted.vertical.menu .ui.dropdown.item .menu .item {
+  color: rgba(255, 255, 255, .9) !important;
 }
