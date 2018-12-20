@@ -21,13 +21,13 @@ class App extends Component {
         <Container>
           <Menu borderless size="massive">
             <Menu.Item header>Project Name</Menu.Item>
-            <Menu.Menu secondary position="right">
+            <Menu.Menu position="right">
               <Menu.Item active>Home</Menu.Item>
               <Menu.Item>About</Menu.Item>
               <Menu.Item>Contact</Menu.Item>
             </Menu.Menu>
           </Menu>
-          <Message textAlign="center">
+          <Message>
             <Grid textAlign="center">
               <Header size="huge" as="h1">
                 Jumbotron heading
