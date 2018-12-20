@@ -50,7 +50,7 @@ class App extends Component {
             <Menu.Item>
               <Form>
                 <Form.Field inline>
-                  <Form.Input placeholder="Search" type="text" as="input" />
+                  <input placeholder="Search" type="text" />
                   {' '}
                   <Button type="submit">Submit</Button>
                 </Form.Field>
