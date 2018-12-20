@@ -34,7 +34,7 @@ class App extends Component {
               <Form.Field>
                 <Checkbox label="Remember me" />
               </Form.Field>
-              <Button primary fluid submit size="large">
+              <Button primary fluid size="large" type="submit">
                 Sign in
               </Button>
             </Form>
