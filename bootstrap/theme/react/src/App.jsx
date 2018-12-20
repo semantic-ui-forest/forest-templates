@@ -147,85 +147,85 @@ class App extends Component {
               Buttons
             </Header>
             <p>
-              <Button size="large">Default</Button>
+              <Button size="large">Default</Button>{" "}
               <Button size="large" primary>
                 Primary
-              </Button>
+              </Button>{" "}
               <Button size="large" color="green">
                 Success
-              </Button>
+              </Button>{" "}
               <Button size="large" color="teal">
                 Teal
-              </Button>
+              </Button>{" "}
               <Button size="large" color="orange">
                 Warning
-              </Button>
+              </Button>{" "}
               <Button size="large" color="red">
                 Danger
-              </Button>
+              </Button>{" "}
               <Button size="large" basic>
                 Link
               </Button>
             </p>
             <p>
-              <Button size="medium">Default</Button>
+              <Button size="medium">Default</Button>{" "}
               <Button size="medium" primary>
                 Primary
-              </Button>
+              </Button>{" "}
               <Button size="medium" color="green">
                 Success
-              </Button>
+              </Button>{" "}
               <Button size="medium" color="teal">
                 Teal
-              </Button>
+              </Button>{" "}
               <Button size="medium" color="orange">
                 Warning
-              </Button>
+              </Button>{" "}
               <Button size="medium" color="red">
                 Danger
-              </Button>
+              </Button>{" "}
               <Button size="medium" basic>
                 Link
               </Button>
             </p>
             <p>
-              <Button size="small">Default</Button>
+              <Button size="small">Default</Button>{" "}
               <Button size="small" primary>
                 Primary
-              </Button>
+              </Button>{" "}
               <Button size="small" color="green">
                 Success
-              </Button>
+              </Button>{" "}
               <Button size="small" color="teal">
                 Teal
-              </Button>
+              </Button>{" "}
               <Button size="small" color="orange">
                 Warning
-              </Button>
+              </Button>{" "}
               <Button size="small" color="red">
                 Danger
-              </Button>
+              </Button>{" "}
               <Button size="small" basic>
                 Link
               </Button>
             </p>
             <p>
-              <Button size="mini">Default</Button>
+              <Button size="mini">Default</Button>{" "}
               <Button size="mini" primary>
                 Primary
-              </Button>
+              </Button>{" "}
               <Button size="mini" color="green">
                 Success
-              </Button>
+              </Button>{" "}
               <Button size="mini" color="teal">
                 Teal
-              </Button>
+              </Button>{" "}
               <Button size="mini" color="orange">
                 Warning
-              </Button>
+              </Button>{" "}
               <Button size="mini" color="red">
                 Danger
-              </Button>
+              </Button>{" "}
               <Button size="mini" basic>
                 Link
               </Button>
@@ -380,146 +380,162 @@ class App extends Component {
               Labels
             </Header>
             <p>
-              <Label size="massive">Default</Label>
-              <Label size="massive" color="blue">
+              <Label size="massive" as="span">
+                Default
+              </Label>{" "}
+              <Label size="massive" color="blue" as="span">
                 Primary
-              </Label>
-              <Label size="massive" color="green">
+              </Label>{" "}
+              <Label size="massive" color="green" as="span">
                 Success
-              </Label>
-              <Label size="massive" color="teal">
+              </Label>{" "}
+              <Label size="massive" color="teal" as="span">
                 Info
-              </Label>
-              <Label size="massive" color="orange">
+              </Label>{" "}
+              <Label size="massive" color="orange" as="span">
                 Warning
-              </Label>
-              <Label size="massive" color="red">
+              </Label>{" "}
+              <Label size="massive" color="red" as="span">
                 Danger
               </Label>
             </p>
             <p>
-              <Label size="huge">Default</Label>
-              <Label size="huge" color="blue">
+              <Label size="huge" as="span">
+                Default
+              </Label>{" "}
+              <Label size="huge" color="blue" as="span">
                 Primary
-              </Label>
-              <Label size="huge" color="green">
+              </Label>{" "}
+              <Label size="huge" color="green" as="span">
                 Success
-              </Label>
-              <Label size="huge" color="teal">
+              </Label>{" "}
+              <Label size="huge" color="teal" as="span">
                 Info
-              </Label>
-              <Label size="huge" color="orange">
+              </Label>{" "}
+              <Label size="huge" color="orange" as="span">
                 Warning
-              </Label>
-              <Label size="huge" color="red">
+              </Label>{" "}
+              <Label size="huge" color="red" as="span">
                 Danger
               </Label>
             </p>
             <p>
-              <Label size="big">Default</Label>
-              <Label size="big" color="blue">
+              <Label size="big" as="span">
+                Default
+              </Label>{" "}
+              <Label size="big" color="blue" as="span">
                 Primary
-              </Label>
-              <Label size="big" color="green">
+              </Label>{" "}
+              <Label size="big" color="green" as="span">
                 Success
-              </Label>
-              <Label size="big" color="teal">
+              </Label>{" "}
+              <Label size="big" color="teal" as="span">
                 Info
-              </Label>
-              <Label size="big" color="orange">
+              </Label>{" "}
+              <Label size="big" color="orange" as="span">
                 Warning
-              </Label>
-              <Label size="big" color="red">
+              </Label>{" "}
+              <Label size="big" color="red" as="span">
                 Danger
               </Label>
             </p>
             <p>
-              <Label size="large">Default</Label>
-              <Label size="large" color="blue">
+              <Label size="large" as="span">
+                Default
+              </Label>{" "}
+              <Label size="large" color="blue" as="span">
                 Primary
-              </Label>
-              <Label size="large" color="green">
+              </Label>{" "}
+              <Label size="large" color="green" as="span">
                 Success
-              </Label>
-              <Label size="large" color="teal">
+              </Label>{" "}
+              <Label size="large" color="teal" as="span">
                 Info
-              </Label>
-              <Label size="large" color="orange">
+              </Label>{" "}
+              <Label size="large" color="orange" as="span">
                 Warning
-              </Label>
-              <Label size="large" color="red">
+              </Label>{" "}
+              <Label size="large" color="red" as="span">
                 Danger
               </Label>
             </p>
             <p>
-              <Label size="medium">Default</Label>
-              <Label size="medium" color="blue">
+              <Label size="medium" as="span">
+                Default
+              </Label>{" "}
+              <Label size="medium" color="blue" as="span">
                 Primary
-              </Label>
-              <Label size="medium" color="green">
+              </Label>{" "}
+              <Label size="medium" color="green" as="span">
                 Success
-              </Label>
-              <Label size="medium" color="teal">
+              </Label>{" "}
+              <Label size="medium" color="teal" as="span">
                 Info
-              </Label>
-              <Label size="medium" color="orange">
+              </Label>{" "}
+              <Label size="medium" color="orange" as="span">
                 Warning
-              </Label>
-              <Label size="medium" color="red">
+              </Label>{" "}
+              <Label size="medium" color="red" as="span">
                 Danger
               </Label>
             </p>
             <p>
-              <Label size="small">Default</Label>
-              <Label size="small" color="blue">
+              <Label size="small" as="span">
+                Default
+              </Label>{" "}
+              <Label size="small" color="blue" as="span">
                 Primary
-              </Label>
-              <Label size="small" color="green">
+              </Label>{" "}
+              <Label size="small" color="green" as="span">
                 Success
-              </Label>
-              <Label size="small" color="teal">
+              </Label>{" "}
+              <Label size="small" color="teal" as="span">
                 Info
-              </Label>
-              <Label size="small" color="orange">
+              </Label>{" "}
+              <Label size="small" color="orange" as="span">
                 Warning
-              </Label>
-              <Label size="small" color="red">
+              </Label>{" "}
+              <Label size="small" color="red" as="span">
                 Danger
               </Label>
             </p>
             <p>
-              <Label size="tiny">Default</Label>
-              <Label size="tiny" color="blue">
+              <Label size="tiny" as="span">
+                Default
+              </Label>{" "}
+              <Label size="tiny" color="blue" as="span">
                 Primary
-              </Label>
-              <Label size="tiny" color="green">
+              </Label>{" "}
+              <Label size="tiny" color="green" as="span">
                 Success
-              </Label>
-              <Label size="tiny" color="teal">
+              </Label>{" "}
+              <Label size="tiny" color="teal" as="span">
                 Info
-              </Label>
-              <Label size="tiny" color="orange">
+              </Label>{" "}
+              <Label size="tiny" color="orange" as="span">
                 Warning
-              </Label>
-              <Label size="tiny" color="red">
+              </Label>{" "}
+              <Label size="tiny" color="red" as="span">
                 Danger
               </Label>
             </p>
             <p>
-              <Label size="mini">Default</Label>
-              <Label size="mini" color="blue">
+              <Label size="mini" as="span">
+                Default
+              </Label>{" "}
+              <Label size="mini" color="blue" as="span">
                 Primary
-              </Label>
-              <Label size="mini" color="green">
+              </Label>{" "}
+              <Label size="mini" color="green" as="span">
                 Success
-              </Label>
-              <Label size="mini" color="teal">
+              </Label>{" "}
+              <Label size="mini" color="teal" as="span">
                 Info
-              </Label>
-              <Label size="mini" color="orange">
+              </Label>{" "}
+              <Label size="mini" color="orange" as="span">
                 Warning
-              </Label>
-              <Label size="mini" color="red">
+              </Label>{" "}
+              <Label size="mini" color="red" as="span">
                 Danger
               </Label>
             </p>
@@ -528,27 +544,27 @@ class App extends Component {
               Badges
             </Header>
             <a className="item" href="#root">
-              Inbox
+              Inbox{" "}
               <Label circular size="small">
                 42
               </Label>
             </a>
             <p />
             <Menu secondary compact>
-              <Menu.Item as="a" href="#root">
-                Home
+              <Menu.Item active as="a" href="#root">
+                Home{" "}
                 <Label size="small" circular>
                   42
                 </Label>
               </Menu.Item>
               <Menu.Item as="a" href="#root">
-                Profile
+                Profile{" "}
                 <Label size="small" circular>
                   53
                 </Label>
               </Menu.Item>
               <Menu.Item as="a" href="#root">
-                Messages
+                Messages{" "}
                 <Label size="small" circular>
                   3
                 </Label>
@@ -578,19 +594,107 @@ class App extends Component {
                 Home
               </Menu.Item>
               <Menu.Item as="a">Profile</Menu.Item>
-              <Menu.Item as="a">Message</Menu.Item>
+              <Menu.Item as="a">Messages</Menu.Item>
             </Menu>
             <Menu secondary>
               <Menu.Item as="a" active>
                 Home
               </Menu.Item>
               <Menu.Item as="a">Profile</Menu.Item>
-              <Menu.Item as="a">Message</Menu.Item>
+              <Menu.Item as="a">Messages</Menu.Item>
             </Menu>
 
             <Header dividing as="h1">
               Navbars
             </Header>
+
+            <Grid padded className="tablet computer only">
+              <Menu borderless fluid>
+                <Container>
+                  <Menu.Item header as="a" href="#root">
+                    Project Name
+                  </Menu.Item>
+                  <Menu.Item active as="a" href="#root">
+                    Home
+                  </Menu.Item>
+                  <Menu.Item as="a" href="#root">
+                    About
+                  </Menu.Item>
+                  <Menu.Item as="a" href="#root">
+                    Contact
+                  </Menu.Item>
+                  <Dropdown item text="Dropdown">
+                    <Dropdown.Menu>
+                      <Dropdown.Item as="a" href="#root">
+                        Action
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        Another Action
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        Something else here
+                      </Dropdown.Item>
+                      <Dropdown.Divider />
+                      <Dropdown.Item as="a" href="#root">
+                        Separated link
+                      </Dropdown.Item>
+                      <Dropdown.Item as="a" href="#root">
+                        One more separated link
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Container>
+              </Menu>
+            </Grid>
+            <Grid padded className="mobile only">
+              <Menu borderless fluid>
+                <Menu.Item header as="a">
+                  Project Name
+                </Menu.Item>
+                <Menu.Menu position="right">
+                  <Menu.Item>
+                    <Button
+                      icon
+                      basic
+                      toggle
+                      onClick={() =>
+                        this.handleToggleDropdownMenu("secondNavbar")
+                      }
+                    >
+                      <Icon name="content" />
+                    </Button>
+                  </Menu.Item>
+                </Menu.Menu>
+                <Menu
+                  vertical
+                  borderless
+                  fluid
+                  style={this.state.dropdownMenuStyle.secondNavbar}
+                >
+                  <Menu.Item active as="a">
+                    Home
+                  </Menu.Item>
+                  <Menu.Item as="a">About</Menu.Item>
+                  <Menu.Item as="a">Contact</Menu.Item>
+                  <Dropdown text="Dropdown" className="item">
+                    <Dropdown.Menu>
+                      <Dropdown.Item as="a">Action</Dropdown.Item>
+                      <Dropdown.Item as="a">Another action</Dropdown.Item>
+                      <Dropdown.Item as="a">Something else here</Dropdown.Item>
+                      <Dropdown.Divider />
+                      <Dropdown.Header>Navbar header</Dropdown.Header>
+                      <Dropdown.Item as="a">Seperated link</Dropdown.Item>
+                      <Dropdown.Item as="a">
+                        One more seperated link
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Menu>
+              </Menu>
+            </Grid>
+
+            <Divider hidden />
+
             <Grid padded className="tablet computer only">
               <Menu borderless inverted fluid>
                 <Container>
@@ -678,92 +782,6 @@ class App extends Component {
               </Menu>
             </Grid>
 
-            <Divider hidden />
-
-            <Grid padded className="tablet computer only">
-              <Menu borderless fluid>
-                <Container>
-                  <Menu.Item header as="a" href="#root">
-                    Project Name
-                  </Menu.Item>
-                  <Menu.Item active as="a" href="#root">
-                    Home
-                  </Menu.Item>
-                  <Menu.Item as="a" href="#root">
-                    About
-                  </Menu.Item>
-                  <Menu.Item as="a" href="#root">
-                    Contact
-                  </Menu.Item>
-                  <Dropdown item text="Dropdown">
-                    <Dropdown.Menu>
-                      <Dropdown.Item as="a" href="#root">
-                        Action
-                      </Dropdown.Item>
-                      <Dropdown.Item as="a" href="#root">
-                        Another Action
-                      </Dropdown.Item>
-                      <Dropdown.Item as="a" href="#root">
-                        Something else here
-                      </Dropdown.Item>
-                      <Dropdown.Divider />
-                      <Dropdown.Item as="a" href="#root">
-                        Separated link
-                      </Dropdown.Item>
-                      <Dropdown.Item as="a" href="#root">
-                        One more separated link
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </Container>
-              </Menu>
-            </Grid>
-            <Grid padded className="mobile only">
-              <Menu borderless fluid>
-                <Menu.Item header as="a">
-                  Project Name
-                </Menu.Item>
-                <Menu.Menu position="right">
-                  <Menu.Item>
-                    <Button
-                      icon
-                      basic
-                      toggle
-                      onClick={() =>
-                        this.handleToggleDropdownMenu("secondNavbar")
-                      }
-                    >
-                      <Icon name="content" />
-                    </Button>
-                  </Menu.Item>
-                </Menu.Menu>
-                <Menu
-                  vertical
-                  borderless
-                  fluid
-                  style={this.state.dropdownMenuStyle.secondNavbar}
-                >
-                  <Menu.Item active as="a">
-                    Home
-                  </Menu.Item>
-                  <Menu.Item as="a">About</Menu.Item>
-                  <Menu.Item as="a">Contact</Menu.Item>
-                  <Dropdown text="Dropdown" className="item">
-                    <Dropdown.Menu>
-                      <Dropdown.Item as="a">Action</Dropdown.Item>
-                      <Dropdown.Item as="a">Another action</Dropdown.Item>
-                      <Dropdown.Item as="a">Something else here</Dropdown.Item>
-                      <Dropdown.Divider />
-                      <Dropdown.Header>Navbar header</Dropdown.Header>
-                      <Dropdown.Item as="a">Seperated link</Dropdown.Item>
-                      <Dropdown.Item as="a">
-                        One more seperated link
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </Menu>
-              </Menu>
-            </Grid>
             <Header dividing as="h1">
               Alerts
             </Header>
@@ -877,7 +895,7 @@ class App extends Component {
                 <Segment attached="bottom">Panel content</Segment>
               </Grid.Column>
               <Grid.Column>
-                <Message attached="top" inverted>
+                <Message attached="top" color="black">
                   Panel title
                 </Message>
                 <Segment attached="bottom">Panel content</Segment>
