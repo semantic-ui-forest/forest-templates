@@ -122,10 +122,6 @@ class App extends Component {
                 not be visible.
               </p>
               <Header size="huge" as="h2">
-                Regarding navbars
-              </Header>
-              <p />
-              <Header size="huge" as="h2">
                 Browsers, scrolling, and fixed elements
               </Header>
               <p>
