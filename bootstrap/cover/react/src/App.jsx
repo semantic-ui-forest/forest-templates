@@ -30,7 +30,7 @@ class App extends Component {
               home pages. Download, edit the text, and add your own fullscreen
               background photo to make it your own.
             </p>
-            <Button color="white" size="huge">
+            <Button size="huge">
               Learn more
             </Button>
           </Container>
