@@ -135,7 +135,7 @@ class App extends Component {
         <div id="content">
           <Container>
             <Message className="jumbotron">
-              <Header size="massive">Theme example</Header>
+              <Header size="huge">Theme example</Header>
               <p>
                 This is a template showcasing the optional theme stylesheet
                 included in Semantic-UI. Use it as a starting point to create
@@ -311,7 +311,7 @@ class App extends Component {
                   </Table.Header>
                   <Table.Body>
                     <Table.Row>
-                      <Table.Cell rowspan="2">1</Table.Cell>
+                      <Table.Cell rowSpan="2">1</Table.Cell>
                       <Table.Cell>Mark</Table.Cell>
                       <Table.Cell>Otto</Table.Cell>
                       <Table.Cell>@mdo</Table.Cell>
@@ -329,7 +329,7 @@ class App extends Component {
                     </Table.Row>
                     <Table.Row>
                       <Table.Cell>3</Table.Cell>
-                      <Table.Cell colspan="2">Larry tde Bird</Table.Cell>
+                      <Table.Cell colSpan="2">Larry tde Bird</Table.Cell>
                       <Table.Cell>@twitter</Table.Cell>
                     </Table.Row>
                   </Table.Body>
@@ -360,7 +360,7 @@ class App extends Component {
                     </Table.Row>
                     <Table.Row>
                       <Table.Cell>3</Table.Cell>
-                      <Table.Cell colspan="2">Larry tde Bird</Table.Cell>
+                      <Table.Cell colSpan="2">Larry tde Bird</Table.Cell>
                       <Table.Cell>@twitter</Table.Cell>
                     </Table.Row>
                   </Table.Body>
