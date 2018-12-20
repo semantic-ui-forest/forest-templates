@@ -55,7 +55,7 @@ class App extends Component {
                 supported and styled with Semantic-UI. Basic typesetting, list,
                 and code are all supported.
               </p>
-              <div class="ui divider" />
+              <Divider />
               <p>
                 Cum sociis natoque penatibus et magnis{" "}
                 <a href="#root">dis parturient montes</a>, nascetur ridiculus
