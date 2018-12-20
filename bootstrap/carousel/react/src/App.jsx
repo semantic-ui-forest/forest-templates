@@ -220,7 +220,7 @@ class App extends Component {
               <Grid.Column width={10}>
                 <Header as="h1">
                   First featurette heading.{" "}
-                  <span class="sub">It'll blow your mind.</span>
+                  <span className="sub">It'll blow your mind.</span>
                 </Header>
                 <p>
                   Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
@@ -241,7 +241,7 @@ class App extends Component {
               </Grid.Column>
               <Grid.Column width={10}>
                 <Header as="h1">
-                  Oh yeah, <span class="sub">it's that good.</span>
+                  Oh yeah, <span className="sub">it's that good.</span>
                 </Header>
                 <p>
                   Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
@@ -256,7 +256,7 @@ class App extends Component {
             <Grid stackable>
               <Grid.Column width={10}>
                 <Header as="h1">
-                  And lastly, <span class="sub">this one.</span>
+                  And lastly, <span className="sub">this one.</span>
                 </Header>
                 <p>
                   Donec ullamcorper nulla non metus auctor fringilla. Vestibulum
