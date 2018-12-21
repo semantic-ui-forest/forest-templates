@@ -1,0 +1,27 @@
+{
+  "name": "forest-templates",
+  "description": "Semantic-UI Forest Templates",
+  "version": "0.1.0",
+  "scripts": {
+    "capture": "node tools/capture.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semantic-ui-forest/forest-templates.git"
+  },
+  "keywords": [
+    "Semantic-UI",
+    "Templaltes",
+    "Bootstrap",
+    "CSS"
+  ],
+  "author": "PPType, Inc.",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/semantic-ui-forest/forest-templates/issues"
+  },
+  "homepage": "https://github.com/semantic-ui-forest/forest-templates#readme",
+  "devDependencies": {
+    "puppeteer": "^1.11.0"
+  }
+}
