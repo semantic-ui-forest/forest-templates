@@ -11,7 +11,7 @@
   padding-bottom: 4rem;
 }
 
-.ui.menu>.ui.container>.header.item {
+.ui.menu > .ui.container > .header.item {
   font-size: 1.4rem;
   margin-left: -20px;
 }

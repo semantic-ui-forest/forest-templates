@@ -30,9 +30,7 @@ class App extends Component {
               home pages. Download, edit the text, and add your own fullscreen
               background photo to make it your own.
             </p>
-            <Button size="huge">
-              Learn more
-            </Button>
+            <Button size="huge">Learn more</Button>
           </Container>
           <Segment inverted vertical as="footer">
             Cover template for <a href="http://semantic-ui.com">Semantic-UI</a>,

@@ -21,7 +21,7 @@ body {
   max-width: none !important;
 }
 
-.ui.container.grid>.row {
+.ui.container.grid > .row {
   margin-top: 4em;
 }
 

@@ -8,7 +8,7 @@ import {
   Divider,
   Grid,
   Header,
-  Menu,
+  Menu
 } from "semantic-ui-react";
 
 import "./App.css";

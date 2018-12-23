@@ -9,7 +9,7 @@ footer {
   }
 }
 
-.ui.container>.ui.menu {
+.ui.container > .ui.menu {
   border-width: 0 0 1px 0;
   border-radius: 0;
   height: 6rem;
@@ -17,7 +17,7 @@ footer {
   margin-bottom: 28px;
 }
 
-.ui.container>.ui.menu .header.item {
+.ui.container > .ui.menu .header.item {
   padding-left: 0;
   font-size: 1.6rem;
   color: #777777;
@@ -38,7 +38,7 @@ footer {
   color: white;
 }
 
-.ui.container>.ui.message {
+.ui.container > .ui.message {
   background-color: rgb(238, 238, 238);
   box-shadow: none;
   padding: 4rem 2rem;

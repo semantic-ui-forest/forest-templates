@@ -7,7 +7,7 @@
   padding-right: 0;
 }
 
-#sidebar .ui.menu>a.item {
+#sidebar .ui.menu > a.item {
   padding: 10px 20px;
   line-height: 20px;
   color: #337ab7;
@@ -16,13 +16,13 @@
   margin-bottom: 0;
 }
 
-#sidebar .ui.menu>a.item.active {
+#sidebar .ui.menu > a.item.active {
   background-color: #337ab7;
   color: white;
   border: none !important;
 }
 
-#sidebar .ui.menu>a.item:hover {
+#sidebar .ui.menu > a.item:hover {
   background-color: #eee;
   color: #23527c;
 }
@@ -38,7 +38,7 @@
 }
 
 #content .ui.dividing.header {
-  width: 100%
+  width: 100%;
 }
 
 .ui.centered.small.circular.image {

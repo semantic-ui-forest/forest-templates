@@ -39,8 +39,12 @@ class App extends Component {
         <Grid padded className="tablet computer only">
           <Menu borderless fluid fixed="top" size="huge">
             <Container>
-              <Menu.Item header as="a">Project Name</Menu.Item>
-              <Menu.Item active as="a">Home</Menu.Item>
+              <Menu.Item header as="a">
+                Project Name
+              </Menu.Item>
+              <Menu.Item active as="a">
+                Home
+              </Menu.Item>
               <Menu.Item as="a">About</Menu.Item>
               <Menu.Item as="a">Contact</Menu.Item>
               <Dropdown item text="Dropdown">
@@ -67,7 +71,9 @@ class App extends Component {
               <Menu.Menu position="right">
                 <Menu.Item as="a">Default</Menu.Item>
                 <Menu.Item as="a">Static top</Menu.Item>
-                <Menu.Item active as="a">Fixed top</Menu.Item>
+                <Menu.Item active as="a">
+                  Fixed top
+                </Menu.Item>
               </Menu.Menu>
             </Container>
           </Menu>
@@ -113,7 +119,9 @@ class App extends Component {
               </Dropdown>
               <Menu.Item as="a">Default</Menu.Item>
               <Menu.Item as="a">Static top</Menu.Item>
-              <Menu.Item active as="a">Fixed top</Menu.Item>
+              <Menu.Item active as="a">
+                Fixed top
+              </Menu.Item>
             </Menu>
           </Menu>
         </Grid>

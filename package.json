@@ -3,7 +3,8 @@
   "description": "Semantic-UI Forest Templates",
   "version": "0.1.0",
   "scripts": {
-    "capture": "node tools/capture.js"
+    "capture": "node tools/capture.js",
+    "format": "prettier --write {bootstrap,semantic-ui}/*/html/*.html {bootstrap,semantic-ui}/*/react/src/*.jsx {bootstrap,semantic-ui}/*/react/src/*.css"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/semantic-ui-forest/forest-templates#readme",
   "devDependencies": {
     "codesandbox": "^1.3.6",
+    "prettier": "^1.15.3",
     "puppeteer": "^1.11.0"
   }
 }

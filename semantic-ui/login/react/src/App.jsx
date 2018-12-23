@@ -20,8 +20,7 @@ class App extends Component {
         <Grid textAlign="center" verticalAlign="middle">
           <Grid.Column style={{ maxWidth: 450 }}>
             <Header as="h2" color="teal" textAlign="center">
-              <img src="/static/images/logo.png" alt="logo" className="image" />
-              {' '}
+              <img src="/static/images/logo.png" alt="logo" className="image" />{" "}
               Log-in to your account
             </Header>
             <Form size="large">

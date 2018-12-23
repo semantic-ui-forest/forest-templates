@@ -25,7 +25,7 @@ body {
 }
 
 .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
-  content: "\f0d7"
+  content: "\f0d7";
 }
 
 .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {

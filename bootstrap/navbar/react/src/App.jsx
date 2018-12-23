@@ -39,8 +39,12 @@ class App extends Component {
         <Container>
           <Grid padded className="tablet computer only">
             <Menu borderless fluid size="huge">
-              <Menu.Item header as="a">Project Name</Menu.Item>
-              <Menu.Item active as="a">Home</Menu.Item>
+              <Menu.Item header as="a">
+                Project Name
+              </Menu.Item>
+              <Menu.Item active as="a">
+                Home
+              </Menu.Item>
               <Menu.Item as="a">About</Menu.Item>
               <Menu.Item as="a">Contact</Menu.Item>
               <Dropdown item text="Dropdown">
@@ -65,7 +69,9 @@ class App extends Component {
                 </Dropdown.Menu>
               </Dropdown>
               <Menu.Menu position="right">
-                <Menu.Item active as="a">Default</Menu.Item>
+                <Menu.Item active as="a">
+                  Default
+                </Menu.Item>
                 <Menu.Item as="a">Static top</Menu.Item>
                 <Menu.Item as="a">Fixed top</Menu.Item>
               </Menu.Menu>
@@ -107,10 +113,14 @@ class App extends Component {
                     <Dropdown.Divider />
                     <Dropdown.Header>Navbar header</Dropdown.Header>
                     <Dropdown.Item as="a">Seperated link</Dropdown.Item>
-                    <Dropdown.Item as="a">One more seperated link</Dropdown.Item>
+                    <Dropdown.Item as="a">
+                      One more seperated link
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <Menu.Item active as="a">Default</Menu.Item>
+                <Menu.Item active as="a">
+                  Default
+                </Menu.Item>
                 <Menu.Item as="a">Static top</Menu.Item>
                 <Menu.Item as="a">Fixed top</Menu.Item>
               </Menu>

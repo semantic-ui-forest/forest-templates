@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+    />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Starter Template for Semantic-UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <style type="text/css">
+      .ui.center.aligned.container {
+        margin-top: 4em;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" />
-  <meta name="description" content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." />
-  <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
-  <meta name="author" content="PPType" />
-  <meta name="theme-color" content="#ffffff" />
-  <title>Starter Template for Semantic-UI</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    type="text/css">
-  <style type="text/css">
-    .ui.center.aligned.container {
-      margin-top: 4em;
-    }
+      p.lead {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.3em;
+        color: #333333;
+        line-height: 1.4;
+        font-weight: 300;
+      }
 
-    p.lead {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 1.3em;
-      color: #333333;
-      line-height: 1.4;
-      font-weight: 300;
-    }
+      .ui.huge.header {
+        font-size: 36px;
+      }
 
-    .ui.huge.header {
-      font-size: 36px;
-    }
+      .ui.inverted.menu {
+        border-radius: 0;
+        flex-wrap: wrap;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+      }
 
-    .ui.inverted.menu {
-      border-radius: 0;
-      flex-wrap: wrap;
-      border: none;
-      padding-left: 0;
-      padding-right: 0;
-    }
+      .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+        display: none;
+      }
 
-    .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
-      display: none;
-    }
+      .ui.inverted.menu .item {
+        color: rgb(157, 157, 157);
+        font-size: 16px;
+      }
 
-    .ui.inverted.menu .item {
-      color: rgb(157, 157, 157);
-      font-size: 16px;
-    }
+      .ui.inverted.menu .active.item {
+        background-color: #080808;
+      }
+    </style>
+  </head>
 
-    .ui.inverted.menu .active.item {
-      background-color: #080808;
-    }
-
-  </style>
-</head>
-
-<body id="root">
-  <div class="ui tablet computer only padded grid">
-    <div class="ui borderless fluid huge inverted menu">
-      <div class="ui container">
-        <a class="header item" href="#root">Project Name</a>
-        <a class="active item" href="#root">Home</a>
-        <a class="item" href="#root">About</a>
-        <a class="item" href="#root">Contact</a>
-      </div>
-    </div>
-  </div>
-  <div class="ui mobile only padded grid">
-    <div class="ui borderless fluid huge inverted menu">
-      <a class="header item" href="#root">Project Name</a>
-      <div class="right menu">
-        <div class="item">
-          <button class="ui icon toggle basic inverted button">
-            <i class="content icon"></i>
-          </button>
+  <body id="root">
+    <div class="ui tablet computer only padded grid">
+      <div class="ui borderless fluid huge inverted menu">
+        <div class="ui container">
+          <a class="header item" href="#root">Project Name</a>
+          <a class="active item" href="#root">Home</a>
+          <a class="item" href="#root">About</a>
+          <a class="item" href="#root">Contact</a>
         </div>
       </div>
-      <div class="ui vertical borderless fluid inverted menu">
-        <a class="active item" href="#root">Home</a>
-        <a class="item" href="#root">About</a>
-        <a class="item" href="#root">Contact</a>
+    </div>
+    <div class="ui mobile only padded grid">
+      <div class="ui borderless fluid huge inverted menu">
+        <a class="header item" href="#root">Project Name</a>
+        <div class="right menu">
+          <div class="item">
+            <button class="ui icon toggle basic inverted button">
+              <i class="content icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="ui vertical borderless fluid inverted menu">
+          <a class="active item" href="#root">Home</a>
+          <a class="item" href="#root">About</a>
+          <a class="item" href="#root">Contact</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="ui center aligned text container">
-    <h1 class="ui huge header">
-      Semantic-UI starter template
-    </h1>
-    <p class="lead">
-      Use this document as a way to quickly start any new project.
-    </p>
-    <p class="lead">
-      All you get is this text and a mostly barebones HTML document.
-    </p>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.ui.toggle.button').click(function () {
-        $('.mobile.only.grid .ui.vertical.menu').toggle(100);
+    <div class="ui center aligned text container">
+      <h1 class="ui huge header">Semantic-UI starter template</h1>
+      <p class="lead">
+        Use this document as a way to quickly start any new project.
+      </p>
+      <p class="lead">
+        All you get is this text and a mostly barebones HTML document.
+      </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".ui.toggle.button").click(function() {
+          $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+        });
       });
-    });
-
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

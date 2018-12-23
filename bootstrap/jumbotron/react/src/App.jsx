@@ -45,14 +45,8 @@ class App extends Component {
                 <Menu.Item>
                   <Form>
                     <Form.Group inline>
-                      <Form.Input
-                        placeholder="Email"
-                        type="text"
-                      />
-                      <Form.Input
-                        placeholder="Password"
-                        type="password"
-                      />
+                      <Form.Input placeholder="Email" type="text" />
+                      <Form.Input placeholder="Password" type="password" />
                       <Form.Button content="Sign in" color="green" />
                     </Form.Group>
                   </Form>
@@ -87,10 +81,7 @@ class App extends Component {
               <Menu.Item>
                 <Form>
                   <Form.Input placeholder="Email" type="text" />
-                  <Form.Input
-                    placeholder="Password"
-                    type="password"
-                  />
+                  <Form.Input placeholder="Password" type="password" />
                   <Form.Button content="Sign in" color="green" />
                 </Form>
               </Menu.Item>

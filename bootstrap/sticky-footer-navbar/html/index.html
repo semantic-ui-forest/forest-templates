@@ -1,218 +1,189 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+    />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Sticky Footer with Navbar Template for Semantic-UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <style type="text/css">
+      html {
+        position: relative;
+        min-height: 100%;
+        height: unset;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" />
-  <meta name="description" content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." />
-  <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
-  <meta name="author" content="PPType" />
-  <meta name="theme-color" content="#ffffff" />
-  <title>Sticky Footer with Navbar Template for Semantic-UI</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    type="text/css">
-  <style type="text/css">
-    html {
-      position: relative;
-      min-height: 100%;
-      height: unset;
-    }
+      body {
+        padding-bottom: 14px;
+        margin-bottom: 60px;
+        padding-top: 36px;
+      }
 
-    body {
-      padding-bottom: 14px;
-      margin-bottom: 60px;
-      padding-top: 36px;
-    }
+      .ui.container h1.ui.huge.header {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        margin-top: 40px;
+        font-size: 36px;
+      }
 
-    .ui.container h1.ui.huge.header {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: 500;
-      margin-top: 40px;
-      font-size: 36px;
-    }
+      .ui.borderless.menu {
+        background-color: #f8f8f8;
+        box-shadow: none;
+        flex-wrap: wrap;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+      }
 
-    .ui.borderless.menu {
-      background-color: #f8f8f8;
-      box-shadow: none;
-      flex-wrap: wrap;
-      border: none;
-      padding-left: 0;
-      padding-right: 0;
-    }
+      .ui.borderless.menu .header.item {
+        font-size: 18px;
+        font-weight: 400;
+      }
 
-    .ui.borderless.menu .header.item {
-      font-size: 18px;
-      font-weight: 400;
-    }
+      .ui.container.grid h1.ui.header {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        margin-top: 40px;
+        font-size: 36px;
+      }
 
-    .ui.container.grid h1.ui.header {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: 500;
-      margin-top: 40px;
-      font-size: 36px;
-    }
+      .ui.tablet.computer.only.padded.grid .ui.menu a.header.item {
+        padding-left: 0;
+      }
 
-    .ui.tablet.computer.only.padded.grid .ui.menu a.header.item {
-      padding-left: 0;
-    }
+      .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+        display: none;
+      }
 
-    .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
-      display: none;
-    }
+      .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+        float: unset;
+      }
 
-    .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
-      float: unset;
-    }
+      .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+        content: "\f0d7";
+      }
 
-    .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
-      content: "\f0d7"
-    }
+      .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+        position: static;
+        width: 100%;
+        background-color: unset;
+        border: none;
+        box-shadow: none;
+      }
 
-    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
-      position: static;
-      width: 100%;
-      background-color: unset;
-      border: none;
-      box-shadow: none;
-    }
+      .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+        margin-top: 6px;
+      }
 
-    .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
-      margin-top: 6px;
-    }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        background-color: #f5f5f5;
+      }
 
-    footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      margin-bottom: 0;
-      background-color: #f5f5f5;
-    }
+      footer p {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #777777;
+      }
 
-    footer p {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: #777777;
-    }
+      p.lead {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 21px;
+        color: #333333;
+        line-height: 1.4;
+        font-weight: 300;
+      }
+    </style>
+  </head>
 
-    p.lead {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 21px;
-      color: #333333;
-      line-height: 1.4;
-      font-weight: 300;
-    }
-  </style>
-</head>
-
-<body id="root">
-  <div class="ui tablet computer only padded grid">
-    <div class="ui top fixed borderless huge menu">
-      <div class="ui container">
+  <body id="root">
+    <div class="ui tablet computer only padded grid">
+      <div class="ui top fixed borderless huge menu">
+        <div class="ui container">
+          <a class="header item">Project Name</a>
+          <a class="active item">Home</a> <a class="item">About</a>
+          <a class="item">Contact</a>
+          <a class="ui dropdown item">
+            Dropdown <i class="dropdown icon"></i>
+            <div class="menu">
+              <div class="item">Action</div>
+              <div class="item">Another action</div>
+              <div class="item">Something else here</div>
+              <div class="ui divider"></div>
+              <div class="header">Navbar header</div>
+              <div class="item">Seperated link</div>
+              <div class="item">One more seperated link</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="ui mobile only grid">
+      <div class="ui top fixed borderless huge menu">
         <a class="header item">Project Name</a>
-        <a class="active item">Home</a>
-        <a class="item">About</a>
-        <a class="item">Contact</a>
-        <a class="ui dropdown item">
-          Dropdown
-          <i class="dropdown icon"></i>
-          <div class="menu">
-            <div class="item">
-              Action
-            </div>
-            <div class="item">
-              Another action
-            </div>
-            <div class="item">
-              Something else here
-            </div>
-            <div class="ui divider"></div>
-            <div class="header">
-              Navbar header
-            </div>
-            <div class="item">
-              Seperated link
-            </div>
-            <div class="item">
-              One more seperated link
-            </div>
+        <div class="right menu">
+          <div class="item">
+            <button class="ui icon toggle basic button">
+              <i class="content icon"></i>
+            </button>
           </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="ui mobile only grid">
-    <div class="ui top fixed borderless huge menu">
-      <a class="header item">Project Name</a>
-      <div class="right menu">
-        <div class="item">
-          <button class="ui icon toggle basic button">
-            <i class="content icon"></i>
-          </button>
         </div>
-      </div>
-      <div class="ui vertical borderless fluid menu">
-        <a class="active item">Home</a>
-        <a class="item">About</a>
-        <a class="item">Contact</a>
-        <div class="ui dropdown item">
-          Dropdown
-          <i class="dropdown icon"></i>
-          <div class="menu">
-            <a class="item">
-              Action
-            </a>
-            <a class="item">
-              Another action
-            </a>
-            <a class="item">
-              Something else here
-            </a>
-            <div class="ui divider"></div>
-            <div class="header">
-              Navbar header
+        <div class="ui vertical borderless fluid menu">
+          <a class="active item">Home</a> <a class="item">About</a>
+          <a class="item">Contact</a>
+          <div class="ui dropdown item">
+            Dropdown <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item"> Action </a> <a class="item"> Another action </a>
+              <a class="item"> Something else here </a>
+              <div class="ui divider"></div>
+              <div class="header">Navbar header</div>
+              <a class="item"> Seperated link </a>
+              <a class="item"> One more seperated link </a>
             </div>
-            <a class="item">
-              Seperated link
-            </a>
-            <a class="item">
-              One more seperated link
-            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="ui container">
-    <h1 class="ui dividing huge header">
-      Sticky footer with fixed navbar
-    </h1>
-    <p class="lead">
-      Pin a fixed-height footer to the bottom of the viewport in desktop
-      browsers with this custom HTML and CSS. A fixed navbar has been
-      added with "ui fixed menu".
-    </p>
-  </div>
-  <footer>
     <div class="ui container">
-      <p>
-        Place sticky footer content here.
+      <h1 class="ui dividing huge header">Sticky footer with fixed navbar</h1>
+      <p class="lead">
+        Pin a fixed-height footer to the bottom of the viewport in desktop
+        browsers with this custom HTML and CSS. A fixed navbar has been added
+        with "ui fixed menu".
       </p>
     </div>
-  </footer>
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.ui.toggle.button').click(function () {
-        $('.mobile.only.grid .ui.vertical.menu').toggle(100);
+    <footer>
+      <div class="ui container"><p>Place sticky footer content here.</p></div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".ui.toggle.button").click(function() {
+          $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+        });
+
+        $(".ui.dropdown").dropdown();
       });
-
-      $('.ui.dropdown').dropdown();
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

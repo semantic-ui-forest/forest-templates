@@ -1,5 +1,5 @@
 body {
-  color: rgb(85, 85, 85)
+  color: rgb(85, 85, 85);
 }
 
 .ui.borderless.menu {
@@ -29,14 +29,14 @@ body {
 footer.ui.segment {
   margin-bottom: 0;
   padding-top: 40px;
-  padding-bottom: 40px
+  padding-bottom: 40px;
 }
 
 /* blockquote styles comes from bootstrap */
 blockquote {
   padding: 0.6rem 1rem 0.4rem;
   margin: 0 0 0.8rem;
-  border-left: 5px solid #EEEEEE;
+  border-left: 5px solid #eeeeee;
 }
 
 blockquote p {

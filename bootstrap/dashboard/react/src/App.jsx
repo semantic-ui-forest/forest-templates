@@ -40,7 +40,9 @@ class App extends Component {
       <div className="App">
         <Grid padded className="tablet computer only">
           <Menu borderless inverted fluid fixed="top">
-            <Menu.Item header as="a">Project name</Menu.Item>
+            <Menu.Item header as="a">
+              Project name
+            </Menu.Item>
             <Menu.Menu position="right">
               <Menu.Item>
                 <Input placeholder="Search..." size="small" />
@@ -54,19 +56,21 @@ class App extends Component {
         </Grid>
         <Grid padded className="mobile only">
           <Menu borderless inverted fluid fixed="top">
-            <Menu.Item header as="a">Project Name</Menu.Item>
+            <Menu.Item header as="a">
+              Project Name
+            </Menu.Item>
             <Menu.Menu position="right">
               <Menu.Item>
-                  <Button
-                    basic
-                    inverted
-                    icon
-                    toggle
-                    onClick={this.handleToggleDropdownMenu}
-                  >
-                    <Icon name="content" />
-                  </Button>
-                </Menu.Item>
+                <Button
+                  basic
+                  inverted
+                  icon
+                  toggle
+                  onClick={this.handleToggleDropdownMenu}
+                >
+                  <Icon name="content" />
+                </Button>
+              </Menu.Item>
             </Menu.Menu>
             <Menu
               borderless
@@ -87,7 +91,12 @@ class App extends Component {
           </Menu>
         </Grid>
         <Grid padded>
-          <Grid.Column tablet={3} computer={3} only="tablet computer" id="sidebar">
+          <Grid.Column
+            tablet={3}
+            computer={3}
+            only="tablet computer"
+            id="sidebar"
+          >
             <Menu vertical borderless fluid text>
               <Menu.Item active as="a">
                 Overview
@@ -107,7 +116,13 @@ class App extends Component {
               <Menu.Item as="a">Windows</Menu.Item>
             </Menu>
           </Grid.Column>
-          <Grid.Column mobile={16} tablet={13} computer={13} floated="right" id="content">
+          <Grid.Column
+            mobile={16}
+            tablet={13}
+            computer={13}
+            floated="right"
+            id="content"
+          >
             <Grid padded>
               <Grid.Row>
                 <Header dividing size="huge" as="h1">

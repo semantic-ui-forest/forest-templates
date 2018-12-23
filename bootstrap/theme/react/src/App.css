@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-.ui.fluid.vertical.menu>.item>.ui.header {
+.ui.fluid.vertical.menu > .item > .ui.header {
   margin-bottom: 5px;
 }
 
@@ -33,7 +33,7 @@
 
 .ui.celled.table tr td:first-child,
 .ui.celled.table tr th:first-child {
-  border-left: 1px solid rgba(34, 36, 38, .1);
+  border-left: 1px solid rgba(34, 36, 38, 0.1);
 }
 
 .ui.borderless.menu {
@@ -52,7 +52,7 @@
 }
 
 .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
-  content: "\f0d7"
+  content: "\f0d7";
 }
 
 .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
@@ -66,5 +66,5 @@
 
 .ui.mobile.only.grid .ui.inverted.vertical.menu .ui.dropdown.item .menu .header,
 .ui.mobile.only.grid .ui.inverted.vertical.menu .ui.dropdown.item .menu .item {
-  color: rgba(255, 255, 255, .9) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }

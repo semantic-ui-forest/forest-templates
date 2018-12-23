@@ -1,349 +1,324 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+    />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Blog Template for Semantic-UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <style type="text/css">
+      body {
+        color: rgb(85, 85, 85);
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" />
-  <meta name="description" content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." />
-  <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
-  <meta name="author" content="PPType" />
-  <meta name="theme-color" content="#ffffff" />
-  <title>Blog Template for Semantic-UI</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    type="text/css">
-  <style type="text/css">
-    body {
-      color: rgb(85, 85, 85)
-    }
+      .ui.borderless.menu {
+        margin-top: 0;
+      }
 
-    .ui.borderless.menu {
-      margin-top: 0;
-    }
+      .ui.inverted.pointing.menu .active.item:after {
+        background-color: white !important;
+      }
 
-    .ui.inverted.pointing.menu .active.item:after {
-      background-color: white !important;
-    }
+      .ui.basic.segment {
+        padding-top: 4rem;
+      }
 
-    .ui.basic.segment {
-      padding-top: 4rem;
-    }
+      .ui.basic.segment > .ui.huge.header {
+        font-size: 54px;
+      }
 
-    .ui.basic.segment > .ui.huge.header {
-      font-size: 54px;
-    }
+      .eleven.wide.column {
+        font-size: 18px;
+      }
 
-    .eleven.wide.column {
-      font-size: 18px;
-    }
+      .four.wide.column .ui.secondary.segment {
+        border: none;
+      }
 
-    .four.wide.column .ui.secondary.segment {
-      border: none;
-    }
+      footer.ui.segment {
+        margin-bottom: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
 
-    footer.ui.segment {
-      margin-bottom: 0;
-      padding-top: 40px;
-      padding-bottom: 40px
-    }
+      /* blockquote styles comes from bootstrap */
+      blockquote {
+        padding: 0.6rem 1rem 0.4rem;
+        margin: 0 0 0.8rem;
+        border-left: 5px solid #eeeeee;
+      }
 
-    /* blockquote styles comes from bootstrap */
-    blockquote {
-      padding: 0.6rem 1rem 0.4rem;
-      margin: 0 0 0.8rem;
-      border-left: 5px solid #EEEEEE;
-    }
+      blockquote p {
+        line-height: 1.2rem;
+        margin-bottom: 0.3rem;
+        text-align: start !important;
+      }
 
-    blockquote p {
-      line-height: 1.2rem;
-      margin-bottom: 0.3rem;
-      text-align: start !important;
-    }
+      blockquote p:last-child {
+        margin-bottom: 0;
+      }
 
-    blockquote p:last-child {
-      margin-bottom: 0;
-    }
+      blockquote ul:last-child,
+      blockquote ol:last-child {
+        margin-bottom: 0;
+      }
 
-    blockquote ul:last-child,
-    blockquote ol:last-child {
-      margin-bottom: 0;
-    }
+      blockquote footer,
+      blockquote small,
+      blockquote .small {
+        margin-bottom: 0.5rem;
+        display: block;
+        font-size: 80%;
+        line-height: 1.42857;
+        color: #999;
+        padding: 0;
+      }
 
-    blockquote footer,
-    blockquote small,
-    blockquote .small {
-      margin-bottom: 0.5rem;
-      display: block;
-      font-size: 80%;
-      line-height: 1.42857;
-      color: #999;
-      padding: 0;
-    }
+      blockquote footer:before,
+      blockquote small:before,
+      blockquote .small:before {
+        content: "— ";
+      }
 
-    blockquote footer:before,
-    blockquote small:before,
-    blockquote .small:before {
-      content: "— ";
-    }
+      blockquote cite:before {
+        content: "«";
+      }
 
-    blockquote cite:before {
-      content: "«";
-    }
+      blockquote cite:after {
+        content: "»";
+      }
+    </style>
+  </head>
 
-    blockquote cite:after {
-      content: "»";
-    }
-  </style>
-</head>
-
-<body id="root">
-  <div class="ui borderless blue inverted pointing menu">
-    <div class="ui container">
-      <a class="header active item" href="#root">Home</a>
-      <a class="item" href="#root">New feature</a>
-      <a class="item" href="#root">Press</a>
-      <a class="item" href="#root">New hires</a>
-      <a class="item" href="#root">About</a>
-    </div>
-  </div>
-  <div class="ui grid stackable container">
-    <div class="row" id="page-header">
-      <div class="ui basic segment">
-        <h1 class="ui huge header">
-          <div class="content">
-            The Semantic-UI Blog
-          </div>
-          <div class="sub header">
-            A simple example of creating a blog with Semantic-UI.
-          </div>
-        </h1>
+  <body id="root">
+    <div class="ui borderless blue inverted pointing menu">
+      <div class="ui container">
+        <a class="header active item" href="#root">Home</a>
+        <a class="item" href="#root">New feature</a>
+        <a class="item" href="#root">Press</a>
+        <a class="item" href="#root">New hires</a>
+        <a class="item" href="#root">About</a>
       </div>
     </div>
-    <div class="row" id="article">
-      <div class="eleven wide column">
-        <h2 class="ui large header">
-          <div class="content">
-            Sample blog post
-          </div>
-          <div class="sub header">
-            March 6, 2017 by <a href="#root">Jack</a>
-          </div>
-        </h2>
-        <div class="ui hidden divider"></div>
-        <p>
-          This blog post shows a few different types of content that's
-          supported and styled with Semantic-UI. Basic
-          typesetting, list, and code are all supported.
-        </p>
-        <div class="ui divider"></div>
-        <p>
-          Cum sociis natoque penatibus et magnis
-          <a href="#root">dis parturient montes</a>,
-          nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem
-          lacinia quam venenatis vestibulum. Sed posuere consectetur est at
-          lobortis. Cras mattis consectetur purus sit amet fermentum.
-        </p>
-        <blockquote>
-          Curabitur blandit tempus porttitor. Nullam quis risus eget urna
-          mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula
-          ut id elit.
-        </blockquote>
-        <p>
-          Etiam porta sem malesuada magna mollis euismod. Cras mattis
-          consectetur purus sit amet fermentum. Aenean
-          lacinia bibendum nulla sed consectetur.
-        </p>
-        <h3 class="ui large header">
-          Heading
-        </h3>
-        <p>
-          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-          auctor. Duis mollis, est non commodo luctus,
-          nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo
-          risus, porta ac consectetur ac,
-          vestibulum at eros.
-        </p>
-        <h4 class="ui medium header">
-          Sub-heading
-        </h4>
-        <p>
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.
-        </p>
-        <div class="ui secondary segment">
-          <code>Example code block</code>
+    <div class="ui grid stackable container">
+      <div class="row" id="page-header">
+        <div class="ui basic segment">
+          <h1 class="ui huge header">
+            <div class="content">The Semantic-UI Blog</div>
+            <div class="sub header">
+              A simple example of creating a blog with Semantic-UI.
+            </div>
+          </h1>
         </div>
-        <p>
-          Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
-          malesuada magna mollis euismod. Fusce dapibus,
-          tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-          fermentum massa.
-        </p>
-        <h4 class="ui medium header">
-          Sub-heading
-        </h4>
-        <p>
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Aenean lacinia bibendum
-          nulla sed consectetur. Etiam porta sem malesuada magna mollis
-          euismod. Fusce dapibus, tellus ac cursus
-          commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-          amet risus.
-        </p>
-        <ul>
-          <li>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-          </li>
-          <li>Donec id elit non mi porta gravida at eget metus.</li>
-          <li>Nulla vitae elit libero, a pharetra augue.</li>
-        </ul>
-        <p>
-          Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit
-          libero, a pharetra augue.
-        </p>
-        <ol>
-          <li>Vestibulum id ligula porta felis euismod semper.</li>
-          <li>
+      </div>
+      <div class="row" id="article">
+        <div class="eleven wide column">
+          <h2 class="ui large header">
+            <div class="content">Sample blog post</div>
+            <div class="sub header">
+              March 6, 2017 by <a href="#root">Jack</a>
+            </div>
+          </h2>
+          <div class="ui hidden divider"></div>
+          <p>
+            This blog post shows a few different types of content that's
+            supported and styled with Semantic-UI. Basic typesetting, list, and
+            code are all supported.
+          </p>
+          <div class="ui divider"></div>
+          <p>
+            Cum sociis natoque penatibus et magnis
+            <a href="#root">dis parturient montes</a>, nascetur ridiculus mus.
+            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+            vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
+            consectetur purus sit amet fermentum.
+          </p>
+          <blockquote>
+            Curabitur blandit tempus porttitor. Nullam quis risus eget urna
+            mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula
+            ut id elit.
+          </blockquote>
+          <p>
+            Etiam porta sem malesuada magna mollis euismod. Cras mattis
+            consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
+            sed consectetur.
+          </p>
+          <h3 class="ui large header">Heading</h3>
+          <p>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
+            consectetur ac, vestibulum at eros.
+          </p>
+          <h4 class="ui medium header">Sub-heading</h4>
+          <p>
             Cum sociis natoque penatibus et magnis dis parturient montes,
             nascetur ridiculus mus.
-          </li>
-          <li>
-            Maecenas sed diam eget risus varius blandit sit amet non magna.
-          </li>
-        </ol>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Sed posuere
-          consectetur est at lobortis.
-        </p>
-        <div class="ui hidden divider"></div>
-        <h2 class="ui large header">
-          <div class="content">
-            Another blog post
-          </div>
-          <div class="sub header">
-            April 1, 2027 by <a href="#root">Mac</a>
-          </div>
-        </h2>
-        <div class="ui hidden divider"></div>
-        <p>
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Aenean eu leo quam.
-          Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed
-          posuere consectetur est at lobortis. Cras
-          mattis consectetur purus sit amet fermentum.
-        </p>
-        <blockquote>
-          Curabitur blandit tempus porttitor. Nullam quis risus eget
-          urna mollis ornare vel eu leo. Nullam id
-          dolor id nibh ultricies vehicula ut id elit.
-        </blockquote>
-        <p>
-          Etiam porta sem malesuada magna mollis euismod. Cras mattis
-          consectetur purus sit amet fermentum. Aenean
-          lacinia bibendum nulla sed consectetur.
-        </p>
-        <p>
-          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-          auctor. Duis mollis, est non commodo luctus,
-          nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo
-          risus, porta ac consectetur ac,
-          vestibulum at eros.
-        </p>
-        <div class="ui hidden divider"></div>
-        <h2 class="ui large header">
-          <div class="content">
-            New feature
-          </div>
-          <div class="sub header">
-            Autumn 13, 2019 by <a href="#root">Semantic</a>
-          </div>
-        </h2>
-        <div class="ui hidden divider"></div>
-        <p>
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Aenean eu leo quam.
-          Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed
-          posuere consectetur est at lobortis. Cras
-          mattis consectetur purus sit amet fermentum.
-        </p>
-        <ul>
-          <li>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-          </li>
-          <li>Donec id elit non mi porta gravida at eget metus.</li>
-          <li>Nulla vitae elit libero, a pharetra augue.</li>
-        </ul>
-        <p>
-          Etiam porta sem malesuada magna mollis euismod. Cras mattis
-          consectetur purus sit amet fermentum. Aenean
-          lacinia bibendum nulla sed consectetur.
-        </p>
-        <p>
-          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-          auctor. Duis mollis, est non commodo luctus,
-          nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo
-          risus, porta ac consectetur ac,
-          vestibulum at eros.
-        </p>
-        <div class="ui hidden divider"></div>
-        <div class="ui basic circular huge button">
-          <a href="#root">Previous</a>
-        </div>
-        <div class="ui basic circular huge button">
-          <a href="#root">Next</a>
-        </div>
-        <div class="ui hidden divider"></div>
-      </div>
-      <div class="four wide right floated column">
-        <div class="ui secondary segment">
-          <h4 class="ui header">
-            About
-          </h4>
-          <p>
-            Etiam porta <i>sem malesuada magna mollis euismod</i>. Cras mattis
-            consectetur purus sit amet fermentum.
-            Aenean lacinia bibendum nulla sed consectetur.
           </p>
+          <div class="ui secondary segment">
+            <code>Example code block</code>
+          </div>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
+            malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
+            commodo, tortor mauris condimentum nibh, ut fermentum massa.
+          </p>
+          <h4 class="ui medium header">Sub-heading</h4>
+          <p>
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Aenean lacinia bibendum nulla sed
+            consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
+            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+            ut fermentum massa justo sit amet risus.
+          </p>
+          <ul>
+            <li>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et.
+            </li>
+            <li>Donec id elit non mi porta gravida at eget metus.</li>
+            <li>Nulla vitae elit libero, a pharetra augue.</li>
+          </ul>
+          <p>
+            Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit
+            libero, a pharetra augue.
+          </p>
+          <ol>
+            <li>Vestibulum id ligula porta felis euismod semper.</li>
+            <li>
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus.
+            </li>
+            <li>
+              Maecenas sed diam eget risus varius blandit sit amet non magna.
+            </li>
+          </ol>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Sed posuere
+            consectetur est at lobortis.
+          </p>
+          <div class="ui hidden divider"></div>
+          <h2 class="ui large header">
+            <div class="content">Another blog post</div>
+            <div class="sub header">
+              April 1, 2027 by <a href="#root">Mac</a>
+            </div>
+          </h2>
+          <div class="ui hidden divider"></div>
+          <p>
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem
+            lacinia quam venenatis vestibulum. Sed posuere consectetur est at
+            lobortis. Cras mattis consectetur purus sit amet fermentum.
+          </p>
+          <blockquote>
+            Curabitur blandit tempus porttitor. Nullam quis risus eget urna
+            mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula
+            ut id elit.
+          </blockquote>
+          <p>
+            Etiam porta sem malesuada magna mollis euismod. Cras mattis
+            consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
+            sed consectetur.
+          </p>
+          <p>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
+            consectetur ac, vestibulum at eros.
+          </p>
+          <div class="ui hidden divider"></div>
+          <h2 class="ui large header">
+            <div class="content">New feature</div>
+            <div class="sub header">
+              Autumn 13, 2019 by <a href="#root">Semantic</a>
+            </div>
+          </h2>
+          <div class="ui hidden divider"></div>
+          <p>
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem
+            lacinia quam venenatis vestibulum. Sed posuere consectetur est at
+            lobortis. Cras mattis consectetur purus sit amet fermentum.
+          </p>
+          <ul>
+            <li>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et.
+            </li>
+            <li>Donec id elit non mi porta gravida at eget metus.</li>
+            <li>Nulla vitae elit libero, a pharetra augue.</li>
+          </ul>
+          <p>
+            Etiam porta sem malesuada magna mollis euismod. Cras mattis
+            consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
+            sed consectetur.
+          </p>
+          <p>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
+            consectetur ac, vestibulum at eros.
+          </p>
+          <div class="ui hidden divider"></div>
+          <div class="ui basic circular huge button">
+            <a href="#root">Previous</a>
+          </div>
+          <div class="ui basic circular huge button">
+            <a href="#root">Next</a>
+          </div>
+          <div class="ui hidden divider"></div>
         </div>
-        <h4 class="ui header">
-          Archives
-        </h4>
-        <div class="ui list">
-          <a class="item">Septempber 2017</a>
-          <a class="item">August 2017</a>
-          <a class="item">June 2017</a>
-          <a class="item">April 2017</a>
-          <a class="item">March 2017</a>
-          <a class="item">February 2017</a>
-          <a class="item">January 2017</a>
-          <a class="item">December 2016</a>
-          <a class="item">October 2016</a>
-          <a class="item">July 2016</a>
-          <a class="item">July 2016</a>
-          <a class="item">May 2016</a>
-          <a class="item">April 2016</a>
-          <a class="item">January 2016</a>
-          <a class="item">May 2015</a>
-        </div>
-        <h4 class="ui header">
-          Elsewhere
-        </h4>
-        <div class="ui list">
-          <a class="item">GitHub</a>
-          <a class="item">Twitter</a>
-          <a class="item">Facebook</a>
+        <div class="four wide right floated column">
+          <div class="ui secondary segment">
+            <h4 class="ui header">About</h4>
+            <p>
+              Etiam porta <i>sem malesuada magna mollis euismod</i>. Cras mattis
+              consectetur purus sit amet fermentum. Aenean lacinia bibendum
+              nulla sed consectetur.
+            </p>
+          </div>
+          <h4 class="ui header">Archives</h4>
+          <div class="ui list">
+            <a class="item">Septempber 2017</a> <a class="item">August 2017</a>
+            <a class="item">June 2017</a> <a class="item">April 2017</a>
+            <a class="item">March 2017</a> <a class="item">February 2017</a>
+            <a class="item">January 2017</a> <a class="item">December 2016</a>
+            <a class="item">October 2016</a> <a class="item">July 2016</a>
+            <a class="item">July 2016</a> <a class="item">May 2016</a>
+            <a class="item">April 2016</a> <a class="item">January 2016</a>
+            <a class="item">May 2015</a>
+          </div>
+          <h4 class="ui header">Elsewhere</h4>
+          <div class="ui list">
+            <a class="item">GitHub</a> <a class="item">Twitter</a>
+            <a class="item">Facebook</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="ui secondary segment">
-    <div class="ui center aligned container">
-      <p>
-        Blog template built for Semantic-UI by
-        <a href="https://semantic-ui-forest.com">@Semantic-UI-Forest</a>.
-      </p>
-      <a href="#root">Back to top</a>
-    </div>
-  </footer>
-</body>
+    <footer class="ui secondary segment">
+      <div class="ui center aligned container">
+        <p>
+          Blog template built for Semantic-UI by
+          <a href="https://semantic-ui-forest.com">@Semantic-UI-Forest</a>.
+        </p>
+        <a href="#root">Back to top</a>
+      </div>
+    </footer>
+  </body>
 </html>

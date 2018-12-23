@@ -25,8 +25,8 @@ class App extends Component {
           <Container>
             <Menu.Item header>Project Name</Menu.Item>
             <Menu.Item active>Home</Menu.Item>
-            <Menu.Item >About</Menu.Item>
-            <Menu.Item >Contact</Menu.Item>
+            <Menu.Item>About</Menu.Item>
+            <Menu.Item>Contact</Menu.Item>
             <Dropdown item text="Dropdown">
               <Dropdown.Menu>
                 <Dropdown.Item as="a" href="#root">
@@ -50,8 +50,7 @@ class App extends Component {
             <Menu.Item>
               <Form>
                 <Form.Field inline>
-                  <input placeholder="Search" type="text" />
-                  {' '}
+                  <input placeholder="Search" type="text" />{" "}
                   <Button type="submit">Submit</Button>
                 </Form.Field>
               </Form>
@@ -79,13 +78,10 @@ class App extends Component {
               <p className="lead">
                 In fact, Semantic-UI's grid system, container and many other
                 components are by default "non-responsive", they will{" "}
-                <b>grow</b>
-                {" "}
-                or
-                {" "}
-                <b>shrink</b> as screen width changes, but they will not stack
-                vertically on a small screen, unless you add "stackable" to it.
-                You can also fix the container's width with simple CSS.
+                <b>grow</b> or <b>shrink</b> as screen width changes, but they
+                will not stack vertically on a small screen, unless you add
+                "stackable" to it. You can also fix the container's width with
+                simple CSS.
               </p>
               <p className="lead">
                 Here are some keywords related to responsiveness:
