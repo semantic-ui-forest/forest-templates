@@ -1,5 +1,7 @@
 body {
   background-color: #dadada;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
 }
 
 body > div,

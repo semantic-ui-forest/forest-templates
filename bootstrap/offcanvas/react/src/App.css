@@ -1,5 +1,7 @@
 body {
   padding-top: 56px;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
 }
 
 .ui.grid {

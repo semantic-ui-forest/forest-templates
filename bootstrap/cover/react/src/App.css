@@ -1,3 +1,8 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
 @media only screen and (min-width: 768px) {
   .ui.container {
     width: 700px;

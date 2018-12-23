@@ -1,5 +1,7 @@
 body {
   color: rgb(85, 85, 85);
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
 }
 
 .ui.inverted.pointing.menu .active.item:after {

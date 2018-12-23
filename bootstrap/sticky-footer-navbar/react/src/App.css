@@ -8,6 +8,8 @@ body {
   padding-bottom: 14px;
   margin-bottom: 60px;
   padding-top: 36px;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
 }
 
 .ui.container h1.ui.huge.header {

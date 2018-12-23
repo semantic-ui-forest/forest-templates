@@ -1,3 +1,8 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
 .ui.form .inline.fields {
   margin-bottom: 0;
 }
