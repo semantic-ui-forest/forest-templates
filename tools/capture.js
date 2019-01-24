@@ -19,7 +19,7 @@ async function capture(templatePath) {
   screenshotPath = path.join(
     templatePath,
     "screenshots",
-    "screenshot-1440x990.png"
+    "screenshot-1440x900.png"
   );
   await page.screenshot({ path: screenshotPath });
 

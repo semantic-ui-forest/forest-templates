@@ -33,9 +33,9 @@ yarn start # npm start
 
 ### Screenshots
 
-computer sized screen, 1440x990 for example:
+computer sized screen, 1440x900 for example:
 
-<img src="./screenshots/screenshot-1440x990.png" width="1440">
+<img src="./screenshots/screenshot-1440x900.png" width="1440">
 
 tablet sized screen, 768x1024 for example:
 
