@@ -7,9 +7,11 @@ async function capture(templatePath) {
   let screenshotPath;
 
   const url = `file:///${process.cwd()}/${templatePath}/html/index.html`;
+  const templateName = templatePath.split("/");
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+
 
   // 1440 x 990, computer size screen
   await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 });
@@ -19,7 +21,7 @@ async function capture(templatePath) {
   screenshotPath = path.join(
     templatePath,
     "screenshots",
-    "screenshot-1440x900.png"
+    `${templateName}-1440x900.png`
   );
   await page.screenshot({ path: screenshotPath });
 
@@ -31,7 +33,7 @@ async function capture(templatePath) {
   screenshotPath = path.join(
     templatePath,
     "screenshots",
-    "screenshot-768x1024.png"
+    `${templateName}-768x1024.png`
   );
   await page.screenshot({ path: screenshotPath });
 
@@ -43,7 +45,7 @@ async function capture(templatePath) {
   screenshotPath = path.join(
     templatePath,
     "screenshots",
-    "screenshot-375x667.png"
+    `${templateName}-375x667.png`
   );
   await page.screenshot({ path: screenshotPath });
   await browser.close();
