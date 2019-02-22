@@ -28,6 +28,7 @@
     "puppeteer": "^1.11.0"
   },
   "dependencies": {
-    "log-timestamp": "^0.2.1"
+    "log-timestamp": "^0.2.1",
+    "sharp": "^0.21.3"
   }
 }
