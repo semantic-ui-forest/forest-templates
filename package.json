@@ -3,7 +3,7 @@
   "description": "Semantic-UI Forest Templates",
   "version": "0.1.0",
   "scripts": {
-    "capture": "node tools/capture.js",
+    "capture": "node scripts/capture.js",
     "format": "prettier --write {bootstrap,semantic-ui}/*/html/*.html {bootstrap,semantic-ui}/*/react/src/*.jsx {bootstrap,semantic-ui}/*/react/src/*.css"
   },
   "repository": {
