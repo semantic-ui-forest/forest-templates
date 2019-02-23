@@ -1,4 +1,4 @@
-const _ = require('log-timestamp');
+const _ = require("log-timestamp");
 
 const { execSync } = require("child_process");
 const fs = require("fs");
@@ -10,9 +10,9 @@ function main() {
       console.log(`Upgrade ${category}/${template} react to latest version...`);
       execSync("yarn upgrade --latest semantic-ui-react", {
         cwd: path.join(category, template, "react")
-      })
+      });
     }
   }
 }
 
-main()
+main();

@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const puppeteer = require("puppeteer");
-const sharp = require('sharp');
+const sharp = require("sharp");
 
 async function capture(templatePath) {
   let screenshotPath, thumbnailPath;
@@ -31,7 +31,9 @@ async function capture(templatePath) {
     `${templateName}-640x400.png`
   );
 
-  sharp(screenshotPath).resize(640, 400).toFile(thumbnailPath);
+  sharp(screenshotPath)
+    .resize(640, 400)
+    .toFile(thumbnailPath);
 
   // 768 x 1024, tablet size screen
   await page.setViewport({ width: 768, height: 1024, deviceScaleFactor: 2 });
