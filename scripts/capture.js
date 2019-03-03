@@ -4,6 +4,8 @@ const path = require("path");
 const puppeteer = require("puppeteer");
 const sharp = require("sharp");
 
+require('console-stamp')(console, { colors: { stamp: 'yellow' } });
+
 async function capture(templatePath) {
   let screenshotPath, thumbnailPath;
 
@@ -17,7 +19,7 @@ async function capture(templatePath) {
   await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 });
   await page.goto(url);
   await page.waitFor(10000);
-  console.log(`capturing screenshot for ${url} with 1440x900 viewport...`);
+  console.log(`capture screenshot for ${url} with 1440x900 viewport.`);
   screenshotPath = path.join(
     templatePath,
     "screenshots",
@@ -39,7 +41,7 @@ async function capture(templatePath) {
   await page.setViewport({ width: 768, height: 1024, deviceScaleFactor: 2 });
   await page.goto(url);
   await page.waitFor(10000);
-  console.log(`capturing screenshot for ${url} with 768x1024 viewport...`);
+  console.log(`capture screenshot for ${url} with 768x1024 viewport.`);
   screenshotPath = path.join(
     templatePath,
     "screenshots",
@@ -51,7 +53,7 @@ async function capture(templatePath) {
   await page.setViewport({ width: 375, height: 667, deviceScaleFactor: 3 });
   await page.goto(url);
   await page.waitFor(10000);
-  console.log(`capturing screenshot for ${url} with 375x667 viewport...`);
+  console.log(`capture screenshot for ${url} with 375x667 viewport.`);
   screenshotPath = path.join(
     templatePath,
     "screenshots",

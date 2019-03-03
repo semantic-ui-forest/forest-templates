@@ -1,4 +1,4 @@
-const _ = require("log-timestamp");
+require('console-stamp')(console, { colors: { stamp: 'yellow' } });
 
 const { execSync } = require("child_process");
 const fs = require("fs");
